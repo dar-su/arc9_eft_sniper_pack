@@ -7,7 +7,7 @@ local ATT = {}
 ATT = {}
 
 ATT.PrintName = "MP-18 7.62x54R 600mm barrel"
-ATT.CompactName = "MP18 600mm"
+ATT.CompactName = "MP18 7.62x54R"
 ATT.Icon = Material("entities/eft_mp18_attachments/barrel.png", "mips smooth")
 ATT.Description = [[A standard factory-produced 600mm barrel with a front sight for MP-18 7.62x54R hunting rifles.]]
 
@@ -53,6 +53,118 @@ ATT.Attachments = {
 
 
 ARC9.LoadAttachment(ATT, "eft_mp18_barrel_762x54r")
+
+///////////////////////////////////////      eft_mp18_barrel_762x51
+
+
+ATT = {}
+
+ATT.PrintName = "MP-18 7.62x51 600mm barrel"
+ATT.CompactName = "MP18 7.62x51"
+ATT.Icon = Material("entities/eft_mp18_attachments/barrel.png", "mips smooth")
+ATT.Description = [[A standard factory-produced 600mm barrel with a front sight for MP-18 7.62x51 hunting rifles.]]
+
+ATT.HasBarrel = true 
+
+ATT.EFTErgoAdd = -13
+ATT.CustomCons = { Ergonomics = "-13" }
+
+ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/762x51.mdl"
+ATT.ShellSounds = ARC9EFT.Shells556
+
+ATT.RecoilMult = 0.82
+ATT.VisualRecoilMult = 0.82
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_mp18_barrel"}
+
+ATT.ClipSize = 1
+
+ATT.Attachments = {
+    {
+        PrintName = "Ammo type",
+        Category = "eft_ammo_762x51",
+        Pos = Vector(0, -4, 2),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        Integral = "eft_ammo_762x51_bpzfmj"
+    },
+    {
+        PrintName = "Handguard",
+        Category = "eft_mp18_hg",
+        Pos = Vector(0, 4, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Mount",
+        Category = "eft_mp18_mount",
+        Pos = Vector(0, -1.8, -1.5),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_mp18_barrel_762x51")
+
+///////////////////////////////////////      eft_mp18_barrel_762x39
+
+
+ATT = {}
+
+ATT.PrintName = "MP-18 7.62x39 600mm barrel"
+ATT.CompactName = "MP18 7.62x39"
+ATT.Icon = Material("entities/eft_mp18_attachments/barrel.png", "mips smooth")
+ATT.Description = [[A standard factory-produced 600mm barrel with a front sight for MP-18 7.62x39 hunting rifles.]]
+
+ATT.HasBarrel = true 
+
+ATT.EFTErgoAdd = -13
+ATT.CustomCons = { Ergonomics = "-13" }
+
+ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/762x39.mdl"
+ATT.ShellSounds = ARC9EFT.Shells556
+
+ATT.RecoilMult = 0.6
+ATT.VisualRecoilMult = 0.6
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_mp18_barrel"}
+
+ATT.ClipSize = 1
+
+ATT.Attachments = {
+    {
+        PrintName = "Ammo type",
+        Category = "eft_ammo_76239",
+        Pos = Vector(0, -4, 2),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        Integral = "eft_ammo_76239_ps"
+    },
+    {
+        PrintName = "Handguard",
+        Category = "eft_mp18_hg",
+        Pos = Vector(0, 4, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Mount",
+        Category = "eft_mp18_mount",
+        Pos = Vector(0, -1.8, -1.5),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_mp18_barrel_762x39")
 
 
 ///////////////////////////////////////      eft_mp18_hg_poly

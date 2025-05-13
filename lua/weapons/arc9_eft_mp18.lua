@@ -282,12 +282,16 @@ SWEP.EFTRequiredAtts = { "HasStock", "HasBarrel", "HasHandguard", "HasAmmooooooo
 
 SWEP.AttachmentElements = {
     ["eft_mp18_barrel_762x54r"]    = { Bodygroups = { {1, 1} } },
+    ["eft_mp18_barrel_762x39"]    = { Bodygroups = { {1, 2} } },
+    ["eft_mp18_barrel_762x51"]    = { Bodygroups = { {1, 3} } },
     ["eft_mp18_hg_wood"]    = { Bodygroups = { {2, 1} } },
     ["eft_mp18_hg_poly"]    = { Bodygroups = { {2, 2} } },
     ["eft_mp18_stock_wood"]    = { Bodygroups = { {3, 1} } },
     ["eft_mp18_stock_poly"]    = { Bodygroups = { {3, 2} } },
     ["eft_mp18_mount_std"]    = { Bodygroups = { {4, 1} } },
     ["76254r"]    = { Bodygroups = { {5, 1} } },
+    ["eft_ammo_76239"]    = { Bodygroups = { {5, 2} } }, -- test if works
+    ["76251"]    = { Bodygroups = { {5, 3} } },
 }
 
 
