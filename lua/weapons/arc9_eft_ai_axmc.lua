@@ -175,7 +175,6 @@ SWEP.CamQCA_Mult = 1
 SWEP.MuzzleParticle = "muzzleflash_m82"
 SWEP.AfterShotParticle = "barrel_smoke"
 SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/86x70.mdl"
-SWEP.ShellScale = 1.5
 SWEP.ShellSounds = ARC9EFT.ShellsHeavy
 
 -- Anti integrated zeroing
