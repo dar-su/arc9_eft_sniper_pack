@@ -64,7 +64,7 @@ SWEP.RPM = 450
 SWEP.EFTErgo = 33
 SWEP.BarrelLength = 50
 SWEP.Ammo = "ar2"
-SWEP.Firemodes = { { Mode = 1, PrintName = "Bolt-action" }, { Mode = 1, PrintName = "Manual reload", ShotgunReload = true, ShouldDropMagEmpty = false },  }
+SWEP.Firemodes = { { Mode = 1, PrintName = ARC9:GetPhrase("eft_fmode_bolt") }, { Mode = 1, PrintName = ARC9:GetPhrase("eft_fmode_manualreload"), ShotgunReload = true, ShouldDropMagEmpty = false },  }
 
 SWEP.ManualAction = true
 SWEP.ManualActionNoLastCycle = true -- wah wah should be true
