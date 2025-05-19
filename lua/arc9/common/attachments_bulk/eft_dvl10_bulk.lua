@@ -27,14 +27,14 @@ ATT.Category = {"eft_dvl10_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_muzzle_dvl10"},
         Pos = Vector(-26, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = {"eft_dvl10_hg"},
         Pos = Vector(-2, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -77,14 +77,14 @@ ATT.Category = {"eft_dvl10_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_muzzle_dvl10_sup"},
         Pos = Vector(-20, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Bipod",
+        PrintName = ARC9:GetPhrase("eft_cat_bipod"),
         Category = "eft_harris_bipod",
         Pos = Vector(-6.67, 0, 1.25),
         Ang = Angle(0, 0, 180),
@@ -114,14 +114,14 @@ ATT.Category = {"eft_dvl10_hg"}
 
 ATT.Attachments = {
     {
-        PrintName = "Top Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
         Category = {"eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(-7, 0, -1.35),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "B Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
         Category = {"eft_tactical", "eft_bipod"},
         Pos = Vector(-8.3, 0, 1.35),
         Ang = Angle(0, 0, 180),
@@ -153,7 +153,7 @@ ATT.Category = {"eft_dvl10_stock"}
 
 -- ATT.ToggleStats = {
 --     {
---         PrintName = "Unfolded",
+--         PrintName = "eft_toggle_unfolded",
 --         EFTErgoAdd = 12,
 --         RecoilMult = 0.75,
 --         VisualRecoilMult = 0.75,
@@ -161,7 +161,7 @@ ATT.Category = {"eft_dvl10_stock"}
 --         HasStock = true
 --     },
 --     {
---         PrintName = "Folded",
+--         PrintName = "eft_toggle_folded",
 --         ActivateElements = {"eft_dvl10_stock_folded"}
 --     },
 -- }
@@ -268,7 +268,7 @@ ATT.Max = 1
 ATT.Category = {"eft_custom_dvl10"}
 ATT.Attachments = {
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Pos = Vector(0, 0, 1),
         Ang = Angle(0, 0, 0),
         Category = {"eft_custom_slot", "eft_custom_dvl10"},

@@ -598,7 +598,7 @@ ATT.ModelOffset = Vector(0, 0, -0)
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_misc",
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
         Category = {"eft_shakhin_cup"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),

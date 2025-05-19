@@ -27,7 +27,7 @@ ATT.Category = {"eft_vpo215_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_muzzle_vpo215", "eft_366_muzzle"},
         Pos = Vector(-22.9, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -62,7 +62,7 @@ ATT.Category = {"eft_vpo215_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Bipod",
+        PrintName = ARC9:GetPhrase("eft_cat_bipod"),
         Category = "eft_harris_bipod",
         Pos = Vector(-11.1, 0, 0.5),
         Ang = Angle(0, 0, 180),
@@ -91,7 +91,7 @@ ATT.Category = {"eft_vpo215_mount"}
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 0, -0.36),
         Ang = Angle(0, 0, 0),

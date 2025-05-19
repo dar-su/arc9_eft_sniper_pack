@@ -28,7 +28,7 @@ ATT.ClipSize = 1
 
 ATT.Attachments = {
     {
-        PrintName = "Ammo type",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_762x54r",
         Pos = Vector(0, -4, 2),
         Ang = Angle(0, 0, 0),
@@ -36,14 +36,14 @@ ATT.Attachments = {
         Integral = "eft_ammo_762x54r_bt_gzh"
     },
     {
-        PrintName = "Handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_mp18_hg",
         Pos = Vector(0, 4, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Mount",
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
         Category = "eft_mp18_mount",
         Pos = Vector(0, -1.8, -1.5),
         Ang = Angle(0, 0, 0),
@@ -84,7 +84,7 @@ ATT.ClipSize = 1
 
 ATT.Attachments = {
     {
-        PrintName = "Ammo type",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_762x51",
         Pos = Vector(0, -4, 2),
         Ang = Angle(0, 0, 0),
@@ -92,14 +92,14 @@ ATT.Attachments = {
         Integral = "eft_ammo_762x51_bpzfmj"
     },
     {
-        PrintName = "Handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_mp18_hg",
         Pos = Vector(0, 4, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Mount",
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
         Category = "eft_mp18_mount",
         Pos = Vector(0, -1.8, -1.5),
         Ang = Angle(0, 0, 0),
@@ -140,7 +140,7 @@ ATT.ClipSize = 1
 
 ATT.Attachments = {
     {
-        PrintName = "Ammo type",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_76239",
         Pos = Vector(0, -4, 2),
         Ang = Angle(0, 0, 0),
@@ -148,14 +148,14 @@ ATT.Attachments = {
         Integral = "eft_ammo_76239_ps"
     },
     {
-        PrintName = "Handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_mp18_hg",
         Pos = Vector(0, 4, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Mount",
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
         Category = "eft_mp18_mount",
         Pos = Vector(0, -1.8, -1.5),
         Ang = Angle(0, 0, 0),
@@ -232,7 +232,7 @@ ATT.Category = {"eft_mp18_mount"}
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_medium", "eft_optic_large", "eft_optic_small"},
         Pos = Vector(0, 0.5, -0.3),
         Ang = Angle(0, -90, 0),

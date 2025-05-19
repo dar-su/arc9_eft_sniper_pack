@@ -8,9 +8,9 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_snip")
 
-SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mosinsnip") or "Mosin (Sniper)"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mosinsnip")
 
-SWEP.Description = "eft_weapon_mosinsnip_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_mosinsnip_desc")
 
 SWEP.StandardPresets = {
     "[Scoped]XQAAAQCuAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD3X0jGsS0T11y2KMRbl10oLWV8xFBXt9bk40p1hsU4pX5+hfQIzQgGZyZ7j45dfsWu6k/ExsZV7T9PFLOuu6rmdW1sSmV2eWFDZIW96bs863CFb3W5KbGJ3OtdBZ/FZj2nEN5v1MVgTzGoOs7eCEseW6DNnKXImpnU6sHEnaCVFNMFnLPWlO6flNT9/HLv8wIQghsqq02WPdSGV80A",

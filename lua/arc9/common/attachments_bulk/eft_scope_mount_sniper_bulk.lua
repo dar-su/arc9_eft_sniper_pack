@@ -20,7 +20,7 @@ ATT.EFTErgoAdd = -2
 ATT.CustomCons = { Ergonomics = "-2" }
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_34mm"},
         Pos = Vector(-0.5, 0, -1.5),
         Ang = Angle(0, 0, 0),
@@ -53,7 +53,7 @@ ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_34mm"},
         Pos = Vector(-0.5, 0, -1.45),
         Ang = Angle(0, 0, 0),
@@ -87,28 +87,28 @@ ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_34mm"},
         Pos = Vector(-0.5, 0, -1.5),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_tactical", -- Front
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"), -- Front
         Category = {"eft_optic_small", "eft_raptar"},
         Pos = Vector(-3.6, 0, -3.65),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_scope", -- Right
+        PrintName = ARC9:GetPhrase("eft_cat_scope"), -- Right
         Category = {"eft_optic_small"},
         Pos = Vector(1.2, 0.75, -2.55),
         Ang = Angle(0, 0, 30),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "eft_cat_scope", -- Left
+        PrintName = ARC9:GetPhrase("eft_cat_scope"), -- Left
         Category = {"eft_optic_small"},
         Pos = Vector(1.2, -0.75, -2.55),
         Ang = Angle(0, 0, -30),
@@ -141,7 +141,7 @@ ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_34mm"},
         Pos = Vector(-0.25, 0, -1.5),
         Ang = Angle(0, 0, 0),
@@ -178,7 +178,7 @@ ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_25mm"},
         Pos = Vector(-1, 0, -0.9),
         Ang = Angle(0, 0, 0),
@@ -212,7 +212,7 @@ ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_35mm"},
         Pos = Vector(-0.5, 0, -1.545),
         Ang = Angle(0, 0, 0),
@@ -246,7 +246,7 @@ ATT.ModelOffset = Vector(2, 0, 1.9)
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_kmz"},
         Pos = Vector(-2, 0, -1.9),
         Ang = Angle(0, 0, 0),
@@ -285,7 +285,7 @@ ATT.ModelOffset = Vector(0, 0, -0)
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_scope",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = "eft_shakhin_scope",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),

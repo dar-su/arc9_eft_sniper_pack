@@ -6,9 +6,9 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_axmc_alt")
-SWEP.Description = "eft_weapon_axmc_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_axmc_desc")
 
-SWEP.Class = "eft_class_weapon_boltsnip"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_boltsnip")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_snip")
 
 SWEP.Trivia = {
@@ -649,7 +649,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Charge",
+        PrintName = ARC9:GetPhrase("eft_cat_charge"),
         Category = "eft_axmc_bolt",
         Bone = "weapon",
         Pos = Vector(0, 15, 0.5),
@@ -658,7 +658,7 @@ SWEP.Attachments = {
         Installed = "eft_axmc_bolt338",
     },
     {
-        PrintName = "Pistol Grip",
+        PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
         Category = "eft_axmc_pg",
         Bone = "weapon",
         Pos = Vector(0, 10.5, -1),
@@ -704,7 +704,7 @@ SWEP.Attachments = {
         }
     },
     { -- 338
-        PrintName = "Mag", 
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"), 
         Category = "eft_axmc_mag_338",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
@@ -714,7 +714,7 @@ SWEP.Attachments = {
         Installed = "eft_axmc_mag338"
     },   
     { -- 308
-        PrintName = "Mag", 
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"), 
         Category = "eft_axmc_mag_308",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
@@ -724,7 +724,7 @@ SWEP.Attachments = {
         -- Installed = "eft_axmc_mag308"
     },
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_axmc"},
         Bone = "weapon",
         Pos = Vector(0, 4, -2),
@@ -734,7 +734,7 @@ SWEP.Attachments = {
 
 
     -- {
-    --     PrintName = "Ammo type",
+    --     PrintName = ARC9:GetPhrase("eft_cat_ammo"),
     --     Category = "eft_ammo_12x70",
     --     Bone = "mod_magazine",
     --     Pos = Vector(0, 0, -5),

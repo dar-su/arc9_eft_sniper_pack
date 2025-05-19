@@ -48,7 +48,7 @@ ATT.SpreadMult = 0.99
 ATT.Category = {"eft_muzzle_338"}
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_awcpsr"},
         Pos = Vector(0, 0.3, 0),
         Ang = Angle(0, -90, 0),
@@ -82,7 +82,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_all_ai_tactical_muzzle_br
 ATT.Category = {"eft_muzzle_338"}
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_tmb338lm"},
         Pos = Vector(0, 2, 0),
         Ang = Angle(0, 0, 0),
@@ -154,7 +154,7 @@ ATT.SpreadMult = 0.99
 ATT.Category = {"eft_muzzle_338"}
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_338borelock"},
         Pos = Vector(0, 0.8, 0),
         Ang = Angle(0, -90, 0),

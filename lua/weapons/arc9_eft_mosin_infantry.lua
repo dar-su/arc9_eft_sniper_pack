@@ -5,10 +5,10 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mosininf") or "Mosin (Infantry)"
-SWEP.Description = "eft_weapon_mosininf_desc"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mosininf")
+SWEP.Description = ARC9:GetPhrase("eft_weapon_mosininf_desc")
 
-SWEP.Class = "eft_class_weapon_boltsnip"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_boltsnip")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_snip")
 
 SWEP.Trivia = {
@@ -876,7 +876,7 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Category = "eft_mosin_barrel",
         Bone = "mod_barrel",
         Pos = Vector(0, 0, 0),
@@ -894,7 +894,7 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_mosin_stock",
         Bone = "mod_stock",
         Pos = Vector(0, 0, 0),
@@ -903,7 +903,7 @@ SWEP.Attachments = {
         Installed = "eft_mosin_stock_inf",
     },
     {
-        PrintName = "Magazine",
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"),
         Category = "eft_mosin_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
@@ -912,7 +912,7 @@ SWEP.Attachments = {
         Installed = "eft_mosin_mag_5",
     },
     { -- sniper only
-        PrintName = "Side mount", 
+        PrintName = ARC9:GetPhrase("eft_cat_mount"), 
         Category = "eft_mosin_side",
         Bone = "mod_barrel",
         Pos = Vector(0, -2.8, 0),
@@ -921,7 +921,7 @@ SWEP.Attachments = {
         RequireElements = {"sniperfuckingmosin"},
     },
     {
-        PrintName = "Ammunition",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_762x54r",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, -3),
@@ -930,7 +930,7 @@ SWEP.Attachments = {
         Integral = "eft_ammo_762x54r_lps_gzh",
     },
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_mosin"},
         Bone = "weapon",
         Pos = Vector(0, 8, -5),

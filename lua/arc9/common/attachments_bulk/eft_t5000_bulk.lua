@@ -27,7 +27,7 @@ ATT.Category = {"eft_t5000_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_muzzle_t5000", "eft_ar10_muzzle"},
         Pos = Vector(-25.455, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -62,21 +62,21 @@ ATT.Category = {"eft_t5000_chassis"}
 
 ATT.Attachments = {
     {
-        PrintName = "Handguard",
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
         Category = "eft_t5000_hg",
         Pos = Vector(-7, 0, -0.5),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Pistol grip",
+        PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
         Category = "eft_t5000_pg",
         Pos = Vector(5, 0, 2.5),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_t5000_stock",
         Pos = Vector(7, 0, 1),
         Ang = Angle(0, 0, 0),
@@ -107,34 +107,34 @@ ATT.Category = {"eft_t5000_hg"}
 
 ATT.Attachments = {
     {
-        PrintName = "Pad",
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
         Category = "eft_t5000_hg2",
         Pos = Vector(2, 0, 1.22),
         Ang = Angle(0, -90, -90),   
     },
     {
-        PrintName = "L Rail",
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
         Category = "eft_t5000_mount_side",
         Pos = Vector(-8.35, -1.15, 0.1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "R Rail",
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
         Category = "eft_t5000_mount_side",
         Pos = Vector(-8.35, 1.15, 0.1),
         Ang = Angle(180, 180, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Top Rail",
+        PrintName = ARC9:GetPhrase("eft_cat_mount_u"),
         Category = "eft_t5000_mount_side",
         Pos = Vector(-8.35, 0, -1.1),
         Ang = Angle(0, 0, 90),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Bottom Rail",
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
         Category = "eft_t5000_mount_side_midonly",
         Pos = Vector(-6.35, 0, 1.27),
         Ang = Angle(0, 0, -90),
@@ -142,7 +142,7 @@ ATT.Attachments = {
         ExcludeElements = {"eft_bipod_harris"}
     },
     {
-        PrintName = "Bipod",
+        PrintName = ARC9:GetPhrase("eft_cat_bipod"),
         Category = "eft_harris_bipod",
         Pos = Vector(-8.8, 0, 1.4),
         Ang = Angle(0, 0, 180),
@@ -234,7 +234,7 @@ ATT.Category = {"eft_t5000_mount"}
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 0, -0.36),
         Ang = Angle(0, 0, 0),
@@ -261,7 +261,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_t5000_long.mdl"
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(2, -0.22, 0),
         Ang = Angle(0, 0, -90),
@@ -288,7 +288,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_t5000_mid.mdl"
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = "eft_tactical",
         Pos = Vector(1, -0.4, 0),
         Ang = Angle(0, 0, -90),

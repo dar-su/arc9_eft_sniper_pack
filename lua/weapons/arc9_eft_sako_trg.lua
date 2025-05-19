@@ -6,9 +6,9 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_trgm10_alt")
-SWEP.Description = "eft_weapon_trgm10_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_trgm10_desc")
 
-SWEP.Class = "eft_class_weapon_boltsnip"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_boltsnip")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_snip")
 
 SWEP.Trivia = {
@@ -648,7 +648,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Charge",
+        PrintName = ARC9:GetPhrase("eft_cat_charge"),
         Category = "eft_sako_bolt",
         Bone = "weapon",
         Pos = Vector(0, 13, 0.5),
@@ -657,7 +657,7 @@ SWEP.Attachments = {
         Installed = "eft_sako_bolt_std",
     },
     {
-        PrintName = "Chassis",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_sako_stock",
         Bone = "weapon",
         Pos = Vector(0, 10.5, -1),
@@ -666,7 +666,7 @@ SWEP.Attachments = {
         Installed = "eft_sako_chassis",
     },
     {
-        PrintName = "Receiver",
+        PrintName = ARC9:GetPhrase("eft_cat_receiver"),
         Category = "eft_sako_uprec",
         Bone = "weapon",
         Pos = Vector(0, 17, 0),
@@ -706,7 +706,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Magazine", 
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"), 
         Category = "eft_sako_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
@@ -715,7 +715,7 @@ SWEP.Attachments = {
         Installed = "eft_sako_mag338"
     },
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_sako"},
         Bone = "weapon",
         Pos = Vector(0, 4, -2),
@@ -725,7 +725,7 @@ SWEP.Attachments = {
 
 
     {
-        PrintName = "Ammo type",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_338",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, -2),
