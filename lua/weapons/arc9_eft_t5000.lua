@@ -342,7 +342,6 @@ local rik_empty = {
 
 SWEP.Animations = {
     ["idle"] = { Source = "idle" },
-    -- ["idle"] = { Source = "idle"  , Time = 1000}, --- REMOVE TIME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     ["ready"] = {
         Source = {"ready0", "ready1", "ready2"},
