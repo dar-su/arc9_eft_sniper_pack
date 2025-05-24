@@ -18,7 +18,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasAmmoooooooo = true 
 ATT.ActivateElements = {"338"}
 
-ATT.EFTRoundName = ".338 Lapua Magnum AP"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_338_ap.printname")
 
 ATT.DamageMax = 115 * mult338
 ATT.DamageMin = 80 * mult338
@@ -96,7 +96,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasAmmoooooooo = true 
 ATT.ActivateElements = {"338"}
 
-ATT.EFTRoundName = ".338 Lapua Magnum TAC-X"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_338_tacx.printname")
 
 ATT.DamageMax = 196 * mult338
 ATT.DamageMin = 136.6 * mult338
@@ -174,7 +174,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasAmmoooooooo = true 
 ATT.ActivateElements = {"338"}
 
-ATT.EFTRoundName = ".338 Lapua Magnum UCW"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_338_upz.printname")
 
 ATT.DamageMax = 142 * mult338
 ATT.DamageMin = 99 * mult338
