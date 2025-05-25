@@ -207,7 +207,7 @@ SWEP.DistantShootSoundSilencedIndoor = path .. "aiax_indoor_silenced_distant.ogg
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
-SWEP.DropMagazineTime = 1.55
+SWEP.DropMagazineTime = 1.7
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 180, 90)
@@ -223,6 +223,7 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 }
 
 -- SWEP.SuppressEmptySuffix = true
+SWEP.EFT_HasTacReloads = true
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -251,7 +252,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if empty then ending = ending .. "_empty" end
 
 
-        if ending == 2 and ARC9EFTBASE and SERVER then
+        if ending == 2 and SERVER then
             net.Start("arc9eftmagcheck")
             net.WriteBool(false) -- accurate or not based on mag type
             net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -266,10 +267,16 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return "reload_single"
     end
     
+        
+    if anim == "reload" and swep.EFT_StartedTacReload then
+        if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
+        return "reload_tactical"
+    end
+
     if anim == "fix" then
         local rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
         -- 0 = misfire, 1 = eject, 2 = feed, 3 = bolt, 4 = bolt      -- no misfire here
-        if ARC9EFTBASE and SERVER then
+        if SERVER then
             timer.Simple(1, function()
                 if IsValid(swep) and IsValid(swep:GetOwner()) then
                     net.Start("arc9eftjam")
@@ -359,6 +366,24 @@ SWEP.Animations = {
             { s = randspin, t = 2.79 },   
         },
     },
+    ["reload_tactical"] = {
+        Source = "reloadt",
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1,
+        DropMagAt = 0.8 - 4/28,
+        EventTable = {
+            { s = randspin, t = 0 },   
+            { s = path .. "aiax_magout_fast.ogg", t = 8/28 - 4/28 },
+            { s = "arc9_eft_shared/weap_magin_sbrosnik.ogg", t = 28/28 - 4/28 },
+            { s = path .. "aiax_magin_rattle.ogg", t = 44/28 - 4/28 },
+            { s = path .. "aiax_magin.ogg", t = 52/28 - 4/28 },
+            { s = randspin, t = 61/28 - 4/28 },   
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.8 - 4/28},
+            {hide = 0, t = 32/28 - 4/28}
+        },
+    },
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.85,
@@ -376,7 +401,7 @@ SWEP.Animations = {
             { s = path .. "aiax_bolt_in.ogg", t = 3.68 },
             { s = randspin, t = 4.09 },   
             {hide = 0, t = 0},
-            {hide = 1, t = 1.55},
+            {hide = 1, t = 1.7},
             {hide = 0, t = 2.2}
         },
         EjectAt = 0.42

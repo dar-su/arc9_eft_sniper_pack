@@ -194,7 +194,7 @@ SWEP.DistantShootSoundSilencedIndoor = path .. "sv98_fire_indoor_silenced_distan
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
-SWEP.DropMagazineTime = 0.8
+SWEP.DropMagazineTime = 0.9
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 180, 90)
@@ -211,6 +211,7 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 }
 
 -- SWEP.SuppressEmptySuffix = true
+SWEP.EFT_HasTacReloads = true
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -239,7 +240,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if empty then ending = ending .. "_empty" end
 
 
-        if ending == 2 and ARC9EFTBASE and SERVER then
+        if ending == 2 and SERVER then
             net.Start("arc9eftmagcheck")
             net.WriteBool(false) -- accurate or not based on mag type
             net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -254,10 +255,15 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return "reload_single"
     end
     
+    if anim == "reload" and swep.EFT_StartedTacReload then
+        if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
+        return "reload_tactical"
+    end
+
     if anim == "fix" then
         local rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
         -- 0 = misfire, 1 = eject, 2 = feed, 3 = bolt, 4 = bolt      -- no misfire here
-        if ARC9EFTBASE and SERVER then
+        if SERVER then
             timer.Simple(1, function()
                 if IsValid(swep) and IsValid(swep:GetOwner()) then
                     net.Start("arc9eftjam")
@@ -384,6 +390,26 @@ SWEP.Animations = {
         },
         IKTimeLine = rik_def,
     },
+
+    ["reload_tactical"] = {
+        Source = "reloadt",
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.1,
+        DropMagAt = 0.9- 2/28,
+        EventTable = {
+            { s = randspin, t = 0.17 - 2/28 },
+            { s = path .. "sv98_mag_out.ogg", t = 0.25-0.1 - 2/28 },
+            { s = pouchout, t = 1.05 - 2/28 },
+            { s = path .. "sv98_mag_in.ogg", t = 1.55-0.1 - 2/28 },
+            { s = randspin, t = 2.32 - 2/28 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.9- 2/28},
+            {hide = 0, t = 1.1}  
+        },
+        IKTimeLine = rik_def,
+    },
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.85,
@@ -400,7 +426,7 @@ SWEP.Animations = {
             { s =  "weapons/darsu_eft/generic_pistol/generic_jam_shell_ remove_medium3.ogg", t = 2.8 },
             { s = path .. "sv98_boltin.ogg", t = 3.14-0.05 },
             {hide = 0, t = 0},
-            {hide = 1, t = 0.8},
+            {hide = 1, t = 0.9},
             {hide = 0, t = 1.1}
         },
         IKTimeLine = rik_empty,

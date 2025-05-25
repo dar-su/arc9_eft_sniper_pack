@@ -212,6 +212,7 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 }
 
 -- SWEP.SuppressEmptySuffix = true
+SWEP.EFT_HasTacReloads = true
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -240,7 +241,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if empty then ending = ending .. "_empty" end
 
 
-        if ending == 2 and ARC9EFTBASE and SERVER then
+        if ending == 2 and SERVER then
             net.Start("arc9eftmagcheck")
             net.WriteBool(false) -- accurate or not based on mag type
             net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -255,10 +256,15 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return "reload_single"
     end
     
+    if anim == "reload" and swep.EFT_StartedTacReload then
+        if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
+        return "reload_tactical"
+    end
+
     if anim == "fix" then
         local rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
         -- 0 = misfire, 1 = eject, 2 = feed, 3 = bolt, 4 = bolt      -- no misfire here
-        if ARC9EFTBASE and SERVER then
+        if SERVER then
             timer.Simple(1, function()
                 if IsValid(swep) and IsValid(swep:GetOwner()) then
                     net.Start("arc9eftjam")
@@ -358,6 +364,28 @@ SWEP.Animations = {
             { s = path .. "sako_mag_in.ogg", t = 3.38 - 0.3 },
             { s = path .. "aim_on_riffle_18.ogg", t = 3.87 - 0.25 },
             { s = randspin, t = 4.3 },  
+        },
+    },
+    ["reload_tactical"] = {
+        Source = "reloadt",
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        DropMagAt = 0.9 ,
+        EventTable = {
+            { s = path .. "aim_on_riffle_07.ogg", t = 0  },
+            { s = path .. "sks_magrelease_button.ogg", t = 0.4 - 0.1  },
+            { s = path .. "sako_mag_out_fast.ogg", t = 0.4 + 0.2  },
+            { s = randspin, t = 0.65  },  
+            { s = pouchout, t = 1.2  },
+            { s = path .. "sako_magin_rattle.ogg", t = 1.9 - 0.1  },
+            { s = path .. "sako_mag_in.ogg", t = 2.19 - 0.3  },
+            { s = path .. "aim_on_riffle_18.ogg", t = 2.66 - 0.25  },
+            { s = randspin, t = 3.15  },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.9 },
+            {hide = 0, t = 1.2 }
         },
     },
     ["reload_empty"] = {
