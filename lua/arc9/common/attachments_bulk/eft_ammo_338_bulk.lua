@@ -233,3 +233,152 @@ ATT.Category = {"eft_ammo_338"}
 
 ARC9.LoadAttachment(ATT, "eft_ammo_338_upz")
 
+
+
+
+///////////////////////////////////////      eft_ammo_50bmg_hp
+
+
+ATT = {}
+
+ATT.PrintName = ".50 BMG HP"
+ATT.CompactName = "HP"
+ATT.Icon = Material("entities/eft_ak50_attachments/hp.png", "mips smooth")
+ATT.Description = [[A .50 BMG (12.7x99mm NATO) hollow point cartridge, developed in the USA. The cartridge has significant stopping power and is capable of inflicting devastating damage to the target upon impact, however the hollow point bullet design does not allow it to penetrate armor effectively.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasAmmoooooooo = true 
+ATT.ActivateElements = {"50bmg"}
+
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_50bmg_hp.printname") or ".50 BMG HP"
+
+ATT.DamageMax = 260 * mult338 * 0.275
+ATT.DamageMin = 260 * mult338
+ATT.PhysBulletMuzzleVelocity = 880 /0.0254
+ATT.RangeMin = 10
+ATT.RangeMax = 1000 /0.0254 * dmgrange
+
+ATT.Penetration =      34 *2.54/100/0.0254
+ATT.PenetrationDelta = 22/100
+ATT.ArmorPiercing =    22/100
+ATT.RicochetChance =   30/100
+
+ATT.VisualRecoilMult = 1.15
+ATT.RecoilMult = 1.15
+ATT.SpreadMult = 0.85
+-- ATT.MalfunctionMeanShotsToFailMult = 0.6
+
+ATT.Category = {"eft_ammo_50bmg"}
+
+ARC9.LoadAttachment(ATT, "eft_ammo_50bmg_hp")
+
+///////////////////////////////////////      eft_ammo_50bmg_m21
+
+
+ATT = {}
+
+ATT.PrintName = ".50 BMG M21"
+ATT.CompactName = "M21"
+ATT.Icon = Material("entities/eft_ak50_attachments/m21.png", "mips smooth")
+ATT.Description = [[A .50 BMG (12.7x99mm NATO) M21 "headlight" high-visibility tracer cartridge, developed in the USA and adopted in 1923 for Browning M2 machine guns, primarily designed to destroy light armored vehicles and neutralize enemy personnel behind light cover. The cartridge has significant stopping power and is capable of inflicting devastating damage to the target upon impact.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasAmmoooooooo = true 
+ATT.ActivateElements = {"50bmg"}
+
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_50bmg_m21.printname") or ".50 BMG M21"
+
+ATT.DamageMax = 220 * mult338
+ATT.DamageMin = 220 * mult338 * 0.614
+ATT.PhysBulletMuzzleVelocity = 867 /0.0254
+ATT.RangeMin = 10
+ATT.RangeMax = 1000 /0.0254 * dmgrange
+
+ATT.Penetration =      45 *2.54/100/0.0254
+ATT.PenetrationDelta = 55/100
+ATT.ArmorPiercing =    55/100
+ATT.RicochetChance =   30/100
+
+ATT.VisualRecoilMult = 1.2
+ATT.RecoilMult = 1.2
+-- ATT.MalfunctionMeanShotsToFailMult = 0.6
+
+ATT.Category = {"eft_ammo_50bmg"}
+
+ARC9.LoadAttachment(ATT, "eft_ammo_50bmg_m21")
+
+///////////////////////////////////////      eft_ammo_50bmg_m33
+
+
+ATT = {}
+
+ATT.PrintName = ".50 BMG M33"
+ATT.CompactName = "M33"
+ATT.Icon = Material("entities/eft_ak50_attachments/m33.png", "mips smooth")
+ATT.Description = [[A .50 BMG (12.7x99mm NATO) M33 Ball cartridge, developed in the USA and adopted in 1923 for Browning M2 machine guns, primarily designed to destroy light armored vehicles and neutralize enemy personnel behind light cover. The cartridge has significant stopping power and is capable of inflicting devastating damage to the target upon impact.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasAmmoooooooo = true 
+ATT.ActivateElements = {"50bmg"}
+
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_50bmg_m33.printname") or ".50 BMG M33"
+
+ATT.DamageMax = 190 * mult338
+ATT.DamageMin = 190 * mult338 * 0.622
+ATT.PhysBulletMuzzleVelocity = 887 /0.0254
+ATT.RangeMin = 10
+ATT.RangeMax = 1000 /0.0254 * dmgrange
+
+ATT.Penetration =      56 *2.54/100/0.0254
+ATT.PenetrationDelta = 85/100
+ATT.ArmorPiercing =    85/100
+ATT.RicochetChance =   10/100
+
+ATT.VisualRecoilMult = 1.25
+ATT.RecoilMult = 1.25
+ATT.SpreadMult = 1.05
+-- ATT.MalfunctionMeanShotsToFailMult = 0.6
+
+ATT.Category = {"eft_ammo_50bmg"}
+
+ARC9.LoadAttachment(ATT, "eft_ammo_50bmg_m33")
+
+///////////////////////////////////////      eft_ammo_50bmg_m903
+
+
+ATT = {}
+
+ATT.PrintName = ".50 BMG M903"
+ATT.CompactName = "M903"
+ATT.Icon = Material("entities/eft_ak50_attachments/m903.png", "mips smooth")
+ATT.Description = [[A .50 BMG (12.7x99mm NATO) M903 SLAP (Saboted Light Armor Penetrator) cartridge. Created by placing a 7.62 armor-piercing bullet in a polymer container that separates after leaving the barrel. The cartridge has significant stopping power and is capable of inflicting devastating damage to the target upon impact.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasAmmoooooooo = true 
+ATT.ActivateElements = {"50bmg"}
+
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_50bmg_m903.printname") or ".50 BMG M903"
+
+ATT.DamageMax = 160 * mult338
+ATT.DamageMin = 160 * mult338 * 0.347
+ATT.PhysBulletMuzzleVelocity = 1220 /0.0254
+ATT.RangeMin = 10
+ATT.RangeMax = 1000 /0.0254 * dmgrange
+
+ATT.Penetration =      115 *2.54/100/0.0254
+ATT.PenetrationDelta = 90/100
+ATT.ArmorPiercing =    90/100
+ATT.RicochetChance =   5/100
+
+ATT.VisualRecoilMult = 1.28
+ATT.RecoilMult = 1.28
+ATT.SpreadMult = 1.1
+ATT.MalfunctionMeanShotsToFailMult = 1.1
+
+ATT.Category = {"eft_ammo_50bmg"}
+
+ARC9.LoadAttachment(ATT, "eft_ammo_50bmg_m903")
