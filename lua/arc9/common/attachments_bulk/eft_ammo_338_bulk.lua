@@ -253,8 +253,8 @@ ATT.ActivateElements = {"50bmg"}
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_50bmg_hp.printname") or ".50 BMG HP"
 
-ATT.DamageMax = 260 * mult338 * 0.275
-ATT.DamageMin = 260 * mult338
+ATT.DamageMax = 260 * mult338
+ATT.DamageMin = 260 * mult338 * 0.275
 ATT.PhysBulletMuzzleVelocity = 880 /0.0254
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
