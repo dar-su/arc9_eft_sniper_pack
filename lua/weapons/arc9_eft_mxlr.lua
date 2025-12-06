@@ -846,7 +846,7 @@ SWEP.Animations = {
 
 ------------------------- |||           Attachments            ||| -------------------------
 
-SWEP.EFTRequiredAtts = { "HasGrip", "HasBarrel", "HasHandguard", "HasBolt", "HasAmmoooooooo" }
+SWEP.EFTRequiredAtts = { "HasGrip", "HasBarrel", "HasHandguard", "HasTrigger", "HasHammer", "HasBolt", "HasAmmoooooooo" }
 
 SWEP.AttachmentElements = {
     ["eft_mxlr_barrel_std"] = { Bodygroups = { {1, 1} } },
