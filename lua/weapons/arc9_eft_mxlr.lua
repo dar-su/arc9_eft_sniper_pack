@@ -82,7 +82,7 @@ SWEP.ManualActionEjectAnyway = false
 SWEP.NoShellEject = true
 SWEP.EjectDelay = 0.15
 SWEP.ShotgunReload = false -- mag sets this to true
-SWEP.ShotgunReloadIncludesChamber = false 
+SWEP.ShotgunReloadIncludesChamber = true 
 SWEP.ShotgunReloadNoChamber = false 
 
 SWEP.Slot = 3
@@ -268,7 +268,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(false) -- accurate or not based on mag type
-                net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
+                net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity())+1, 9)
                 net.WriteUInt(swep:GetCapacity(), 9)
                 net.Send(swep:GetOwner())
             end
@@ -572,7 +572,7 @@ SWEP.Animations = {
             { t = 0, lhik = 1, rhik = 0 },
             { t = 1, lhik = 1, rhik = 0 },
         },
-        -- Mult = 0.85
+        Mult = 0.95
         -- MinProgress = 0
     },   
     ["reload_finish"] = {
@@ -603,9 +603,10 @@ SWEP.Animations = {
         EventTable = rst_look,
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1 },
-            { t = 0.2, lhik = 0, rhik = 1 },
-            { t = 0.66, lhik = 0, rhik = 1 },
-            { t = 0.9, lhik = 1, rhik = 1 },
+            -- { t = 0.1, lhik = 1, rhik = 1 },
+            -- { t = 0.3, lhik = 0, rhik = 1 },
+            -- { t = 0.66, lhik = 0, rhik = 1 },
+            -- { t = 0.9, lhik = 1, rhik = 1 },
             { t = 1, lhik = 1, rhik = 1 },
         }
     },    
@@ -616,9 +617,9 @@ SWEP.Animations = {
         EventTable = rst_look,
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1 },
-            { t = 0.2, lhik = 0, rhik = 1 },
-            { t = 0.66, lhik = 0, rhik = 1 },
-            { t = 0.9, lhik = 1, rhik = 1 },
+            -- { t = 0.2, lhik = 0, rhik = 1 },
+            -- { t = 0.66, lhik = 0, rhik = 1 },
+            -- { t = 0.9, lhik = 1, rhik = 1 },
             { t = 1, lhik = 1, rhik = 1 },
         }
     },

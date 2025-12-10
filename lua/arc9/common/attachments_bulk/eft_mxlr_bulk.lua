@@ -1066,6 +1066,8 @@ ARC9.LoadAttachment(ATT, "eft_mxlr_hg_costa_rail")
 
 
 
+local dmgrange = (GetConVar("arc9_eft_mindmgrange"):GetInt() or 1000)/1000
+local mult54 = GetConVar("arc9_eft_mult_bigrifle"):GetFloat() or 0.5
 
 ///////////////////////////////////////      eft_ammo_308me_me
 
@@ -1081,20 +1083,22 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasAmmoooooooo = true 
 -- ATT.ActivateElements = {"308me"}
 
--- ATT.SpreadMult = 0.85
+ATT.SpreadMult = 0.98
+ATT.RecoilMult = 1.03
+ATT.VisualRecoilMult = 1.03
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_308me_me.printname") or ".308 ME"
 
--- ATT.DamageMax = 115 * mult54
--- ATT.DamageMin = 115 * mult54 * 0.27
--- ATT.PhysBulletMuzzleVelocity = 793 /0.0254
--- ATT.RangeMin = 10
--- ATT.RangeMax = 1000 /0.0254 * dmgrange
+ATT.DamageMax = 80 * mult54
+ATT.DamageMin = 80 * mult54 * 0.27
+ATT.PhysBulletMuzzleVelocity = 838 /0.0254
+ATT.RangeMin = 10
+ATT.RangeMax = 1000 /0.0254 * dmgrange
 
--- ATT.Penetration =      44 *2.54/100/0.0254
--- ATT.PenetrationDelta = 55/100
--- ATT.ArmorPiercing =    55/100
--- ATT.RicochetChance =   34/100
+ATT.Penetration =      42 *2.54/100/0.0254
+ATT.PenetrationDelta = 78/100
+ATT.ArmorPiercing =    78/100
+ATT.RicochetChance =   34/100
 
 ATT.Category = {"eft_ammo_308me"}
 
@@ -1115,20 +1119,22 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasAmmoooooooo = true 
 -- ATT.ActivateElements = {"308me"}
 
--- ATT.SpreadMult = 0.85
+ATT.SpreadMult = 0.98
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 1.03
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_308me_lokt.printname") or ".308 ME LOKT"
 
--- ATT.DamageMax = 115 * mult54
--- ATT.DamageMin = 115 * mult54 * 0.27
--- ATT.PhysBulletMuzzleVelocity = 793 /0.0254
--- ATT.RangeMin = 10
--- ATT.RangeMax = 1000 /0.0254 * dmgrange
+ATT.DamageMax = 96 * mult54
+ATT.DamageMin = 96 * mult54 * 0.27
+ATT.PhysBulletMuzzleVelocity = 838 /0.0254
+ATT.RangeMin = 10
+ATT.RangeMax = 1000 /0.0254 * dmgrange
 
--- ATT.Penetration =      44 *2.54/100/0.0254
--- ATT.PenetrationDelta = 55/100
--- ATT.ArmorPiercing =    55/100
--- ATT.RicochetChance =   34/100
+ATT.Penetration =      24 *2.54/100/0.0254
+ATT.PenetrationDelta = 55/100
+ATT.ArmorPiercing =    55/100
+ATT.RicochetChance =   34/100
 
 ATT.Category = {"eft_ammo_308me"}
 
