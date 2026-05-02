@@ -48,11 +48,12 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 12
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_25_4mm_vomz_pilad_4x32m_mark.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.3
+ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeNew_ShadowScale = 0.77
 
 ATT.ScopeScreenRatio = 0.4065
 
@@ -85,7 +86,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 13.3, 0),        
+        Pos = Vector(0, 11.9, 0),        
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -117,23 +118,23 @@ end
 local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/ATACR_7-35x56_mark_f.png", "mips")
 local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/ATACR_7-35x56_mark_q.png", "mips")
 
-local scale = 1
-local finalsize = 14 * scale
+local scale = 1.3
+local finalsize = 3.1 * scale
 ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
     local scrollevel = sight.SmoothScrollLevel or 0
     local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
     local mat = Reticle_full
 
-    if scrollevel <= 0.8 then 
+    if scrollevel <= 0.55 then 
         size = size / 4
         mat = Reticle_quarter
     end
 
     surface.SetMaterial(mat)
     surface.SetDrawColor(255, 255, 255)
-    -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
-    local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
-    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
+    surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+    -- local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
+    -- surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
 end
 
 ATT.ZoomSound = false
@@ -155,6 +156,7 @@ ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true 
 
 ATT.ScopeScreenRatio = 619/1080
+ATT.RTScopeNew_ShadowScale = 1.2
 
 
 ARC9.LoadAttachment(ATT, "eft_scope_34mm_atacr")
@@ -183,7 +185,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 11.6, 0),
+        Pos = Vector(0, 10, 0),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -213,25 +215,25 @@ ATT.DrawFunc = function(swep, model, wm)
 end
 
 local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/Hensoldt_FF_4-16x56_mark_f.png", "mips")
-local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/Hensoldt_FF_4-16x56_mark_q.png", "mips")
+-- local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/Hensoldt_FF_4-16x56_mark_q.png", "mips")
 
-local scale = 1
-local finalsize = 3.3 * scale
+local scale = 0.5
+local finalsize = 2.9
 ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
     local scrollevel = sight.SmoothScrollLevel or 0
     local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
     local mat = Reticle_full
 
-    if scrollevel <= 0.135 then 
-        size = size / 4
-        mat = Reticle_quarter
-    end
+    -- if scrollevel <= 0.135 then 
+    --     size = size / 4
+    --     mat = Reticle_quarter
+    -- end
 
     surface.SetMaterial(mat)
     surface.SetDrawColor(255, 255, 255)
-    -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
-    local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
-    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
+    surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+    -- local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
+    -- surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
 end
 
 ATT.ZoomSound = false
@@ -246,7 +248,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 12
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/empty.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 1.5
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
@@ -283,7 +285,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 11.9, 0),
+        Pos = Vector(0, 11.4, 0),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -316,8 +318,8 @@ end
 local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/SB_PM_II_5-25x56_mark_f.png", "mips")
 local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/SB_PM_II_5-25x56_mark_q.png", "mips")
 
-local scale = 1
-local finalsize = 12 * scale
+local scale = 1.25
+local finalsize = 3.65
 ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
     local scrollevel = sight.SmoothScrollLevel or 0
     local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
@@ -330,9 +332,9 @@ ATT.RTScopeDrawFunc = function(swep, rtsize, sight)
 
     surface.SetMaterial(mat)
     surface.SetDrawColor(255, 255, 255)
-    -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
-    local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
-    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
+    surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+    -- local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
+    -- surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
 end
 
 ATT.ZoomSound = false
@@ -354,6 +356,7 @@ ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true 
 
 ATT.ScopeScreenRatio = 693/1080
+ATT.RTScopeNew_ShadowScale = 1.2
 
 
 ARC9.LoadAttachment(ATT, "eft_scope_34mm_sb_pmii5")
@@ -383,7 +386,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 11.75, 0),
+        Pos = Vector(0, 10.6, 0),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -416,23 +419,23 @@ end
 local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/scope_35mm_leupold_mark_5hd_5_25x56_mark_f.png", "mips")
 local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/scope_35mm_leupold_mark_5hd_5_25x56_mark_q.png", "mips")
 
-local scale = 0.87
-local finalsize = 14 * scale
+local scale = 0.6
+local finalsize = 1.85
 ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
     local scrollevel = sight.SmoothScrollLevel or 0
     local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
     local mat = Reticle_full
 
-    if scrollevel <= 0.7 then 
-        size = size / 4
+    if scrollevel <= 0.3 then 
+        size = size / 2
         mat = Reticle_quarter
     end
 
     surface.SetMaterial(mat)
     surface.SetDrawColor(255, 255, 255)
-    -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
-    local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
-    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
+    surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+    -- local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
+    -- surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
 end
 
 ATT.ZoomSound = false
@@ -448,7 +451,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 12
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/empty.png", "mips smooth")
-ATT.RTScopeReticleScale = 0.96
+ATT.RTScopeReticleScale = 1.4
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 15
 ATT.RTScopeBlackBox = true 
@@ -547,33 +550,44 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 12
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_base_ciklon_shakhin_37x_LOD0_mark.png", "mips smooth")
-ATT.RTScopeReticleScale = 0.94
+ATT.RTScopeReticleScale = 0.75
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 5
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true  
-ATT.RTScopeNoShadow = false  
+-- ATT.RTScopeBlackBox = true 
+-- ATT.RTScopeBlackBoxShadow = false 
+-- ATT.RTScopeNoShadow = true 
+ATT.RTScopeNew_ReticleBlackBox = true 
+-- ATT.RTScopeNew_DisableShader = true 
+
+-- ATT.RTScopeNew_FrontShadow = false 
+ATT.RTScopeNew_BackShadow = true  
+ATT.RTScopeNew_FrontShadowScale = 1.5
+ATT.RTScopeNew_BackShadowScale = 0.8
+ATT.RTScopeNew_ChromaticAberrationMult = 5
+ATT.RTScopeNew_ShadowIntensity = 0.9
+
+ATT.RTScopeNew_FPSLock = 21
 
 ATT.RTScopeFLIR = true
 
 ATT.RTScopeFLIRSolid = false -- Solid color FLIR instead of like a shaded look
 ATT.RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
-    ["$pp_colour_addr"] = 185/255,
-    ["$pp_colour_addg"] = 90/255,
+    ["$pp_colour_addr"] = 0,
+    ["$pp_colour_addg"] = 0,
     ["$pp_colour_addb"] = 0,
-    ["$pp_colour_brightness"] = 0.15,
-    ["$pp_colour_contrast"] = 0.27,
-    ["$pp_colour_colour"] = 0.2,
+    ["$pp_colour_brightness"] = 0.4,
+    ["$pp_colour_contrast"] = 0.2,
+    ["$pp_colour_colour"] = 0.1,
     ["$pp_colour_mulr"] = 0,
     ["$pp_colour_mulg"] = 0,
     ["$pp_colour_mulb"] = 0
 }
 ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
-    ["$pp_colour_addr"] = 0.49,
-    ["$pp_colour_addg"] = 0.49,
-    ["$pp_colour_addb"] = 0.49,
-    ["$pp_colour_brightness"] = -0.59,
-    ["$pp_colour_contrast"] = 1,
+    ["$pp_colour_addr"] = 0,
+    ["$pp_colour_addg"] = 0,
+    ["$pp_colour_addb"] = 0,
+    ["$pp_colour_brightness"] = 0.8,
+    ["$pp_colour_contrast"] = 0.5,
     ["$pp_colour_colour"] = 0,
     ["$pp_colour_mulr"] = 0,
     ["$pp_colour_mulg"] = 0,
@@ -582,7 +596,7 @@ ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
 
 ATT.RTScopeCustomPPFunc = function(swep)
     -- DrawMotionBlur(0.95, 1, 1/21)
-    DrawBloom(0.16, 2, 5.5, 5.5, 0, 0.1, 71/255, 1, 93/255)
+    DrawBloom(0.12, 2, 5.5, 5.5, 0, 0.1, 1, 1, 1)
 
     -- DrawSharpen(4, 0.6)
 end

@@ -468,7 +468,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 11.9, 0.03),
+        Pos = Vector(0, 11.6, 0.03),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -500,8 +500,8 @@ end
 local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/1p59_3-10x_mark_f.png", "mips")
 local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/1p59_3-10x_mark_q.png", "mips")
 
-local scale = 1
-local finalsize = 3.5 * scale
+local scale = 0.9
+local finalsize = 2.35 * scale
 ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
     local scrollevel = sight.SmoothScrollLevel or 0
     local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
@@ -514,9 +514,9 @@ ATT.RTScopeDrawFunc = function(swep, rtsize, sight)
 
     surface.SetMaterial(mat)
     surface.SetDrawColor(255, 255, 255)
-    -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
-    local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
-    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
+    surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+    -- local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
+    -- surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
 end
 
 ATT.ZoomSound = false
@@ -526,9 +526,10 @@ ATT.RTScopeAdjustmentLevels = 7
 ATT.RTScopeMagnification = 3
 ATT.RTScopeMagnificationMin = 3
 ATT.RTScopeMagnificationMax = 10
+ATT.RTScopeNew_ShadowScale = 1.1
 
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 38/4
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/empty.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
@@ -586,7 +587,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 11.9, 0.03),
+        Pos = Vector(0, 11.6, 0.03),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
@@ -618,8 +619,8 @@ end
 local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/1p59_3-10x_mark_red_f.png", "mips")
 local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/1p59_3-10x_mark_red_q.png", "mips")
 
-local scale = 1
-local finalsize = 3.5 * scale
+local scale = 0.9
+local finalsize = 2.35 * scale
 ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
     local scrollevel = sight.SmoothScrollLevel or 0
     local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
@@ -632,9 +633,9 @@ ATT.RTScopeDrawFunc = function(swep, rtsize, sight)
 
     surface.SetMaterial(mat)
     surface.SetDrawColor(255, 255, 255)
-    -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
-    local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
-    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
+    surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+    -- local counterrotation = ARC9.NewRTScopesEnabled and 0 or (swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2))
+    -- surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
 end
 
 ATT.ZoomSound = false
@@ -644,9 +645,10 @@ ATT.RTScopeAdjustmentLevels = 7
 ATT.RTScopeMagnification = 3
 ATT.RTScopeMagnificationMin = 3
 ATT.RTScopeMagnificationMax = 10
+ATT.RTScopeNew_ShadowScale = 1.1
 
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 38/4
 ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/empty.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
