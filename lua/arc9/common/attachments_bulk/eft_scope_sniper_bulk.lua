@@ -58,6 +58,7 @@ ATT.RTScopeNew_ShadowScale = 0.77
 ATT.ScopeScreenRatio = 0.4065
 
 
+-- EFT ID: 5dff772da3651922b360bf91
 ARC9.LoadAttachment(ATT, "eft_scope_25mm_pilad")
 
 
@@ -159,6 +160,7 @@ ATT.ScopeScreenRatio = 619/1080
 ATT.RTScopeNew_ShadowScale = 1.2
 
 
+-- EFT ID: 5aa66be6e5b5b0214e506e97
 ARC9.LoadAttachment(ATT, "eft_scope_34mm_atacr")
 
 
@@ -257,6 +259,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 531/1080
 
 
+-- EFT ID: 56ea70acd2720b844b8b4594
 ARC9.LoadAttachment(ATT, "eft_scope_34mm_hsff")
 
 
@@ -359,6 +362,7 @@ ATT.ScopeScreenRatio = 693/1080
 ATT.RTScopeNew_ShadowScale = 1.2
 
 
+-- EFT ID: 62850c28da09541f43158cca
 ARC9.LoadAttachment(ATT, "eft_scope_34mm_sb_pmii5")
 
 
@@ -460,6 +464,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 627/1080
 
 
+-- EFT ID: 676175789dcee773150c6925
 ARC9.LoadAttachment(ATT, "eft_scope_35mm_5hd")
 
 
@@ -583,6 +588,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 67641b461c2eb66ade05dba6
 ARC9.LoadAttachment(ATT, "eft_scope_shakhin")
 
 ///////////////////////////////////////      eft_optic_shakhin_eyecup
@@ -605,4 +611,5 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdditionalSightDistance = 1
 
+-- EFT ID: 67641bec4ad898aa100c1079
 ARC9.LoadAttachment(ATT, "eft_optic_shakhin_eyecup")

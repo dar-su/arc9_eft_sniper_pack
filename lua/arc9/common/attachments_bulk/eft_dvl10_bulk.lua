@@ -43,6 +43,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5888956924597752983e182d
 ARC9.LoadAttachment(ATT, "eft_dvl10_barrel_std")
 
 ///////////////////////////////////////      eft_dvl10_barrel_sup
@@ -93,6 +94,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5888945a2459774bf43ba385
 ARC9.LoadAttachment(ATT, "eft_dvl10_barrel_sup")
 
 ///////////////////////////////////////      eft_dvl10_hg_std
@@ -129,6 +131,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5888976c24597754281f93f5
 ARC9.LoadAttachment(ATT, "eft_dvl10_hg_std")
 
 ///////////////////////////////////////      eft_dvl10_stock_std
@@ -166,6 +169,7 @@ ATT.Category = {"eft_dvl10_stock"}
 --     },
 -- }
 
+-- EFT ID: 58889d0c2459775bc215d981
 ARC9.LoadAttachment(ATT, "eft_dvl10_stock_std")
 
 ///////////////////////////////////////      eft_dvl10_muzzle_brake
@@ -191,6 +195,7 @@ ATT.BarrelLengthAdd = 1.5
 
 ATT.Category = {"eft_muzzle_dvl10"}
 
+-- EFT ID: 5888996c24597754281f9419
 ARC9.LoadAttachment(ATT, "eft_dvl10_muzzle_brake")
 
 ///////////////////////////////////////      eft_dvl10_muzzle_cap
@@ -203,7 +208,6 @@ ATT.Icon = Material("entities/eft_dvl10_attachments/cap.png", "mips smooth")
 ATT.Description = "A standard-issue muzzle device for the DVL-10 sniper rifle, manufactured by Lobaev Arms."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 -- ATT.SpreadMult = 0.99
@@ -216,6 +220,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_muzzle_dvl10_sup"}
 
+-- EFT ID: 58889c7324597754281f9439
 ARC9.LoadAttachment(ATT, "eft_dvl10_muzzle_cap")
 
 ///////////////////////////////////////      eft_dvl10_mag_10
@@ -228,7 +233,6 @@ ATT.Icon = Material("entities/eft_dvl10_attachments/10.png", "mips smooth")
 ATT.Description = "A standard-issue DVL-10 sniper rifle magazine by Lobaev Arms, for 7.62x51 cartridges."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_dvl10_5.mdl"
 ATT.DropMagazineAmount = 1
@@ -244,6 +248,7 @@ ATT.SuppressEmptySuffix = false
 ATT.ClipSize = 10
 ATT.ChamberSize = 1
 
+-- EFT ID: 5888988e24597752fe43a6fa
 ARC9.LoadAttachment(ATT, "eft_dvl10_mag_10")
 
 ///////////////////////////////////////      eft_dvl10_blk
@@ -275,4 +280,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_dvl10_blk")

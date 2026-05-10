@@ -36,6 +36,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5de65547883dde217541644b
 ARC9.LoadAttachment(ATT, "eft_vpo215_barrel_std")
 
 ///////////////////////////////////////      eft_vpo215_stock_std
@@ -70,6 +71,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5de655be4a9f347bc92edb88
 ARC9.LoadAttachment(ATT, "eft_vpo215_stock_std")
 
 ///////////////////////////////////////      eft_vpo215_rail_optic
@@ -98,6 +100,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5de6558e9f98ac2bc65950fc
 ARC9.LoadAttachment(ATT, "eft_vpo215_rail_optic")
 
 ///////////////////////////////////////      eft_vpo215_muzzle_brake
@@ -119,6 +122,7 @@ ATT.BarrelLengthAdd = 1.5
 
 ATT.Category = {"eft_muzzle_vpo215"}
 
+-- EFT ID: 5de6556a205ddc616a6bc4f7
 ARC9.LoadAttachment(ATT, "eft_vpo215_muzzle_brake")
 
 ///////////////////////////////////////      eft_vpo215_mag_4
@@ -147,6 +151,7 @@ ATT.SuppressEmptySuffix = false
 ATT.ClipSize = 4
 ATT.ChamberSize = 1
 
+-- EFT ID: 5de653abf76fdc1ce94a5a2a
 ARC9.LoadAttachment(ATT, "eft_vpo215_mag_4")
 
 
@@ -181,6 +186,7 @@ ATT.NoFlash = true
 
 ATT.Category = {"eft_366_muzzle"}
 
+-- EFT ID: 5a9fbb74a2750c0032157181
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_r43_366")
 
 
@@ -233,6 +239,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 67d4178bffb910d21f04720a
 ARC9.LoadAttachment(ATT, "eft_ak50_barrel_std")
 
 
@@ -295,6 +302,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 67d417c023ec241bb70d4896
 ARC9.LoadAttachment(ATT, "eft_ak50_gas_std")
 
 
@@ -323,6 +331,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_barret10.mdl"
 
 ATT.ActivateElements = {"magdef"}
 
+-- EFT ID: 67d418d0ffb910d21f04720e
 ARC9.LoadAttachment(ATT, "eft_barret_mag10")
 
 
@@ -373,6 +382,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 67d416e19bd76ef20f0e743b
 ARC9.LoadAttachment(ATT, "eft_ak50_rec_std")
 
 ///////////////////////////////////////      eft_ak50_mz_std
@@ -397,4 +407,5 @@ ATT.BarrelLengthAdd = 2
 
 ATT.Category = {"eft_ak50_mz"}
 
+-- EFT ID: 67d41883f378a36c4706eeb7
 ARC9.LoadAttachment(ATT, "eft_ak50_mz_std")

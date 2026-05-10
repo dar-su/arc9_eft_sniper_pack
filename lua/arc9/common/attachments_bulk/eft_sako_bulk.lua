@@ -24,6 +24,7 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_sako_86x70_8.mdl"
 ATT.ActivateElements = {"magdef"}
 
+-- EFT ID: 673cbdfad0453ba50c0f76d6
 ARC9.LoadAttachment(ATT, "eft_sako_mag338")
 
 ///////////////////////////////////////      eft_sako_barrel_20
@@ -57,6 +58,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 67405d760098dcb5940ea1a6
 ARC9.LoadAttachment(ATT, "eft_sako_barrel_20")
 
 ///////////////////////////////////////      eft_sako_barrel_235
@@ -91,6 +93,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 673cb551093e0ea7fd0b874a
 ARC9.LoadAttachment(ATT, "eft_sako_barrel_235")
 
 ///////////////////////////////////////      eft_sako_barrel_27
@@ -125,6 +128,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 67405e3b83ac5c69ae025406
 ARC9.LoadAttachment(ATT, "eft_sako_barrel_27")
 
 
@@ -156,6 +160,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_sako_black")
 
 
@@ -181,6 +186,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sako_bolt"}
 
+-- EFT ID: 673cb4054ff4aa8f86076f4a
 ARC9.LoadAttachment(ATT, "eft_sako_bolt_std")
 
 
@@ -215,6 +221,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 673cb212e695740be0047a46
 ARC9.LoadAttachment(ATT, "eft_sako_chassis")
 
 ///////////////////////////////////////      eft_sako_hook_std
@@ -236,6 +243,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sako_hook"}
 
+-- EFT ID: 673ddbb567c759b3c90e5f76
 ARC9.LoadAttachment(ATT, "eft_sako_hook_std")
 
 ///////////////////////////////////////      eft_sako_pad
@@ -255,6 +263,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sako_hg_pad"}
 
+-- EFT ID: 673cb81f5b1511adb10cd326
 ARC9.LoadAttachment(ATT, "eft_sako_pad")
 
 ///////////////////////////////////////      eft_sako_upper
@@ -303,6 +312,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 673cb491280680de5e02ff36
 ARC9.LoadAttachment(ATT, "eft_sako_upper")
 
 ///////////////////////////////////////      eft_sako_toprail
@@ -340,6 +350,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 673cb51e093e0ea7fd0b8746
 ARC9.LoadAttachment(ATT, "eft_sako_toprail")
 
 ///////////////////////////////////////      eft_sako_hg_11
@@ -409,6 +420,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 67405ef125beb509e8070276
 ARC9.LoadAttachment(ATT, "eft_sako_hg_11")
 
 ///////////////////////////////////////      eft_sako_hg_15
@@ -478,6 +490,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 673cb5d1280680de5e02ff3b
 ARC9.LoadAttachment(ATT, "eft_sako_hg_15")
 
 ///////////////////////////////////////      eft_sako_hg_15mlok
@@ -548,6 +561,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 67405fd0812f476fb2020066
 ARC9.LoadAttachment(ATT, "eft_sako_hg_15mlok")
 
 
@@ -580,6 +594,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 673dd617912f68467c0615b6
 ARC9.LoadAttachment(ATT, "eft_sako_railmid")
 
 ///////////////////////////////////////      eft_sako_railshort
@@ -611,4 +626,5 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 673dd5f73f92dc7e120d20a9
 ARC9.LoadAttachment(ATT, "eft_sako_railshort")

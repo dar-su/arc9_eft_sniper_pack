@@ -36,6 +36,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5df256570dee1b22f862e9c4
 ARC9.LoadAttachment(ATT, "eft_t5000_barrel_std")
 
 ///////////////////////////////////////      eft_t5000_chassis_std
@@ -84,6 +85,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5df35e59c41b2312ea3334d5
 ARC9.LoadAttachment(ATT, "eft_t5000_chassis_std")
 
 ///////////////////////////////////////      eft_t5000_hg_std
@@ -150,6 +152,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5df25d3bfd6b4e6e2276dc9a
 ARC9.LoadAttachment(ATT, "eft_t5000_hg_std")
 ///////////////////////////////////////      eft_t5000_hg2_std
 
@@ -172,6 +175,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_t5000_hg2"}
 
+-- EFT ID: 5df36948bb49d91fb446d5ad
 ARC9.LoadAttachment(ATT, "eft_t5000_hg2_std")
 
 ///////////////////////////////////////      eft_t5000_pg_std
@@ -193,6 +197,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_t5000_pg"}
 
+-- EFT ID: 5df38a5fb74cd90030650cb6
 ARC9.LoadAttachment(ATT, "eft_t5000_pg_std")
 ///////////////////////////////////////      eft_t5000_stock_std
 
@@ -214,6 +219,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_t5000_stock"}
 
+-- EFT ID: 5df35ddddfc58d14537c2036
 ARC9.LoadAttachment(ATT, "eft_t5000_stock_std")
 ///////////////////////////////////////      eft_t5000_rail_optic
 
@@ -241,6 +247,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5df35e970b92095fd441e4d2
 ARC9.LoadAttachment(ATT, "eft_t5000_rail_optic")
 
 ///////////////////////////////////////      eft_t5000_rail_long
@@ -269,6 +276,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5df35ea9c41b2312ea3334d8
 ARC9.LoadAttachment(ATT, "eft_t5000_rail_long")
 ///////////////////////////////////////      eft_t5000_rail_medium
 
@@ -296,6 +304,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5df35eb2b11454561e3923e2
 ARC9.LoadAttachment(ATT, "eft_t5000_rail_medium")
 ///////////////////////////////////////      eft_t5000_muzzle_brake
 
@@ -320,6 +329,7 @@ ATT.BarrelLengthAdd = 1.5
 
 ATT.Category = {"eft_muzzle_t5000"}
 
+-- EFT ID: 5df35e7f2a78646d96665dd4
 ARC9.LoadAttachment(ATT, "eft_t5000_muzzle_brake")
 
 ///////////////////////////////////////      eft_t5000_mag_5
@@ -332,7 +342,6 @@ ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_762x51_5round_m
 ATT.Description = "A 5-round magazine for the T-5000M 7.62x51 sniper rifle, manufactured by ORSIS."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_t5000_5.mdl"
 ATT.DropMagazineAmount = 1
@@ -348,4 +357,5 @@ ATT.SuppressEmptySuffix = false
 ATT.ClipSize = 5
 ATT.ChamberSize = 1
 
+-- EFT ID: 5df25b6c0b92095fd441e4cf
 ARC9.LoadAttachment(ATT, "eft_t5000_mag_5")

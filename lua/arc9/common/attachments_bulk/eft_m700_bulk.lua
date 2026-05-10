@@ -37,6 +37,7 @@ ATT.Attachments = {
 
 -- ATT.MuzzleEffectQCA = 5
 
+-- EFT ID: 5bfebc320db8340019668d79
 ARC9.LoadAttachment(ATT, "eft_m700_barrel_20")
 
 ///////////////////////////////////////      eft_m700_barrel_20s
@@ -76,6 +77,7 @@ ATT.Attachments = {
 
 -- ATT.MuzzleEffectQCA = 5
 
+-- EFT ID: 5d2703038abbc3105103d94c
 ARC9.LoadAttachment(ATT, "eft_m700_barrel_20s")
 ///////////////////////////////////////      eft_m700_barrel_26
 
@@ -114,6 +116,7 @@ ATT.Category = {"eft_m700_barrel"}
 
 ATT.MuzzleEffectQCA = 5
 
+-- EFT ID: 5bfebc250db834001a6694e1
 ARC9.LoadAttachment(ATT, "eft_m700_barrel_26")
 ///////////////////////////////////////      eft_m700_barrel_26s
 
@@ -152,6 +155,7 @@ ATT.Category = {"eft_m700_barrel"}
 
 ATT.MuzzleEffectQCA = 5
 
+-- EFT ID: 5d2702e88abbc31ed91efc44
 ARC9.LoadAttachment(ATT, "eft_m700_barrel_26s")
 
 
@@ -189,6 +193,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5bfeb32b0db834001a6694d9
 ARC9.LoadAttachment(ATT, "eft_m700_stock_hogue")
 
 ///////////////////////////////////////      eft_m700_stock_gen3
@@ -242,6 +247,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5cde739cd7f00c0010373bd3
 ARC9.LoadAttachment(ATT, "eft_m700_stock_gen3")
 
 ///////////////////////////////////////      eft_m700_stock_aics
@@ -283,6 +289,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5d25d0ac8abbc3054f3e61f7
 ARC9.LoadAttachment(ATT, "eft_m700_stock_aics")
 ///////////////////////////////////////      eft_m700_stock_archangel
 
@@ -310,6 +317,7 @@ ATT.Category = {"eft_m700_stock"}
 
 -- ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_m700_toz.mdl"
 
+-- EFT ID: 5cf13123d7f00c1085616a50
 ARC9.LoadAttachment(ATT, "eft_m700_stock_archangel")
 ///////////////////////////////////////      eft_m700_stock_pro700
 
@@ -391,6 +399,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5cdeac22d7f00c000f26168f
 ARC9.LoadAttachment(ATT, "eft_m700_stock_pro700")
 
 
@@ -426,6 +435,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5cdeaca5d7f00c00b61c4b70
 ARC9.LoadAttachment(ATT, "eft_m700_mount_pro700")
 ///////////////////////////////////////      eft_m700_hg_gen3
 
@@ -497,6 +507,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5cde7afdd7f00c000d36b89d
 ARC9.LoadAttachment(ATT, "eft_m700_hg_gen3")
 ///////////////////////////////////////      eft_m700_buffer_adap_gen3
 
@@ -525,6 +536,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5cde77a9d7f00c000f261009
 ARC9.LoadAttachment(ATT, "eft_m700_buffer_adap_gen3")
 ///////////////////////////////////////      eft_m700_pro700_folding
 
@@ -545,6 +557,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m700_pro700_stock"}
 
+-- EFT ID: 5cdeac42d7f00c000d36ba73
 ARC9.LoadAttachment(ATT, "eft_m700_pro700_folding")
 ///////////////////////////////////////      eft_m700_pro700_pistol_grip
 
@@ -566,6 +579,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_m700_pro700_pistolgrip"}
 
 
+-- EFT ID: 5cdeac5cd7f00c000f261694
 ARC9.LoadAttachment(ATT, "eft_m700_pro700_pistol_grip")
 ///////////////////////////////////////      eft_m700_rail_ext
 
@@ -598,6 +612,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = {"eft_m700_hg_gen3"}
 
+-- EFT ID: 5bfebc530db834001d23eb65
 ARC9.LoadAttachment(ATT, "eft_m700_rail_ext")
 ///////////////////////////////////////      eft_m700_rail_modx
 
@@ -628,6 +643,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5cde7b43d7f00c000d36b93e
 ARC9.LoadAttachment(ATT, "eft_m700_rail_modx")
 ///////////////////////////////////////      eft_m700_rail_badger
 
@@ -661,6 +677,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 65f064eec4da400cbb0dc1fe
 ARC9.LoadAttachment(ATT, "eft_m700_rail_badger")
 ///////////////////////////////////////      eft_m700_rail_ring
 
@@ -689,6 +706,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5bfebc5e0db834001a6694e5
 ARC9.LoadAttachment(ATT, "eft_m700_rail_ring")
 
 
@@ -714,6 +732,7 @@ ATT.BarrelLengthAdd = 0.5
 
 ATT.Category = {"eft_muzzle_m700"}
 
+-- EFT ID: 5d270b3c8abbc3105335cfb8
 ARC9.LoadAttachment(ATT, "eft_m700_muzzle_thr")
 
 ///////////////////////////////////////      eft_m700_muzzle_thrs
@@ -738,6 +757,7 @@ ATT.BarrelLengthAdd = 0.5
 
 ATT.Category = {"eft_muzzle_m700"}
 
+-- EFT ID: 5d270ca28abbc31ee25ee821
 ARC9.LoadAttachment(ATT, "eft_m700_muzzle_thrs")
 
 
@@ -771,6 +791,7 @@ ATT.ChamberSize = 1
 
 ATT.RequireElements = {"eft_m700_stock_hogue"}
 
+-- EFT ID: 5bfea7ad0db834001c38f1ee
 ARC9.LoadAttachment(ATT, "eft_m700_mag_w5")
 ///////////////////////////////////////      eft_m700_mag_w10
 
@@ -801,6 +822,7 @@ ATT.ChamberSize = 1
 
 ATT.RequireElements = {"eft_m700_stock_hogue"}
 
+-- EFT ID: 5bfeaa0f0db834001b734927
 ARC9.LoadAttachment(ATT, "eft_m700_mag_w10")
 ///////////////////////////////////////      eft_m700_mag_a5
 
@@ -831,6 +853,7 @@ ATT.ChamberSize = 1
 
 ATT.ExcludeElements = {"eft_m700_stock_hogue", "eft_m700_stock_archangel"}
 
+-- EFT ID: 5d25a4a98abbc30b917421a4
 ARC9.LoadAttachment(ATT, "eft_m700_mag_a5")
 ///////////////////////////////////////      eft_m700_mag_a10
 
@@ -861,6 +884,7 @@ ATT.ChamberSize = 1
 
 ATT.ExcludeElements = {"eft_m700_stock_hogue", "eft_m700_stock_archangel"}
 
+-- EFT ID: 5d25a6538abbc306c62e630d
 ARC9.LoadAttachment(ATT, "eft_m700_mag_a10")
 ///////////////////////////////////////      eft_m700_mag_a12
 
@@ -872,7 +896,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_mdt_aics_12round_
 ATT.Description = "A 12-round Remington M700 sniper rifle magazine by Modular Driven Technologies LP., for 7.62x51 cartridges."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_aics12.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_aics12.mdl"
@@ -891,6 +914,7 @@ ATT.ChamberSize = 1
 
 ATT.ExcludeElements = {"eft_m700_stock_hogue", "eft_m700_stock_archangel"}
 
+-- EFT ID: 5d25a6a48abbc306c62e6310
 ARC9.LoadAttachment(ATT, "eft_m700_mag_a12")
 ///////////////////////////////////////      eft_m700_mag_p5
 
@@ -921,6 +945,7 @@ ATT.ChamberSize = 1
 
 ATT.ExcludeElements = {"eft_m700_stock_hogue", "eft_m700_stock_archangel"}
 
+-- EFT ID: 5ce69cbad7f00c00b61c5098
 ARC9.LoadAttachment(ATT, "eft_m700_mag_p5")
 ///////////////////////////////////////      eft_m700_mag_p10
 
@@ -951,6 +976,7 @@ ATT.ChamberSize = 1
 
 ATT.ExcludeElements = {"eft_m700_stock_hogue", "eft_m700_stock_archangel"}
 
+-- EFT ID: 5d25a7b88abbc3054f3e60bc
 ARC9.LoadAttachment(ATT, "eft_m700_mag_p10")
 ///////////////////////////////////////      eft_m700_mag_pro10
 
@@ -978,6 +1004,7 @@ ATT.ChamberSize = 1
 
 ATT.RequireElements = {"eft_m700_stock_archangel"}
 
+-- EFT ID: 5d25af8f8abbc3055079fec5
 ARC9.LoadAttachment(ATT, "eft_m700_mag_pro10")
 ///////////////////////////////////////      eft_m700_mag_pro20
 
@@ -1008,4 +1035,5 @@ ATT.ChamberSize = 1
 
 ATT.RequireElements = {"eft_m700_stock_archangel"}
 
+-- EFT ID: 5cf12a15d7f00c05464b293f
 ARC9.LoadAttachment(ATT, "eft_m700_mag_pro20")

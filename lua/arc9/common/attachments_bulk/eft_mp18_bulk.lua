@@ -52,6 +52,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 61f4012adfc9f01a816adda1
 ARC9.LoadAttachment(ATT, "eft_mp18_barrel_762x54r")
 
 ///////////////////////////////////////      eft_mp18_barrel_762x51
@@ -108,6 +109,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_mp18_barrel_762x51")
 
 ///////////////////////////////////////      eft_mp18_barrel_762x39
@@ -164,6 +166,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_mp18_barrel_762x39")
 
 
@@ -188,6 +191,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mp18_hg"}
 
 
+-- EFT ID: 61f8024263dc1250e26eb029
 ARC9.LoadAttachment(ATT, "eft_mp18_hg_poly")
 
 
@@ -212,6 +216,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mp18_hg"}
 
 
+-- EFT ID: 61f7b85367ddd414173fdb36
 ARC9.LoadAttachment(ATT, "eft_mp18_hg_wood")
 
 
@@ -242,6 +247,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 61f804acfcba9556ea304cb8
 ARC9.LoadAttachment(ATT, "eft_mp18_mount_std")
 
 
@@ -269,6 +275,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mp18_stock"}
 
 
+-- EFT ID: 61f803b8ced75b2e852e35f8
 ARC9.LoadAttachment(ATT, "eft_mp18_stock_poly")
 
 
@@ -296,5 +303,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mp18_stock"}
 
 
+-- EFT ID: 61f7b234ea4ab34f2f59c3ec
 ARC9.LoadAttachment(ATT, "eft_mp18_stock_wood")
 

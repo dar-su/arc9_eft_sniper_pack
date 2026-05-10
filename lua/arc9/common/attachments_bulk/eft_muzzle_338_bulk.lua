@@ -23,6 +23,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_tmb338lm"}
 
 
+-- EFT ID: 628120621d5df4475f46a335
 ARC9.LoadAttachment(ATT, "eft_muzzle_axmccap")
 
 
@@ -58,6 +59,7 @@ ATT.Attachments = {
 
 
 
+-- EFT ID: 612e0d81290d254f5e6b291a
 ARC9.LoadAttachment(ATT, "eft_muzzle_psr338")
 
 ///////////////////////////////////////      eft_muzzle_tmb338lm
@@ -92,6 +94,7 @@ ATT.Attachments = {
 
 
 
+-- EFT ID: 62812081d23f207deb0ab216
 ARC9.LoadAttachment(ATT, "eft_muzzle_tmb338lm")
 
 
@@ -128,6 +131,7 @@ ATT.Category = {"eft_tmb338lm"}
 
 
 
+-- EFT ID: 62811fa609427b40ab14e765
 ARC9.LoadAttachment(ATT, "eft_muzzle_tsm338lm")
 
 
@@ -162,6 +166,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 673f3ef1259f5945d70e43a8
 ARC9.LoadAttachment(ATT, "eft_muzzle_borelock338")
 
 ///////////////////////////////////////      eft_muzzle_borelock338_cap
@@ -184,6 +189,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_338borelock"}
 
+-- EFT ID: 673f3f2f40aeca974e0b5c66
 ARC9.LoadAttachment(ATT, "eft_muzzle_borelock338_cap")
 
 ///////////////////////////////////////      eft_muzzle_borelock338_sup
@@ -217,6 +223,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_borelock_aseutra_sl7i_b
 -- ATT.ModelAngleOffset = Angle(0, -90, 0)
 ATT.Category = {"eft_338borelock"}
 
+-- EFT ID: 673f0a38259f5945d70e43a6
 ARC9.LoadAttachment(ATT, "eft_muzzle_borelock338_sup")
 
 ///////////////////////////////////////      eft_muzzle_trg_std
@@ -242,6 +249,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_muzzle_sako"}
 
+-- EFT ID: 673f4046259f5945d70e43ab
 ARC9.LoadAttachment(ATT, "eft_muzzle_trg_std")
 
 ///////////////////////////////////////      eft_muzzle_trg_cap
@@ -264,6 +272,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_muzzle_sako"}
 
+-- EFT ID: 673f3f5eef7545280c00f026
 ARC9.LoadAttachment(ATT, "eft_muzzle_trg_cap")
 
 ///////////////////////////////////////      eft_muzzle_trg_coretac
@@ -289,6 +298,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_muzzle_sako"}
 
+-- EFT ID: 673f3f9840aeca974e0b5c68
 ARC9.LoadAttachment(ATT, "eft_muzzle_trg_coretac")
 
 ///////////////////////////////////////      eft_muzzle_trg_pgm
@@ -323,6 +333,7 @@ ATT.ModelAngleOffset = Angle(0, -90, 0)
 -- ATT.Category = {"eft_muzzle_sako"}
 ATT.Category = {"eft_muzzle_338"}
 
+-- EFT ID: 673f0a9370a3ddcf0d0ee0b8
 ARC9.LoadAttachment(ATT, "eft_muzzle_trg_pgm")
 
 ///////////////////////////////////////      eft_muzzle_trg_cgs
@@ -357,4 +368,5 @@ ATT.ModelAngleOffset = Angle(0, -90, 0)
 -- ATT.Category = {"eft_muzzle_sako"}
 ATT.Category = {"eft_muzzle_338"}
 
+-- EFT ID: 673f0b36536d64240f01acd6
 ARC9.LoadAttachment(ATT, "eft_muzzle_trg_cgs")

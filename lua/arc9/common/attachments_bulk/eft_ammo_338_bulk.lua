@@ -76,6 +76,7 @@ ATT.DamageLookupTable = {
 ATT.Category = {"eft_ammo_338"}
 
 
+-- EFT ID: 5fc382a9d724d907e2077dab
 ARC9.LoadAttachment(ATT, "eft_ammo_338_ap")
 
 -- fmj moved to shraed
@@ -156,6 +157,7 @@ ATT.DamageLookupTable = {
 ATT.Category = {"eft_ammo_338"}
 
 
+-- EFT ID: 5fc382b6d6fa9c00c571bbc3
 ARC9.LoadAttachment(ATT, "eft_ammo_338_tacx")
 
 
@@ -231,6 +233,7 @@ ATT.DamageLookupTable = {
 ATT.Category = {"eft_ammo_338"}
 
 
+-- EFT ID: 5fc382c1016cce60e8341b20
 ARC9.LoadAttachment(ATT, "eft_ammo_338_upz")
 
 
@@ -271,6 +274,7 @@ ATT.SpreadMult = 0.85
 
 ATT.Category = {"eft_ammo_50bmg"}
 
+-- EFT ID: 67d41936f378a36c4706eeb9
 ARC9.LoadAttachment(ATT, "eft_ammo_50bmg_hp")
 
 ///////////////////////////////////////      eft_ammo_50bmg_m21
@@ -307,6 +311,7 @@ ATT.RecoilMult = 1.2
 
 ATT.Category = {"eft_ammo_50bmg"}
 
+-- EFT ID: 67dc212493ce32834b0fa446
 ARC9.LoadAttachment(ATT, "eft_ammo_50bmg_m21")
 
 ///////////////////////////////////////      eft_ammo_50bmg_m33
@@ -344,6 +349,7 @@ ATT.SpreadMult = 1.05
 
 ATT.Category = {"eft_ammo_50bmg"}
 
+-- EFT ID: 67dc255ee3028a8b120efc48
 ARC9.LoadAttachment(ATT, "eft_ammo_50bmg_m33")
 
 ///////////////////////////////////////      eft_ammo_50bmg_m903
@@ -381,4 +387,5 @@ ATT.MalfunctionMeanShotsToFailMult = 1.1
 
 ATT.Category = {"eft_ammo_50bmg"}
 
+-- EFT ID: 67dc2648ba5b79876906a166
 ARC9.LoadAttachment(ATT, "eft_ammo_50bmg_m903")

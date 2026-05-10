@@ -30,6 +30,7 @@ ATT.Attachments = {
 
 
 
+-- EFT ID: 5aa66a9be5b5b0214e506e89
 ARC9.LoadAttachment(ATT, "eft_mount_34mm_nf")
 
 
@@ -63,6 +64,7 @@ ATT.Attachments = {
 
 
 
+-- EFT ID: 62811f461d5df4475f46a332
 ARC9.LoadAttachment(ATT, "eft_mount_34mm_ax50")
 
 
@@ -118,6 +120,7 @@ ATT.Attachments = {
 
 
 
+-- EFT ID: 5aa66c72e5b5b00016327c93
 ARC9.LoadAttachment(ATT, "eft_mount_34mm_nfris")
 
 
@@ -151,6 +154,7 @@ ATT.Attachments = {
 
 
 
+-- EFT ID: 5c86592b2e2216000e69e77c
 ARC9.LoadAttachment(ATT, "eft_mount_34mm_one_piece_is_real")
 
 
@@ -188,6 +192,7 @@ ATT.Attachments = {
 
 
 
+-- EFT ID: 5dff77c759400025ea5150cf
 ARC9.LoadAttachment(ATT, "eft_mount_25mm_utg")
 
 
@@ -220,6 +225,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6761759e7ee06333f108bf86
 ARC9.LoadAttachment(ATT, "eft_mount_35mm_ims")
 
 
@@ -257,6 +263,7 @@ ATT.Attachments = {
 
 
 
+-- EFT ID: 5d0a29fed7ad1a002769ad08
 ARC9.LoadAttachment(ATT, "eft_mount_all_kmz_1p69")
 
 
@@ -293,4 +300,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 67641a851b2899700609901a
 ARC9.LoadAttachment(ATT, "eft_mount_shakhin")

@@ -38,6 +38,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_barrel308_20")
 
 
@@ -77,6 +78,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_barrel308_24")
 
 
@@ -115,6 +117,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_barrel308_26")
 
 
@@ -151,6 +154,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 628121434fa03b6b6c35dc6a
 ARC9.LoadAttachment(ATT, "eft_axmc_barrel338_28")
 
 
@@ -183,6 +187,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_black")
 
 
@@ -239,6 +244,7 @@ ATT.Attachments = {
 ATT.Category = {"eft_axmc_bolt"}
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_bolt308")
 
 
@@ -255,7 +261,6 @@ ATT.Description = [[A .338 Lapua Magnum bolt assembly for the Accuracy Internati
 ATT.HasBolt = true 
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -274,6 +279,7 @@ ATT.Attachments = {
 ATT.Category = {"eft_axmc_bolt"}
 
 
+-- EFT ID: 62811cd7308cb521f87a8f99
 ARC9.LoadAttachment(ATT, "eft_axmc_bolt338")
 
 
@@ -333,6 +339,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 6281204f308cb521f87a8f9b
 ARC9.LoadAttachment(ATT, "eft_axmc_chassis")
 
 
@@ -374,6 +381,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 62811e2510e26c1f344e6554
 ARC9.LoadAttachment(ATT, "eft_axmc_grip")
 
 
@@ -421,6 +429,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 62811e335631d45211793c95
 ARC9.LoadAttachment(ATT, "eft_axmc_gripar")
 
 
@@ -476,6 +485,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 6281209662cba23f6c4d7a19
 ARC9.LoadAttachment(ATT, "eft_axmc_hg")
 
 
@@ -506,6 +516,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_axmc_762x51_10.m
 ATT.ActivateElements = {"mag762"}
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_mag308")
 
 
@@ -520,7 +531,6 @@ ATT.Icon = Material("entities/eft_axmc_attachments/338mag.png", "mips smooth")
 ATT.Description = [[A 10-round AXMC sniper rifle magazine by Accuracy International, for .338 Lapua Magnum cartridges.]]
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -534,6 +544,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_axmc_86x70_10.md
 ATT.ActivateElements = {"magdef"}
 
 
+-- EFT ID: 628120fd5631d45211793c9f
 ARC9.LoadAttachment(ATT, "eft_axmc_mag338")
 
 
@@ -558,6 +569,7 @@ ATT.RequireElements = {"eft_axmc_bolt308"}
 ATT.Category = {"eft_axmc_308magwell"}
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_magwell")
 
 
@@ -582,6 +594,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_axmc_hg_pad"}
 
 
+-- EFT ID: 6281212a09427b40ab14e770
 ARC9.LoadAttachment(ATT, "eft_axmc_pad")
 
 
@@ -614,6 +627,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 628120dd308cb521f87a8fa1
 ARC9.LoadAttachment(ATT, "eft_axmc_railmid")
 
 
@@ -649,6 +663,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_railmid_b")
 
 
@@ -681,6 +696,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 628120d309427b40ab14e76d
 ARC9.LoadAttachment(ATT, "eft_axmc_railshort")
 
 
@@ -716,6 +732,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_railshort_b")
 
 
@@ -740,6 +757,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_axmc_grip_stock"}
 
 
+-- EFT ID: 62811f828193841aca4a45c3
 ARC9.LoadAttachment(ATT, "eft_axmc_stock")
 
 
@@ -776,6 +794,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 628120c21d5df4475f46a337
 ARC9.LoadAttachment(ATT, "eft_axmc_toprail")
 
 
@@ -843,6 +862,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 62811fbf09427b40ab14e767
 ARC9.LoadAttachment(ATT, "eft_axmc_upper")
 
 
@@ -876,4 +896,5 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 671126a210d67adb5b08e925
 ARC9.LoadAttachment(ATT, "eft_axmc_railbipod")

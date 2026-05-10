@@ -30,6 +30,7 @@ ATT.Attachments = {
 }
 ATT.RequireElements = {"eft_sv98_chassis_cnc"}
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_sv98_black")
 
 
@@ -86,6 +87,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 623b2e9d11c3296b440d1638
 ARC9.LoadAttachment(ATT, "eft_sv98_chassis_cnc")
 
 ///////////////////////////////////////      eft_sv98_chassis_wood
@@ -129,6 +131,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 61faa91878830f069b6b7967
 ARC9.LoadAttachment(ATT, "eft_sv98_chassis_wood")
 
 
@@ -184,6 +187,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 623c3c1f37b4b31470357737
 ARC9.LoadAttachment(ATT, "eft_sv98_cnc_hg")
 
 
@@ -211,6 +215,7 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_sv98.mdl"
 
 
+-- EFT ID: 559ba5b34bdc2d1f1a8b4582
 ARC9.LoadAttachment(ATT, "eft_sv98_mag_10")
 
 
@@ -235,6 +240,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sv98_stock"}
 
+-- EFT ID: 624c29ce09cd027dff2f8cd7
 ARC9.LoadAttachment(ATT, "eft_sv98_m12")
 
 ///////////////////////////////////////      eft_sv98_ribooon
@@ -256,6 +262,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sv98_ribbon"}
 
+-- EFT ID: 56083eab4bdc2d26448b456a
 ARC9.LoadAttachment(ATT, "eft_sv98_ribooon")
 
 ///////////////////////////////////////      eft_sv98_rss
@@ -273,6 +280,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sv98_rs"}
 
+-- EFT ID: 56083e1b4bdc2dc8488b4572
 ARC9.LoadAttachment(ATT, "eft_sv98_rss")
 
 
@@ -301,6 +309,7 @@ ATT.SwayMultBipod = 0.1
 
 ATT.Category = {"eft_sv98_bipod"}
 
+-- EFT ID: 56ea8222d2720b69698b4567
 ARC9.LoadAttachment(ATT, "eft_sv98_bipodd")
 
 
@@ -340,6 +349,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5c4eecc32e221602b412b440
 ARC9.LoadAttachment(ATT, "eft_sv98_muzzle_sil")
 
 ///////////////////////////////////////      eft_sv98_muzzle_std
@@ -360,6 +370,7 @@ ATT.VisualRecoilMult = 0.95
 
 ATT.Category = {"eft_muzzle_sv98"}
 
+-- EFT ID: 560e620e4bdc2d724b8b456b
 ARC9.LoadAttachment(ATT, "eft_sv98_muzzle_std")
 
 ///////////////////////////////////////      eft_sv98_muzzle_srvv
@@ -380,6 +391,7 @@ ATT.VisualRecoilMult = 0.87
 
 ATT.Category = {"eft_muzzle_sv98"}
 
+-- EFT ID: 5c4ee3d62e2216152006f302
 ARC9.LoadAttachment(ATT, "eft_sv98_muzzle_srvv")
 
 ///////////////////////////////////////      eft_sv98_muzzle_thr
@@ -408,6 +420,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c4eec9b2e2216398b5aaba2
 ARC9.LoadAttachment(ATT, "eft_sv98_muzzle_thr")
 
 ///////////////////////////////////////      eft_sv98_sil_cover
@@ -427,6 +440,7 @@ ATT.HeatCapacityMult = 1.02
 
 ATT.Category = {"eft_muzzle_sv98_sil_cover"}
 
+-- EFT ID: 5c4eecde2e221602b3140418
 ARC9.LoadAttachment(ATT, "eft_sv98_sil_cover")
 
 
@@ -558,6 +572,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5d0a3a58d7ad1a669c15ca14
 ARC9.LoadAttachment(ATT, "eft_scope_kmz_1p59")
 
 
@@ -677,6 +692,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5d0a3e8cd7ad1a6f6a3d35bd
 ARC9.LoadAttachment(ATT, "eft_scope_kmz_1p69")
 
 ///////////////////////////////////////      eft_optic_kmz_eyecap
@@ -703,4 +719,5 @@ ATT.AdditionalSightDistance = 2
 ATT.ModelOffset = Vector(0, 0, 0)
 
 
+-- EFT ID: 5d0b5cd3d7ad1a3fe32ad263
 ARC9.LoadAttachment(ATT, "eft_optic_kmz_eyecap")

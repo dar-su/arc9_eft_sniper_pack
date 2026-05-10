@@ -28,6 +28,7 @@ ATT.ExcludeElements = {"eft_mosin_stock_ati", "eft_mosin_stock_carbine", "eft_mo
 
 ATT.Category = {"eft_mosin_barrel"}
 
+-- EFT ID: 5bfd4cc90db834001d23e846
 ARC9.LoadAttachment(ATT, "eft_mosin_barrel_200")
 
 ///////////////////////////////////////      eft_mosin_barrel_220
@@ -73,6 +74,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5bfd4cd60db834001c38f095
 ARC9.LoadAttachment(ATT, "eft_mosin_barrel_220")
 
 ///////////////////////////////////////      eft_mosin_barrel_514
@@ -123,6 +125,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5bfd4cbe0db834001b73449f
 ARC9.LoadAttachment(ATT, "eft_mosin_barrel_514")
 
 ///////////////////////////////////////      eft_mosin_barrel_730
@@ -175,6 +178,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5ae09bff5acfc4001562219d
 ARC9.LoadAttachment(ATT, "eft_mosin_barrel_730")
 
 
@@ -194,6 +198,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_fs"}
 
+-- EFT ID: 5ae099875acfc4001714e593
 ARC9.LoadAttachment(ATT, "eft_mosin_std_fs")
 
 ///////////////////////////////////////      eft_mosin_std_rs
@@ -210,6 +215,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_730rs"}
 
+-- EFT ID: 5ae099925acfc4001a5fc7b3
 ARC9.LoadAttachment(ATT, "eft_mosin_std_rs")
 
 ///////////////////////////////////////      eft_mosin_carb_rs
@@ -226,6 +232,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_220rs", "eft_mosin_514rs"}
 
+-- EFT ID: 5bfd4c980db834001b73449d
 ARC9.LoadAttachment(ATT, "eft_mosin_carb_rs")
 
 ///////////////////////////////////////      eft_mosin_pgrip_tacfire
@@ -248,6 +255,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_pgrip"}
 
+-- EFT ID: 5bbde41ed4351e003562b038
 ARC9.LoadAttachment(ATT, "eft_mosin_pgrip_tacfire")
 
 ///////////////////////////////////////      eft_mosin_butt_aim
@@ -269,6 +277,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_butt"}
 
+-- EFT ID: 5bbde409d4351e003562b036
 ARC9.LoadAttachment(ATT, "eft_mosin_butt_aim")
 
 
@@ -302,6 +311,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b3f7bf05acfc433000ecf6b
 ARC9.LoadAttachment(ATT, "eft_mosin_mount_kochetov")
 
 ///////////////////////////////////////      eft_mosin_mount_rings
@@ -332,6 +342,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = {"eft_mosin_mount_trirail" }
 
+-- EFT ID: 5b3f7c005acfc4704b4a1de8
 ARC9.LoadAttachment(ATT, "eft_mosin_mount_rings")
 
 
@@ -382,6 +393,7 @@ ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 400/1080
 
+-- EFT ID: 5b3f7c1c5acfc40dc5296b1d
 ARC9.LoadAttachment(ATT, "eft_mosin_scope_pu")
 
 
@@ -415,6 +427,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = {"eft_mosin_mount_trirail", "eft_mosin_mount_mng" }
 
+-- EFT ID: 5d024f5cd7ad1a04a067e91a
 ARC9.LoadAttachment(ATT, "eft_mosin_mount_patriot")
 
 ///////////////////////////////////////      eft_mosin_mount_trirail
@@ -462,6 +475,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = {"eft_mosin_mount_patriot", "eft_mosin_mount_rings" }
 
+-- EFT ID: 5bbdb811d4351e45020113c7
 ARC9.LoadAttachment(ATT, "eft_mosin_mount_trirail")
 
 ///////////////////////////////////////      eft_mosin_mount_mng
@@ -495,6 +509,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = {"eft_mosin_mount_patriot" }
 
+-- EFT ID: 5bc5a372d4351e44f824d17f
 ARC9.LoadAttachment(ATT, "eft_mosin_mount_mng")
 
 
@@ -545,6 +560,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = {"eft_mosin_barrel_730", "eft_mosin_barrel_200", "eft_mosin_barrel_220", "eft_mosin_mount_kochetov" }
 
+-- EFT ID: 5bfd384c0db834001a6691d3
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_carbine")
 
 ///////////////////////////////////////      eft_mosin_stock_inf
@@ -586,6 +602,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = { "eft_mosin_barrel_200", "eft_mosin_barrel_220", "eft_mosin_barrel_514", "eft_mosin_mount_kochetov"}
 
+-- EFT ID: 5bfd35380db83400232fe5cc
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_inf")
 
 ///////////////////////////////////////      eft_mosin_stock_sawnoff
@@ -620,6 +637,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = { "eft_mosin_mount_kochetov"}
 
+-- EFT ID: 5bfd36ad0db834001c38ef66
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_sawnoff")
 
 ///////////////////////////////////////      eft_mosin_stock_sawnoff_sniper
@@ -652,6 +670,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5bfd36290db834001966869a
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_sawnoff_sniper")
 
 ///////////////////////////////////////      eft_mosin_stock_sniper_carbine
@@ -693,6 +712,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = {"eft_mosin_barrel_730", "eft_mosin_barrel_200", "eft_mosin_barrel_220"}
 
+-- EFT ID: 5bfd37c80db834001d23e842
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_sniper_carbine")
 
 ///////////////////////////////////////      eft_mosin_stock_std
@@ -734,6 +754,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = { "eft_mosin_barrel_200", "eft_mosin_barrel_220", "eft_mosin_barrel_514" }
 
+-- EFT ID: 5ae096d95acfc400185c2c81
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_std")
 
 ///////////////////////////////////////      eft_mosin_stock_ati
@@ -769,6 +790,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5bbdb870d4351e00367fb67d
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_ati")
 
 ///////////////////////////////////////      eft_mosin_stock_opfor
@@ -799,6 +821,7 @@ ATT.SpreadMult = 0.97
 
 ATT.ExcludeElements = { "eft_mosin_barrel_200", "eft_mosin_barrel_220"}
 
+-- EFT ID: 5bae13bad4351e00320204af
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_opfor")
 
 
@@ -837,6 +860,7 @@ ATT.HasMag = true
 ATT.ClipSize = 5
 ATT.ChamberSize = 1
 
+-- EFT ID: 5ae0973a5acfc4001562206c
 ARC9.LoadAttachment(ATT, "eft_mosin_mag_5")
 
 ///////////////////////////////////////      eft_mosin_mag_10
@@ -869,6 +893,7 @@ ATT.ShotgunReload = false
 ATT.ClipSize = 10
 ATT.ChamberSize = 1
 
+-- EFT ID: 5bae13ded4351e44f824bf38
 ARC9.LoadAttachment(ATT, "eft_mosin_mag_10")
 
 
@@ -904,6 +929,7 @@ ATT.NoFlash = true
 
 ATT.Category = {"eft_muzzle_mosin"}
 
+-- EFT ID: 5b86a0e586f7745b600ccb23
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_bramit")
 
 ///////////////////////////////////////      eft_mosin_muzzle_tpp
@@ -927,6 +953,7 @@ ATT.VisualRecoilMult = 0.77
 
 ATT.Category = {"eft_muzzle_mosin"}
 
+-- EFT ID: 5bc5a351d4351e003477a414
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_tpp")
 
 ///////////////////////////////////////      eft_mosin_muzzle_tanker
@@ -944,12 +971,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_mosin_tacfire_tanker_styl
 ATT.ModelOffset = Vector(0.52, 0, 0)
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.RecoilMult = 0.87
 ATT.VisualRecoilMult = 0.87
 
 ATT.Category = {"eft_muzzle_mosin"}
 
+-- EFT ID: 5bbdb83fd4351e44f824c44b
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_tanker")
 
 ///////////////////////////////////////      eft_mosin_muzzle_wm
@@ -973,6 +1000,7 @@ ATT.VisualRecoilMult = 0.71
 
 ATT.Category = {"eft_muzzle_mosin"}
 
+-- EFT ID: 5bc5a35cd4351e450201232f
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_wm")
 
 ///////////////////////////////////////      eft_mosin_muzzle_kiba
@@ -1001,6 +1029,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5cf79389d7f00c10941a0c4d
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_kiba")
 
 ///////////////////////////////////////      eft_mosin_muzzle_tr
@@ -1032,6 +1061,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5cf79599d7f00c10875d9212
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_tr")
 
 ///////////////////////////////////////      eft_mosin_muzzle_wt
@@ -1060,4 +1090,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5cf67a1bd7f00c06585fb6f3
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_wt")
