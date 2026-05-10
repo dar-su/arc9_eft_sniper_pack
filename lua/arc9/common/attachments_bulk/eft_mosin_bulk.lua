@@ -13,7 +13,6 @@ ATT.Description = [[A sawn-off 200mm barrel for the Mosin rifle.]]
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 -- ATT.RecoilMult = 0.96
 -- ATT.VisualRecoilMult = 0.96
 ATT.SpreadOverride = 6.19 * ARC9.MOAToAcc
@@ -43,7 +42,6 @@ ATT.Description = [[A sawn-off 200mm barrel for the Mosin rifle.]]
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.SpreadOverride = 6.53 * ARC9.MOAToAcc
@@ -89,7 +87,6 @@ ATT.Description = [[A regular 514mm barrel for the Mosin carbine.]]
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -8
-ATT.CustomCons = { Ergonomics = "-8" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 ATT.SpreadOverride = 2.41 * ARC9.MOAToAcc
@@ -140,7 +137,6 @@ ATT.Description = [[A regular 730mm barrel for the Mosin rifle.]]
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -13
-ATT.CustomCons = { Ergonomics = "-13" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.SpreadOverride = 1.31 * ARC9.MOAToAcc
@@ -248,7 +244,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mosin_pgrip_rhik.mdl"
 ATT.RHIK = true
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -268,7 +263,6 @@ ATT.Icon = Material("entities/eft_mosin_attachments/butt.png", "mips smooth")
 ATT.Description = [[A rubberized recoil pad for the Mosin rifle. Produced by AIM Sports.]]
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 
@@ -299,7 +293,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mosin_side"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
@@ -329,7 +322,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_kochetov"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
@@ -363,7 +355,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_pu"
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 
 ATT.FoldSights = true
 
@@ -412,7 +403,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_kochetov"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
@@ -446,7 +436,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_mosin_aim_sports_tri_rail.
 ATT.Category = {"eft_mosin_220rs", "eft_mosin_730rs"}
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Attachments = {
     {
@@ -494,7 +483,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_mosin_aim_sports_mng.mdl"
 ATT.Category = {"eft_mosin_730rs"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
@@ -538,7 +526,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mosin_stock"}
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 ATT.RecoilMult = 0.73
 ATT.VisualRecoilMult = 0.73
 
@@ -580,7 +567,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mosin_stock"}
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.71
 ATT.VisualRecoilMult = 0.71
 
@@ -622,7 +608,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mosin_stock"}
 
 ATT.EFTErgoAdd = 16
-ATT.CustomPros = { Ergonomics = "+16" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 
@@ -657,7 +642,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mosin_stock"}
 
 ATT.EFTErgoAdd = 16
-ATT.CustomPros = { Ergonomics = "+16" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 
@@ -690,7 +674,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mosin_stock"}
 
 ATT.EFTErgoAdd = 11
-ATT.CustomPros = { Ergonomics = "+11" }
 ATT.RecoilMult = 0.73
 ATT.VisualRecoilMult = 0.73
 
@@ -732,7 +715,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mosin_stock"}
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.71
 ATT.VisualRecoilMult = 0.71
 
@@ -774,7 +756,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mosin_stock"}
 
 ATT.EFTErgoAdd = 22
-ATT.CustomPros = { Ergonomics = "+22" }
 ATT.RecoilMult = 0.66
 ATT.VisualRecoilMult = 0.66
 
@@ -814,7 +795,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mosin_stock"}
 
 ATT.EFTErgoAdd = 40
-ATT.CustomPros = { Ergonomics = "+40" }
 ATT.RecoilMult = 0.62
 ATT.VisualRecoilMult = 0.62
 ATT.SpreadMult = 0.97
@@ -845,7 +825,6 @@ ATT.Icon = Material("entities/eft_mosin_attachments/5.png", "mips smooth")
 ATT.Description = [[A standard 7.62x54R 5-round magazine designed for the Mosin rifle. The magazine is installed into the rifle internally and cannot be ejected on the spot, so it's not recommended to take multiple of them into a raid.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.ExcludeElements = {"eft_mosin_stock_opfor"}
@@ -875,7 +854,6 @@ ATT.Description = [[A detachable 10-round magazine for the Archangel Mosin Rifle
 ATT.RequireElements = {"eft_mosin_stock_opfor"}
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.MalfunctionMeanShotsToFailMult = 0.96
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_mosin_promag_opfor.mdl"
@@ -916,7 +894,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_mosin_bramit.mdl"
 ATT.ModelOffset = Vector(0.95, 0, 0)
 
 ATT.EFTErgoAdd = -20
-ATT.CustomCons = { Ergonomics = "-20" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.SpreadMult = 1.03
@@ -947,7 +924,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_mosin_tpp_clamp_on_muzzle
 ATT.ModelOffset = Vector(0.55, 0, 0)
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.77
 ATT.VisualRecoilMult = 0.77
 
@@ -994,7 +970,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_mosin_witt_machine_custom
 ATT.ModelOffset = Vector(0.43, 0, 0)
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.71
 ATT.VisualRecoilMult = 0.71
 

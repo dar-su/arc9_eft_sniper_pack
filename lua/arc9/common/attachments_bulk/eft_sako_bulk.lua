@@ -11,7 +11,6 @@ ATT.Icon = Material("entities/eft_sako_attachments/sako_trg_m10_338_lm_8round_ma
 ATT.Description = [[An 8-round .338 Lapua Magnum magazine for the TRG M10 sniper rifle, manufactured by Sako.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -39,7 +38,6 @@ ATT.Description = [[A 20 inch (508mm) .338 Lapua Magnum barrel for the TRG M10 s
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -11
-ATT.CustomCons = { Ergonomics = "-11" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.PhysBulletMuzzleVelocityMult = 1.04
@@ -74,7 +72,6 @@ ATT.HasBarrel = true
 ATT.MuzzleEffectQCA = 5
 
 ATT.EFTErgoAdd = -18
-ATT.CustomCons = { Ergonomics = "-18" }
 ATT.RecoilMult = 0.93
 ATT.VisualRecoilMult = 0.93
 ATT.PhysBulletMuzzleVelocityMult = 1.056
@@ -109,7 +106,6 @@ ATT.HasBarrel = true
 ATT.MuzzleEffectQCA = 6
 
 ATT.EFTErgoAdd = -23
-ATT.CustomCons = { Ergonomics = "-23" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.08
@@ -177,7 +173,6 @@ ATT.Description = [[A .338 Lapua Magnum bolt assembly for the Sako TRG M10 snipe
 ATT.HasBolt = true 
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -202,7 +197,6 @@ ATT.Description = [[Standard chassis with a folding stock for the TRG M10 sniper
 ATT.HasChassis = true 
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 
@@ -234,7 +228,6 @@ ATT.Icon = Material("entities/eft_sako_attachments/sako_trg_m10_rear_hook.png", 
 ATT.Description = [[A rail cover for the TRG M10 sniper rifle buttstock. Manufactured by Sako.]]
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -256,7 +249,6 @@ ATT.Icon = Material("entities/eft_sako_attachments/sako_trg_m10_grip_pad.png", "
 ATT.Description = [[A standard-issue padded grip for the TRG M10 sniper rifle, manufactured by Sako. Comes with a hex and torx key set for quick access. ]]
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -279,7 +271,6 @@ ATT.Description = [[A standard .338 Lapua Magnum receiver for the TRG M10 sniper
 ATT.HasReceiver = true 
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -367,7 +358,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 -- ATT.RecoilMult = 0.98
 -- ATT.VisualRecoilMult = 0.98
 
@@ -437,7 +427,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
@@ -507,7 +496,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 

@@ -16,7 +16,6 @@ This attachment was found in EFT files, it's does not exist in actual game yet.]
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -11
-ATT.CustomCons = { Ergonomics = "-11" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.PhysBulletMuzzleVelocityMult = 1.104
@@ -57,7 +56,6 @@ This attachment was found in EFT files, it's does not exist in actual game yet.]
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -13
-ATT.CustomCons = { Ergonomics = "-13" }
 ATT.RecoilMult = 0.93
 ATT.VisualRecoilMult = 0.93
 ATT.PhysBulletMuzzleVelocityMult = 1.11
@@ -97,7 +95,6 @@ This attachment was found in EFT files, it's does not exist in actual game yet.]
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -14
-ATT.CustomCons = { Ergonomics = "-14" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.PhysBulletMuzzleVelocityMult = 1.126
@@ -134,7 +131,6 @@ ATT.Description = [[A 28 inch (686mm) barrel for the AI AXMC chambered in .338 L
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -18
-ATT.CustomCons = { Ergonomics = "-18" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 1.056
@@ -216,7 +212,6 @@ ATT.VisualRecoilMult = 0.8
 ATT.MalfunctionMeanShotsToFailMult = 1.2
 ATT.SpreadMult = 1.1
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 local path = "weapons/darsu_eft/m700/"
 
@@ -296,7 +291,6 @@ ATT.Description = [[The factory fitted .338 Lapua Magnum chassis for the AXMC sn
 ATT.HasChassis = true 
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -356,7 +350,6 @@ ATT.Description = [[A pistol grip for the AXMC sniper rifle, manufactured by Acc
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -399,7 +392,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Category = {"eft_axmc_pg"}
 
@@ -447,7 +439,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -502,7 +493,6 @@ ATT.Description = [[A 10-round AXMC sniper rifle magazine by Accuracy Internatio
 This attachment was found in EFT files, it's does not exist in actual game yet.]]
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -561,7 +551,6 @@ ATT.Description = [[The Magwell for the AXMC sniper rifle, manufactured by Accur
 This attachment was found in EFT files, it's does not exist in actual game yet.]]
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -584,7 +573,6 @@ ATT.Icon = Material("entities/eft_axmc_attachments/pad.png", "mips smooth")
 ATT.Description = [[A standard-issue padded grip for the AXMC sniper rifle, manufactured by Accuracy International.]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -747,7 +735,6 @@ ATT.Icon = Material("entities/eft_axmc_attachments/stock.png", "mips smooth")
 ATT.Description = [[The AX buttstock for the AXMC sniper rifle, manufactured by Accuracy International.]]
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.73
 ATT.VisualRecoilMult = 0.73
 
@@ -811,7 +798,6 @@ ATT.Description = [[An upper receiver for the AXMC sniper rifle manufactured by 
 ATT.HasReceiver = true 
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 

@@ -14,7 +14,6 @@ ATT.Description = [[A standard factory-produced 600mm barrel with a front sight 
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -13
-ATT.CustomCons = { Ergonomics = "-13" }
 
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
@@ -68,7 +67,6 @@ ATT.Description = [[A standard factory-produced 600mm barrel with a front sight 
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -13
-ATT.CustomCons = { Ergonomics = "-13" }
 
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/762x51.mdl"
 ATT.ShellSounds = ARC9EFT.Shells556
@@ -125,7 +123,6 @@ ATT.Description = [[A standard factory-produced 600mm barrel with a front sight 
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -13
-ATT.CustomCons = { Ergonomics = "-13" }
 
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/762x39.mdl"
 ATT.ShellSounds = ARC9EFT.Shells556
@@ -183,7 +180,6 @@ ATT.Description = [[A polymer handguard for MP-18 hunting rifles. Manufactured b
 ATT.HasHandguard = true 
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -208,7 +204,6 @@ ATT.Description = [[A wooden handguard for MP-18 hunting rifles. Manufactured by
 ATT.HasHandguard = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -264,7 +259,6 @@ ATT.Description = [[A polymer stock for MP-18 hunting rifles. Manufactured by Iz
 ATT.HasStock = true 
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 
 ATT.RecoilMult = 0.69
 ATT.VisualRecoilMult = 0.69
@@ -292,7 +286,6 @@ ATT.Description = [[A wooden stock for MP-18 hunting rifles. Manufactured by Izh
 ATT.HasStock = true 
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.RecoilMult = 0.69
 ATT.VisualRecoilMult = 0.69

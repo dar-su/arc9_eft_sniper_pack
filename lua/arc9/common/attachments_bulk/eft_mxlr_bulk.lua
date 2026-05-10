@@ -14,7 +14,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_barrel"}
 
 ATT.EFTErgoAdd = -14
-ATT.CustomCons = { Ergonomics = "-14" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.PhysBulletMuzzleVelocityMult = 0.972
@@ -105,7 +104,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_trig"}
 
 ATT.EFTErgoAdd = 1.5
-ATT.CustomPros = { Ergonomics = "+1.5" }
 
 ATT.HasTrigger = true
 
@@ -126,7 +124,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_trig"}
 
 ATT.EFTErgoAdd = 1.5
-ATT.CustomPros = { Ergonomics = "+1.5" }
 
 ATT.HasTrigger = true
 
@@ -147,7 +144,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_trig"}
 
 ATT.EFTErgoAdd = 1.5
-ATT.CustomPros = { Ergonomics = "+1.5" }
 
 ATT.HasTrigger = true
 
@@ -196,7 +192,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hammer_ext"}
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 -- EFT ID: 67c5414ed0538d12ec036c0c
 ARC9.LoadAttachment(ATT, "eft_mxlr_hammer_ext_spur")
@@ -215,7 +210,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hammer_ext"}
 
 ATT.EFTErgoAdd = 1.5
-ATT.CustomPros = { Ergonomics = "+1.5" }
 
 -- EFT ID: 67c5414226265106dd06979c
 ARC9.LoadAttachment(ATT, "eft_mxlr_hammer_ext_black")
@@ -235,7 +229,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hammer_ext"}
 
 ATT.EFTErgoAdd = 1.5
-ATT.CustomPros = { Ergonomics = "+1.5" }
 
 -- EFT ID: 67ff1eaf8e8db1dcb80ccad8
 ARC9.LoadAttachment(ATT, "eft_mxlr_hammer_ext_gold")
@@ -254,7 +247,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_loop"}
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasBolt = true
 
@@ -275,7 +267,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_loop"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HasBolt = true
 
@@ -296,7 +287,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_stock"}
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.RecoilMult = 0.76
 ATT.VisualRecoilMult = 0.76
 
@@ -319,7 +309,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_stock"}
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.82
 ATT.VisualRecoilMult = 0.82
 
@@ -342,7 +331,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_stock"}
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.82
 ATT.VisualRecoilMult = 0.82
 
@@ -365,7 +353,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_stock"}
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.82
 ATT.VisualRecoilMult = 0.82
 
@@ -388,7 +375,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_stock"}
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.74
 ATT.VisualRecoilMult = 0.74
 
@@ -411,7 +397,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_stock"}
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.74
 ATT.VisualRecoilMult = 0.74
 
@@ -434,7 +419,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_rail"}
 
 ATT.EFTErgoAdd = -0.5
-ATT.CustomCons = { Ergonomics = "-0.5" }
 
 ATT.Attachments = {
     {
@@ -505,7 +489,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_rs"}
 
 ATT.EFTErgoAdd = -0.1
-ATT.CustomCons = { Ergonomics = "-0.1" }
 
 ATT.ExcludeElements = {"eft_mxlr_rail_xs"}
 
@@ -542,7 +525,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_fs"}
 
 ATT.EFTErgoAdd = -0.1
-ATT.CustomCons = { Ergonomics = "-0.1" }
 
 ATT.ExcludeElements = {"eft_mxlr_rs_xs"}
 
@@ -582,7 +564,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -615,7 +596,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.975
 ATT.VisualRecoilMult = 0.975
 
@@ -671,7 +651,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.975
 ATT.VisualRecoilMult = 0.975
 
@@ -727,7 +706,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.975
 ATT.VisualRecoilMult = 0.975
 
@@ -783,7 +761,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 
@@ -839,7 +816,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 
@@ -895,7 +871,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
@@ -958,7 +933,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
@@ -1021,7 +995,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
@@ -1084,7 +1057,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_costa_rail"}
 
 ATT.EFTErgoAdd = -0.5
-ATT.CustomCons = { Ergonomics = "-0.5" }
 
 ATT.Attachments = {
     {

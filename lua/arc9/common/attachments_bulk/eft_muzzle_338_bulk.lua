@@ -14,7 +14,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ai_thread_protector_86x70
 
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.MalfunctionMeanShotsToFailMult = 1.02
 
 ATT.SortOrder = 0
@@ -41,7 +40,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.86
 ATT.VisualRecoilMult = 0.86
 ATT.SpreadMult = 0.99
@@ -73,7 +71,6 @@ ATT.Icon = Material("entities/eft_axmc_attachments/tmb338.png", "mips smooth")
 ATT.Description = [[A muzzle brake manufactured by Accuracy International for .338 LM (8.6x70). Reduces recoil and counters the muzzle rise.]]
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.89
 ATT.VisualRecoilMult = 0.89
 ATT.SpreadMult = 0.99
@@ -117,7 +114,6 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 5
 
 ATT.EFTErgoAdd = -30
-ATT.CustomCons = { Ergonomics = "-30" }
 ATT.RecoilMult = 0.85
 ATT.VisualRecoilMult = 0.85
 ATT.SpreadMult = 1.04
@@ -150,7 +146,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.SpreadMult = 0.99
@@ -181,7 +176,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_borelock_thread_protector
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
 ATT.EFTErgoAdd = 1.5
-ATT.CustomPros = { Ergonomics = "+1.5" }
 ATT.MalfunctionMeanShotsToFailMult = 1.02
 
 ATT.SortOrder = 0
@@ -210,7 +204,6 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 5
 
 ATT.EFTErgoAdd = -17
-ATT.CustomCons = { Ergonomics = "-17" }
 ATT.RecoilMult = 0.93
 ATT.VisualRecoilMult = 0.93
 -- ATT.SpreadMult = 1.04
@@ -239,7 +232,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_trg_sako_m10_muzzle_brake
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 -- ATT.SpreadMult = 0.99
@@ -264,7 +256,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_trg_sako_m10_thread_prote
 -- ATT.ModelAngleOffset = Angle(0, -90, 0)
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.MalfunctionMeanShotsToFailMult = 1.02
 
 ATT.SortOrder = 0
@@ -288,7 +279,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_trg_coretac_corebrake_muz
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.SpreadMult = 0.99
@@ -319,7 +309,6 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 5
 
 ATT.EFTErgoAdd = -30
-ATT.CustomCons = { Ergonomics = "-30" }
 ATT.RecoilMult = 0.89
 ATT.VisualRecoilMult = 0.89
 -- ATT.SpreadMult = 1.04
@@ -354,7 +343,6 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 5
 
 ATT.EFTErgoAdd = -23
-ATT.CustomCons = { Ergonomics = "-23" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 -- ATT.SpreadMult = 1.04

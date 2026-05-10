@@ -47,7 +47,6 @@ ATT.Description = [[The OV-SV98 chassis for the SV-98 sniper rifle, manufactured
 ATT.HasChassis = true
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 
@@ -104,7 +103,6 @@ ATT.HasChassis = true
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.8
 ATT.VisualRecoilMult = 0.8
 
@@ -149,7 +147,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -202,7 +199,6 @@ ATT.Icon = Material("entities/eft_sv98_attachments/10.png", "mips smooth")
 ATT.Description = [[A standard Izhmash-produced polymer magazine for the SV-98 7.62x54R sniper rifle.]]
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -233,7 +229,6 @@ ATT.Description = [[A universal rear stock by CNC Guns for the OV-SV98 kit.]]
 ATT.RecoilMult = 0.8
 ATT.VisualRecoilMult = 0.8
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -254,7 +249,6 @@ ATT.Icon = Material("entities/eft_sv98_attachments/heat.png", "mips smooth")
 ATT.Description = [[An anti-heat ribbon for the SV-98 sniper rifle. Applied to the barrel. Prevents hot air from rising directly from the barrel and creating optical distortions in the line of fire.]]
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.HeatCapacityMult = 1.2
 
 ATT.SortOrder = 0
@@ -298,7 +292,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Bipod = true 
 ATT.RecoilMultBipod = 0.33
@@ -327,7 +320,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -22
-ATT.CustomCons = { Ergonomics = "-22" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 ATT.HeatCapacityMult = 1.14
@@ -364,7 +356,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 
@@ -385,7 +376,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.87
 ATT.VisualRecoilMult = 0.87
 
@@ -406,7 +396,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Category = {"eft_muzzle_sv98"}
 
@@ -435,7 +424,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.HeatCapacityMult = 1.02
 
 ATT.Category = {"eft_muzzle_sv98_sil_cover"}
@@ -476,7 +464,6 @@ ATT.Category = {"eft_optic_kmz"}
 
 
 ATT.EFTErgoAdd = -8
-ATT.CustomCons = { Ergonomics = "-8" }
 
 ATT.FoldSights = true
 
@@ -596,7 +583,6 @@ ATT.Category = {"eft_optic_kmz"}
 
 
 ATT.EFTErgoAdd = -8
-ATT.CustomCons = { Ergonomics = "-8" }
 
 ATT.FoldSights = true
 
@@ -708,7 +694,6 @@ ATT.Description = [[Rubber eyecup for KMZ 1P59 scope.]]
 ATT.Model = "models/weapons/arc9_eft_shared/atts/optic/kmz_eyecup.mdl"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 
 ATT.Category = {"eft_kmz_eyecap"}

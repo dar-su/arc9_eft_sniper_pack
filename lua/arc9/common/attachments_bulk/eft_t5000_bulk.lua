@@ -10,7 +10,6 @@ ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_762x51_660mm_ba
 ATT.Description = "A 660mm long match-grade barrel manufactured by ORSIS for the T-5000M 7.62x51 bolt-action sniper rifle."
 
 ATT.EFTErgoAdd = -10
-ATT.CustomCons = { Ergonomics = "-10" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.82
@@ -49,7 +48,6 @@ ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_aluminium_body.
 ATT.Description = "A standard aluminum body for the T-5000M bolt-action sniper rifle, manufactured by ORSIS."
 
 ATT.EFTErgoAdd = 16
-ATT.CustomPros = { Ergonomics = "+16" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -98,7 +96,6 @@ ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_handguard.png",
 ATT.Description = "A standard handguard for the T-5000M bolt-action sniper rifle, manufactured by ORSIS."
 
 ATT.EFTErgoAdd = 11
-ATT.CustomPros = { Ergonomics = "+11" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -164,7 +161,6 @@ ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_padded_handguar
 ATT.Description = "A standard-issue padded grip for the T-5000M sniper rifle, manufactured by ORSIS."
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 
@@ -188,7 +184,6 @@ ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_pistol_grip.png
 ATT.Description = "An ergonomic pistol grip for the T-5000M bolt-action sniper rifle, manufactured by ORSIS."
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.HasGrip = true
 
@@ -209,7 +204,6 @@ ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_stock.png", "mi
 ATT.Description = "A universal standard-issue stock for T-5000M sniper rifles, manufactured by ORSIS."
 
 ATT.EFTErgoAdd = 11
-ATT.CustomPros = { Ergonomics = "+11" }
 ATT.RecoilMult = 0.82
 ATT.VisualRecoilMult = 0.82
 
@@ -231,7 +225,6 @@ ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_scope_mount.png
 ATT.Description = "A universal scope mount for the T-5000M sniper rifle, manufactured by ORSIS. Allows installation of various scopes."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -316,7 +309,6 @@ ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_762x51_muzzle_b
 ATT.Description = "A standard-issue muzzle brake for the T-5000M bolt-action sniper rifle, manufactured by ORSIS."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.SpreadMult = 0.99

@@ -10,7 +10,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_20_inch_threaded_
 ATT.Description = "A 20 inches (508mm) long threaded barrel for Remington Model 700 sniper rifle chambered in 7.62x51 NATO ammo."
 
 ATT.EFTErgoAdd = -11
-ATT.CustomCons = { Ergonomics = "-11" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.85
@@ -50,7 +49,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_20_inch_stainless
 ATT.Description = "A 20 inches (508mm) long stainless steel threaded barrel for the Remington Model 700 sniper rifle chambered in 7.62x51 NATO ammo."
 
 ATT.EFTErgoAdd = -10
-ATT.CustomCons = { Ergonomics = "-10" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.85
@@ -89,7 +87,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_26_inch_barrel.pn
 ATT.Description = "A 26 inches (660mm) long barrel for the Remington Model 700 sniper rifle chambered in 7.62x51 NATO ammo."
 
 ATT.EFTErgoAdd = -14
-ATT.CustomCons = { Ergonomics = "-14" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.HeatCapacityMult = 0.82
@@ -128,7 +125,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_26_inch_stainless
 ATT.Description = "A 26 inches (660mm) long stainless steel barrel for Remington Model 700 sniper rifle chambered in 7.62x51 NATO ammo."
 
 ATT.EFTErgoAdd = -14
-ATT.CustomCons = { Ergonomics = "-14" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.HeatCapacityMult = 0.82
@@ -170,7 +166,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_hogue_overmolded_ghillie
 ATT.Description = "The Overmolded Ghillie stock for the Remington Model 700 bolt-action sniper rifle. Manufactured by Hogue."
 
 ATT.EFTErgoAdd = 14
-ATT.CustomPros = { Ergonomics = "+14" }
 ATT.RecoilMult = 0.79
 ATT.VisualRecoilMult = 0.79
 ATT.HeatCapacityMult = 1.021
@@ -206,7 +201,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_ab_arms_modx_gen_3_chass
 ATT.Description = "The AB Arms MOD*X GEN III Modular Rifle System is a lightweight, ergonomic, drop-in chassis designed for the Remington Model 700 bolt-action sniper rifle."
 
 ATT.EFTErgoAdd = 13
-ATT.CustomPros = { Ergonomics = "+13" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 
@@ -260,7 +254,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_ai_at_aics_polymer_chass
 ATT.Description = "The AT AICS polymer chassis for the Remington M700 sniper rifle. Manufactured by Accuracy International."
 
 ATT.EFTErgoAdd = 38
-ATT.CustomPros = { Ergonomics = "+38" }
 ATT.RecoilMult = 0.76
 ATT.VisualRecoilMult = 0.76
 ATT.SpreadMult = 0.94
@@ -301,7 +294,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_promag_archangel_chassis
 ATT.Description = "The Archangel ergonomic polymer chassis for the Remington M700 sniper rifle. Manufactured by ProMag."
 
 ATT.EFTErgoAdd = 28
-ATT.CustomPros = { Ergonomics = "+28" }
 ATT.RecoilMult = 0.75
 ATT.VisualRecoilMult = 0.75
 ATT.SpreadMult = 0.97
@@ -329,7 +321,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_magpul_pro_700_chassis.p
 ATT.Description = "Pro 700 is a lightweight ergonomic chassis designed for the Remington M700 sniper rifle. Manufactured by Magpul."
 
 ATT.EFTErgoAdd = 22
-ATT.CustomPros = { Ergonomics = "+22" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.957
@@ -413,7 +404,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_magpul_pro_700_chassis_i
 ATT.Description = "A universal mount rail by Magpul for installation of additional tactical devices, can be installed on the Pro 700 chasiss for the Remington M700 sniper rifle."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -447,7 +437,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_ab_arms_modx_gen_3_keymo
 ATT.Description = "The AB Arms MOD*X GEN 3 KeyMod handguard for M700 sniper rifles equipped with a KeyMod interface for installation of additional devices and accessories."
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.965
@@ -519,7 +508,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_ab_arms_modx_buffer_tube
 ATT.Description = "A foldable adapter for installation of telescopic stock buffer tubes on the Remington M700 MOD*X kit by AB Arms."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -548,7 +536,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_magpul_pro_700_folding_s
 ATT.Description = "A folding stock for the Pro 700 chasiss for the Remington M700 sniper rifle, manufactured by Magpul."
 
 ATT.EFTErgoAdd = 20
-ATT.CustomPros = { Ergonomics = "+20" }
 ATT.RecoilMult = 0.82
 ATT.VisualRecoilMult = 0.82
 
@@ -569,7 +556,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_magpul_pro_700_pistol_gr
 ATT.Description = "A polymer pistol grip for installation on the Pro 700 chassis for the Remington M700 sniper rifle. Manufactured by Magpul."   
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.HasGrip = true
 
@@ -655,7 +641,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_badger_ordnance_scope_ra
 ATT.Description = "A universal rail for mounting various sights on the Remington Model 700. Manufactured by Badger Ordnance."
 
 ATT.EFTErgoAdd = 0.5
-ATT.CustomPros = { Ergonomics = "+0.5" }
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -689,7 +674,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_30mm_integral_ring_scope
 ATT.Description = "A universal 30mm scope base mount for installation on Remington Model 700 rifles."
 
 ATT.EFTErgoAdd = -1.5
-ATT.CustomCons = { Ergonomics = "-1.5" }
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -720,7 +704,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_thread_protection_cap.pn
 ATT.Description = "A threading protection cap for the Remington M700 7.62x51 sniper rifle barrels."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = -2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -745,7 +728,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_thread_protection_cap_st
 ATT.Description = "A stainless steel threading protection cap for the Remington M700 7.62x51 barrels."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = -2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -771,7 +753,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_wyatts_outdoor_5r
 ATT.Description = "A Remington M700 sniper rifle 5-round magazine by Wyatts Outdoor, for 7.62x51 cartridges."
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_wyatt5.mdl"
@@ -803,7 +784,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_wyatts_outdoor_10
 ATT.Description = "A Remington M700 sniper rifle 10-round magazine by Wyatts Outdoor, for 7.62x51 cartridges."
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_wyatt10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_wyatt10.mdl"
@@ -834,7 +814,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_ai_aics_5round_ma
 ATT.Description = "A 5-round Remington M700 sniper rifle magazine by Accuracy International, for 7.62x51 cartridges."
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_aics5.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_aics5.mdl"
@@ -865,7 +844,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_ai_aics_10round_m
 ATT.Description = "A 10-round Remington M700 sniper rifle magazine by Accuracy International, for 7.62x51 cartridges."
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_aics10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_aics10.mdl"
@@ -926,7 +904,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_magpul_pmag_ac_5r
 ATT.Description = "A Remington M700 sniper rifle 5-round polymer magazine by Magpul. It accepts 7.62x51 cartridges."
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_pmag5.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_pmag5.mdl"
@@ -957,7 +934,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_magpul_pmag_ac_10
 ATT.Description = "A Remington M700 sniper rifle polymer magazine by Magpul, with a 10-round capacity for 7.62x51 cartridges."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_pmag10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_pmag10.mdl"
@@ -1016,7 +992,6 @@ ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_promag_aa70_20rou
 ATT.Description = "A Remington M700 sniper rifle magazine by ProMag, for the Archangel M700 stock. It accepts 7.62x51 cartridges and has a 20-round capacity."
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_pro20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_pro20.mdl"

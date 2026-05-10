@@ -19,7 +19,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_25mm"
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 
 
 ATT.FoldSights = true
@@ -81,7 +80,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_34mm"
 
 ATT.EFTErgoAdd = -8
-ATT.CustomCons = { Ergonomics = "-8" }
 
 ATT.FoldSights = true
 
@@ -181,7 +179,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_34mm"
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 
 ATT.FoldSights = true
 
@@ -282,7 +279,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_34mm"
 
 ATT.EFTErgoAdd = -8
-ATT.CustomCons = { Ergonomics = "-8" }
 
 ATT.FoldSights = true
 
@@ -384,7 +380,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_35mm"
 
 ATT.EFTErgoAdd = -10
-ATT.CustomCons = { Ergonomics = "-10" }
 
 ATT.FoldSights = true
 
@@ -489,7 +484,6 @@ ATT.Category = "eft_shakhin_scope"
 
 
 ATT.EFTErgoAdd = -20
-ATT.CustomCons = { Ergonomics = "-20" }
 
 ATT.FoldSights = true
 -- local Reticle0 = Material("vgui/arc9_eft_shared/reticles/scope_base_armasight_zeus_pro_640_2_16x50_30hz_LOD0_mark_00.png", "")
@@ -604,7 +598,6 @@ ATT.Description = [[A rubber eyecup for the Shakhin thermal scope. Manufactured 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_shakhin_eyecup.mdl"
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Category = {"eft_shakhin_cup"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
