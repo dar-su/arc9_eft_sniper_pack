@@ -13,9 +13,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_barrel"}
 
-ATT.EFTErgoAdd = -14
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
 ATT.PhysBulletMuzzleVelocityMult = 0.972
 
 ATT.HasBarrel = true
@@ -44,6 +41,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -14,
+    recoilModifier = -9,
+    weight = 1.1,
+    velocity = -2.8,
+}))
+
+
 -- EFT ID: 67c5425e26265106dd0697a7
 ARC9.LoadAttachment(ATT, "eft_mxlr_barrel_std")
 
@@ -69,6 +74,12 @@ ATT.ChamberSize = 1
 ATT.ShotgunReload = true
 ATT.ManualActionNoLastCycle = false 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.3,
+    malfunctionChance = 0.01,
+}))
+
+
 -- EFT ID: 67c5424826265106dd0697a4
 ARC9.LoadAttachment(ATT, "eft_mxlr_mag_5")
 
@@ -87,6 +98,11 @@ ATT.Category = {"eft_mxlr_trig"}
 
 ATT.HasTrigger = true
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.014,
+}))
+
+
 -- EFT ID: 67c54114d0538d12ec036c0a
 ARC9.LoadAttachment(ATT, "eft_mxlr_trig_std")
 
@@ -103,9 +119,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_trig"}
 
-ATT.EFTErgoAdd = 1.5
 
 ATT.HasTrigger = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.5,
+    weight = 0.02,
+}))
+
 
 -- EFT ID: 67c5411f26265106dd06979a
 ARC9.LoadAttachment(ATT, "eft_mxlr_trig_rpp")
@@ -123,9 +144,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_trig"}
 
-ATT.EFTErgoAdd = 1.5
 
 ATT.HasTrigger = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.5,
+    weight = 0.02,
+}))
+
 
 -- EFT ID: 67ff1e209d1f778973073376
 ARC9.LoadAttachment(ATT, "eft_mxlr_trig_rpp_black")
@@ -143,9 +169,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_trig"}
 
-ATT.EFTErgoAdd = 1.5
 
 ATT.HasTrigger = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.5,
+    weight = 0.02,
+}))
+
 
 -- EFT ID: 67ff1e2b3e43c3abb701c7c6
 ARC9.LoadAttachment(ATT, "eft_mxlr_trig_rpp_gold")
@@ -175,6 +206,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.018,
+}))
+
+
 -- EFT ID: 67c5412bb032bbdb530201ba
 ARC9.LoadAttachment(ATT, "eft_mxlr_hammer_std")
 
@@ -191,7 +227,12 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hammer_ext"}
 
-ATT.EFTErgoAdd = 1
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.05,
+}))
+
 
 -- EFT ID: 67c5414ed0538d12ec036c0c
 ARC9.LoadAttachment(ATT, "eft_mxlr_hammer_ext_spur")
@@ -209,7 +250,12 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hammer_ext"}
 
-ATT.EFTErgoAdd = 1.5
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.5,
+    weight = 0.03,
+}))
+
 
 -- EFT ID: 67c5414226265106dd06979c
 ARC9.LoadAttachment(ATT, "eft_mxlr_hammer_ext_black")
@@ -228,7 +274,12 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hammer_ext"}
 
-ATT.EFTErgoAdd = 1.5
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.5,
+    weight = 0.03,
+}))
+
 
 -- EFT ID: 67ff1eaf8e8db1dcb80ccad8
 ARC9.LoadAttachment(ATT, "eft_mxlr_hammer_ext_gold")
@@ -246,9 +297,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_loop"}
 
-ATT.EFTErgoAdd = 3
 
 ATT.HasBolt = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.064,
+}))
+
 
 -- EFT ID: 67c54183b032bbdb530201bc
 ARC9.LoadAttachment(ATT, "eft_mxlr_loop_std")
@@ -266,9 +322,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_loop"}
 
-ATT.EFTErgoAdd = 5
 
 ATT.HasBolt = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.064,
+}))
+
 
 -- EFT ID: 67c5418f26265106dd06979e
 ARC9.LoadAttachment(ATT, "eft_mxlr_loop_rpp")
@@ -286,11 +347,15 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_stock"}
 
-ATT.EFTErgoAdd = 1
-ATT.RecoilMult = 0.76
-ATT.VisualRecoilMult = 0.76
 
 ATT.HasGrip = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    recoilModifier = -24,
+    weight = 0.5,
+}))
+
 
 -- EFT ID: 67c541ba5b84f7f36c03e555
 ARC9.LoadAttachment(ATT, "eft_mxlr_stock_std")
@@ -308,11 +373,15 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_stock"}
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.82
-ATT.VisualRecoilMult = 0.82
 
 ATT.HasGrip = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -18,
+    weight = 0.595,
+}))
+
 
 -- EFT ID: 67c541ca26265106dd0697a0
 ARC9.LoadAttachment(ATT, "eft_mxlr_stock_rpp")
@@ -330,11 +399,15 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_stock"}
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.82
-ATT.VisualRecoilMult = 0.82
 
 ATT.HasGrip = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -18,
+    weight = 0.595,
+}))
+
 
 -- EFT ID: 67ff1f9f32abb9a4280b5178
 ARC9.LoadAttachment(ATT, "eft_mxlr_stock_rpp_fde")
@@ -352,11 +425,15 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_stock"}
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.82
-ATT.VisualRecoilMult = 0.82
 
 ATT.HasGrip = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -18,
+    weight = 0.595,
+}))
+
 
 -- EFT ID: 67ff1fa88e8db1dcb80ccada
 ARC9.LoadAttachment(ATT, "eft_mxlr_stock_rpp_green")
@@ -374,11 +451,15 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_stock"}
 
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.74
-ATT.VisualRecoilMult = 0.74
 
 ATT.HasGrip = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -26,
+    weight = 0.5,
+}))
+
 
 -- EFT ID: 67c541d45b84f7f36c03e557
 ARC9.LoadAttachment(ATT, "eft_mxlr_stock_magpul")
@@ -396,11 +477,15 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_stock"}
 
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.74
-ATT.VisualRecoilMult = 0.74
 
 ATT.HasGrip = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -26,
+    weight = 0.5,
+}))
+
 
 -- EFT ID: 67ff2c16c593c7b94a095e56
 ARC9.LoadAttachment(ATT, "eft_mxlr_stock_magpul_fde")
@@ -418,7 +503,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_rail"}
 
-ATT.EFTErgoAdd = -0.5
 
 ATT.Attachments = {
     {
@@ -429,6 +513,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.09,
+}))
+
 
 -- EFT ID: 67c541fcb032bbdb530201be
 ARC9.LoadAttachment(ATT, "eft_mxlr_rail_rhino")
@@ -446,7 +536,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_rail"}
 
-ATT.EFTErgoAdd = -0.5
 
 ATT.Attachments = {
     {
@@ -471,6 +560,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.163,
+}))
+
+
 -- EFT ID: 67c54210d0538d12ec036c0e
 ARC9.LoadAttachment(ATT, "eft_mxlr_rail_xs")
 
@@ -488,9 +583,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_rs"}
 
-ATT.EFTErgoAdd = -0.1
 
 ATT.ExcludeElements = {"eft_mxlr_rail_xs"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.1,
+    weight = 0.002,
+}))
+
 
 -- EFT ID: 67c5428ab032bbdb530201c4
 ARC9.LoadAttachment(ATT, "eft_mxlr_rs_std")
@@ -508,6 +608,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_rs_xs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.002,
+}))
+
+
 -- EFT ID: 67c5422726265106dd0697a2
 ARC9.LoadAttachment(ATT, "eft_mxlr_rs_xs")
 
@@ -524,9 +629,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_fs"}
 
-ATT.EFTErgoAdd = -0.1
 
 ATT.ExcludeElements = {"eft_mxlr_rs_xs"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.1,
+    weight = 0.007,
+}))
+
 
 -- EFT ID: 67c54270b032bbdb530201c2
 ARC9.LoadAttachment(ATT, "eft_mxlr_fs_std")
@@ -546,6 +656,11 @@ ATT.Category = {"eft_mxlr_fs"}
 
 ATT.ExcludeElements = {"eft_mxlr_rs_std"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
+
 -- EFT ID: 67c5427eac40c364490664f6
 ARC9.LoadAttachment(ATT, "eft_mxlr_fs_xs")
 
@@ -563,9 +678,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.HasHandguard = true
 
@@ -578,6 +690,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.22,
+}))
+
 
 -- EFT ID: 67c542c126265106dd0697ab
 ARC9.LoadAttachment(ATT, "eft_mxlr_hg_std")
@@ -595,9 +713,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.975
-ATT.VisualRecoilMult = 0.975
 
 ATT.HasHandguard = true
 
@@ -633,6 +748,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.213,
+}))
+
 
 -- EFT ID: 67c5429fac40c364490664f8
 ARC9.LoadAttachment(ATT, "eft_mxlr_hg_rpp")
@@ -650,9 +771,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.975
-ATT.VisualRecoilMult = 0.975
 
 ATT.HasHandguard = true
 
@@ -688,6 +806,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.213,
+}))
+
 
 -- EFT ID: 67ff24b9079850d544096ea6
 ARC9.LoadAttachment(ATT, "eft_mxlr_hg_rpp_fde")
@@ -705,9 +829,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.975
-ATT.VisualRecoilMult = 0.975
 
 ATT.HasHandguard = true
 
@@ -744,6 +865,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.213,
+}))
+
+
 -- EFT ID: 67ff24c0abb53266190dfc66
 ARC9.LoadAttachment(ATT, "eft_mxlr_hg_rpp_green")
 
@@ -760,9 +887,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.985
-ATT.VisualRecoilMult = 0.985
 
 ATT.HasHandguard = true
 
@@ -798,6 +922,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    weight = 0.22,
+}))
+
 
 -- EFT ID: 67c542aeb032bbdb530201c6
 ARC9.LoadAttachment(ATT, "eft_mxlr_hg_magpul")
@@ -815,9 +945,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.985
-ATT.VisualRecoilMult = 0.985
 
 ATT.HasHandguard = true
 
@@ -854,6 +981,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    weight = 0.22,
+}))
+
+
 -- EFT ID: 67ff26a2abb53266190dfc6c
 ARC9.LoadAttachment(ATT, "eft_mxlr_hg_magpul_fde")
 
@@ -870,9 +1003,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 
 ATT.HasHandguard = true
 
@@ -915,6 +1045,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(-1.5, 0, -0.75),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.23,
+}))
+
 
 -- EFT ID: 67c542baac40c36449066500
 ARC9.LoadAttachment(ATT, "eft_mxlr_hg_costa")
@@ -932,9 +1068,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 
 ATT.HasHandguard = true
 
@@ -977,6 +1110,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(-1.5, 0, -0.75),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.23,
+}))
+
 
 -- EFT ID: 67ff2792ea587611b0080956
 ARC9.LoadAttachment(ATT, "eft_mxlr_hg_costa_fde")
@@ -994,9 +1133,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_hg"}
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 
 ATT.HasHandguard = true
 
@@ -1040,6 +1176,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.23,
+}))
+
+
 -- EFT ID: 67ff279dea587611b008095d
 ARC9.LoadAttachment(ATT, "eft_mxlr_hg_costa_green")
 
@@ -1056,7 +1198,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mxlr_costa_rail"}
 
-ATT.EFTErgoAdd = -0.5
 
 ATT.Attachments = {
     {
@@ -1067,13 +1208,16 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.065,
+}))
+
+
 -- EFT ID: 67c542ecac40c36449066508
 ARC9.LoadAttachment(ATT, "eft_mxlr_hg_costa_rail")
 
 
-
-local dmgrange = (GetConVar("arc9_eft_mindmgrange"):GetInt() or 1000)/1000
-local mult54 = GetConVar("arc9_eft_mult_bigrifle"):GetFloat() or 0.5
 
 ///////////////////////////////////////      eft_ammo_308me_me
 
@@ -1089,24 +1233,30 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasAmmoooooooo = true 
 -- ATT.ActivateElements = {"308me"}
 
-ATT.SpreadMult = 0.98
-ATT.RecoilMult = 1.03
-ATT.VisualRecoilMult = 1.03
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_308me_me.printname") or ".308 ME"
 
-ATT.DamageMax = 80 * mult54
-ATT.DamageMin = 80 * mult54 * 0.27
-ATT.PhysBulletMuzzleVelocity = 838 /0.0254
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      42 *2.54/100/0.0254
-ATT.PenetrationDelta = 78/100
-ATT.ArmorPiercing =    78/100
-ATT.RicochetChance =   34/100
 
 ATT.Category = {"eft_ammo_308me"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.024,
+    damage = 80,
+    ballisticCoeficient = 0.346,
+    initialSpeed = 838,
+    accuracyModifier = -0.02,
+    recoilModifier = 0.03,
+    penetrationPower = 42,
+    armorDamage = 78,
+    penetrationChance = 0.75,
+    ricochetChance = 0.3,
+    heatFactor = 1.1,
+    failureToFeedChance = 0.0935,
+    misfireChance = 0.1834,
+    lightBleedModifier = 0.35,
+    heavyBleedModifier = 0.17,
+}), "bigrifle")
+
 
 -- EFT ID: 67c540c3d0538d12ec036c08
 ARC9.LoadAttachment(ATT, "eft_ammo_308me_me")
@@ -1126,24 +1276,30 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasAmmoooooooo = true 
 -- ATT.ActivateElements = {"308me"}
 
-ATT.SpreadMult = 0.98
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 1.03
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_308me_lokt.printname") or ".308 ME LOKT"
 
-ATT.DamageMax = 96 * mult54
-ATT.DamageMin = 96 * mult54 * 0.27
-ATT.PhysBulletMuzzleVelocity = 838 /0.0254
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      24 *2.54/100/0.0254
-ATT.PenetrationDelta = 55/100
-ATT.ArmorPiercing =    55/100
-ATT.RicochetChance =   34/100
 
 ATT.Category = {"eft_ammo_308me"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.024,
+    damage = 96,
+    ballisticCoeficient = 0.346,
+    initialSpeed = 838,
+    accuracyModifier = -0.02,
+    recoilModifier = -0.03,
+    penetrationPower = 24,
+    armorDamage = 55,
+    penetrationChance = 0.4,
+    ricochetChance = 0.2,
+    heatFactor = 1.05,
+    failureToFeedChance = 0.09,
+    misfireChance = 0.1834,
+    lightBleedModifier = 0.45,
+    heavyBleedModifier = 0.22,
+}), "bigrifle")
+
 
 -- EFT ID: 67c540cfb032bbdb530201b8
 ARC9.LoadAttachment(ATT, "eft_ammo_308me_lokt")

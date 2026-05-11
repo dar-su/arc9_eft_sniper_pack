@@ -9,9 +9,6 @@ ATT.CompactName = "M700 20\""
 ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_20_inch_threaded_barrel.png", "mips smooth")
 ATT.Description = "A 20 inches (508mm) long threaded barrel for Remington Model 700 sniper rifle chambered in 7.62x51 NATO ammo."
 
-ATT.EFTErgoAdd = -11
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.85
 ATT.PhysBulletMuzzleVelocityMult = 1.104
 
@@ -36,6 +33,15 @@ ATT.Attachments = {
 
 -- ATT.MuzzleEffectQCA = 5
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -34,
+    recoilModifier = -15.2,
+    accuracyModifier = 10,
+    weight = 1.2,
+    velocity = 10,
+}))
+
+
 -- EFT ID: 5bfebc320db8340019668d79
 ARC9.LoadAttachment(ATT, "eft_m700_barrel_20")
 
@@ -48,9 +54,6 @@ ATT.CompactName = "M700 20\" steel"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_20_inch_stainless_steel_threaded_barrel.png", "mips smooth")
 ATT.Description = "A 20 inches (508mm) long stainless steel threaded barrel for the Remington Model 700 sniper rifle chambered in 7.62x51 NATO ammo."
 
-ATT.EFTErgoAdd = -10
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.85
 ATT.PhysBulletMuzzleVelocityMult = 1.088
 
@@ -75,6 +78,15 @@ ATT.Attachments = {
 
 -- ATT.MuzzleEffectQCA = 5
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -33,
+    recoilModifier = -15.2,
+    accuracyModifier = 10,
+    weight = 1.2,
+    velocity = 8,
+}))
+
+
 -- EFT ID: 5d2703038abbc3105103d94c
 ARC9.LoadAttachment(ATT, "eft_m700_barrel_20s")
 ///////////////////////////////////////      eft_m700_barrel_26
@@ -86,9 +98,6 @@ ATT.CompactName = "M700 26\""
 ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_26_inch_barrel.png", "mips smooth")
 ATT.Description = "A 26 inches (660mm) long barrel for the Remington Model 700 sniper rifle chambered in 7.62x51 NATO ammo."
 
-ATT.EFTErgoAdd = -14
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
 ATT.HeatCapacityMult = 0.82
 ATT.PhysBulletMuzzleVelocityMult = 1.126
 
@@ -113,6 +122,15 @@ ATT.Category = {"eft_m700_barrel"}
 
 ATT.MuzzleEffectQCA = 5
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -40,
+    recoilModifier = -19.8,
+    accuracyModifier = 5,
+    weight = 1.45,
+    velocity = 12,
+}))
+
+
 -- EFT ID: 5bfebc250db834001a6694e1
 ARC9.LoadAttachment(ATT, "eft_m700_barrel_26")
 ///////////////////////////////////////      eft_m700_barrel_26s
@@ -124,9 +142,6 @@ ATT.CompactName = "M700 26\" steel"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_26_inch_stainless_steel_barrel.png", "mips smooth")
 ATT.Description = "A 26 inches (660mm) long stainless steel barrel for Remington Model 700 sniper rifle chambered in 7.62x51 NATO ammo."
 
-ATT.EFTErgoAdd = -14
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
 ATT.HeatCapacityMult = 0.82
 ATT.PhysBulletMuzzleVelocityMult = 1.115
 
@@ -151,6 +166,15 @@ ATT.Category = {"eft_m700_barrel"}
 
 ATT.MuzzleEffectQCA = 5
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -40,
+    recoilModifier = -19.8,
+    accuracyModifier = 5,
+    weight = 1.45,
+    velocity = 11,
+}))
+
+
 -- EFT ID: 5d2702e88abbc31ed91efc44
 ARC9.LoadAttachment(ATT, "eft_m700_barrel_26s")
 
@@ -165,9 +189,6 @@ ATT.CompactName = "Overmolded Ghillie"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_hogue_overmolded_ghillie_stock.png", "mips smooth")
 ATT.Description = "The Overmolded Ghillie stock for the Remington Model 700 bolt-action sniper rifle. Manufactured by Hogue."
 
-ATT.EFTErgoAdd = 14
-ATT.RecoilMult = 0.79
-ATT.VisualRecoilMult = 0.79
 ATT.HeatCapacityMult = 1.021
 
 ATT.HasGrip = true
@@ -188,6 +209,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    recoilModifier = -21,
+    weight = 1.8,
+}))
+
+
 -- EFT ID: 5bfeb32b0db834001a6694d9
 ARC9.LoadAttachment(ATT, "eft_m700_stock_hogue")
 
@@ -200,9 +228,6 @@ ATT.CompactName = "MOD*X GEN 3"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_ab_arms_modx_gen_3_chassis.png", "mips smooth")
 ATT.Description = "The AB Arms MOD*X GEN III Modular Rifle System is a lightweight, ergonomic, drop-in chassis designed for the Remington Model 700 bolt-action sniper rifle."
 
-ATT.EFTErgoAdd = 13
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
 
 -- ATT.HasGrip = true
 
@@ -241,6 +266,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    recoilModifier = -6,
+    weight = 0.9,
+}))
+
+
 -- EFT ID: 5cde739cd7f00c0010373bd3
 ARC9.LoadAttachment(ATT, "eft_m700_stock_gen3")
 
@@ -253,10 +285,6 @@ ATT.CompactName = "AT AICS"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_ai_at_aics_polymer_chassis.png", "mips smooth")
 ATT.Description = "The AT AICS polymer chassis for the Remington M700 sniper rifle. Manufactured by Accuracy International."
 
-ATT.EFTErgoAdd = 38
-ATT.RecoilMult = 0.76
-ATT.VisualRecoilMult = 0.76
-ATT.SpreadMult = 0.94
 ATT.HeatCapacityMult = 0.97
 
 ATT.HasGrip = true
@@ -282,6 +310,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 38,
+    recoilModifier = -24,
+    accuracyModifier = 6,
+    weight = 0.64,
+}))
+
+
 -- EFT ID: 5d25d0ac8abbc3054f3e61f7
 ARC9.LoadAttachment(ATT, "eft_m700_stock_aics")
 ///////////////////////////////////////      eft_m700_stock_archangel
@@ -293,10 +329,6 @@ ATT.CompactName = "Archangel"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_promag_archangel_chassis.png", "mips smooth")
 ATT.Description = "The Archangel ergonomic polymer chassis for the Remington M700 sniper rifle. Manufactured by ProMag."
 
-ATT.EFTErgoAdd = 28
-ATT.RecoilMult = 0.75
-ATT.VisualRecoilMult = 0.75
-ATT.SpreadMult = 0.97
 ATT.HeatCapacityMult = 0.941
 
 ATT.HasGrip = true
@@ -309,6 +341,14 @@ ATT.Category = {"eft_m700_stock"}
 
 -- ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_m700_toz.mdl"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 28,
+    recoilModifier = -25,
+    accuracyModifier = 3,
+    weight = 2.2,
+}))
+
+
 -- EFT ID: 5cf13123d7f00c1085616a50
 ARC9.LoadAttachment(ATT, "eft_m700_stock_archangel")
 ///////////////////////////////////////      eft_m700_stock_pro700
@@ -320,9 +360,6 @@ ATT.CompactName = "Pro 700"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_magpul_pro_700_chassis.png", "mips smooth")
 ATT.Description = "Pro 700 is a lightweight ergonomic chassis designed for the Remington M700 sniper rifle. Manufactured by Magpul."
 
-ATT.EFTErgoAdd = 22
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.957
 
 ATT.HasHG = true
@@ -390,6 +427,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 22,
+    recoilModifier = -5,
+    weight = 1.72,
+}))
+
+
 -- EFT ID: 5cdeac22d7f00c000f26168f
 ARC9.LoadAttachment(ATT, "eft_m700_stock_pro700")
 
@@ -403,7 +447,6 @@ ATT.CompactName = "Pro 700"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_magpul_pro_700_chassis_inline_mount.png", "mips smooth")
 ATT.Description = "A universal mount rail by Magpul for installation of additional tactical devices, can be installed on the Pro 700 chasiss for the Remington M700 sniper rifle."
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -425,6 +468,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.28,
+}))
+
+
 -- EFT ID: 5cdeaca5d7f00c00b61c4b70
 ARC9.LoadAttachment(ATT, "eft_m700_mount_pro700")
 ///////////////////////////////////////      eft_m700_hg_gen3
@@ -436,9 +485,6 @@ ATT.CompactName = "MOD*X GEN 3"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_ab_arms_modx_gen_3_keymod_handguard.png", "mips smooth")
 ATT.Description = "The AB Arms MOD*X GEN 3 KeyMod handguard for M700 sniper rifles equipped with a KeyMod interface for installation of additional devices and accessories."
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.965
 
 ATT.HasHG = true
@@ -496,6 +542,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -3,
+    weight = 0.39,
+}))
+
+
 -- EFT ID: 5cde7afdd7f00c000d36b89d
 ARC9.LoadAttachment(ATT, "eft_m700_hg_gen3")
 ///////////////////////////////////////      eft_m700_buffer_adap_gen3
@@ -507,7 +560,6 @@ ATT.CompactName = "MOD*X buffer"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_ab_arms_modx_buffer_tube_side_folder_adapter.png", "mips smooth")
 ATT.Description = "A foldable adapter for installation of telescopic stock buffer tubes on the Remington M700 MOD*X kit by AB Arms."
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -524,6 +576,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 5cde77a9d7f00c000f261009
 ARC9.LoadAttachment(ATT, "eft_m700_buffer_adap_gen3")
 ///////////////////////////////////////      eft_m700_pro700_folding
@@ -535,14 +593,18 @@ ATT.CompactName = "Pro 700"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_magpul_pro_700_folding_stock.png", "mips smooth")
 ATT.Description = "A folding stock for the Pro 700 chasiss for the Remington M700 sniper rifle, manufactured by Magpul."
 
-ATT.EFTErgoAdd = 20
-ATT.RecoilMult = 0.82
-ATT.VisualRecoilMult = 0.82
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m700_pro700_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 20,
+    recoilModifier = -18,
+    weight = 0.4,
+}))
+
 
 -- EFT ID: 5cdeac42d7f00c000d36ba73
 ARC9.LoadAttachment(ATT, "eft_m700_pro700_folding")
@@ -555,7 +617,6 @@ ATT.CompactName = "Pro 700"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_magpul_pro_700_pistol_grip.png", "mips smooth")
 ATT.Description = "A polymer pistol grip for installation on the Pro 700 chassis for the Remington M700 sniper rifle. Manufactured by Magpul."   
 
-ATT.EFTErgoAdd = 6
 
 ATT.HasGrip = true
 
@@ -563,6 +624,13 @@ ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m700_pro700_pistolgrip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1,
+    weight = 0.08,
+}))
 
 
 -- EFT ID: 5cdeac5cd7f00c000f261694
@@ -598,6 +666,11 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = {"eft_m700_hg_gen3"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.09,
+}))
+
+
 -- EFT ID: 5bfebc530db834001d23eb65
 ARC9.LoadAttachment(ATT, "eft_m700_rail_ext")
 ///////////////////////////////////////      eft_m700_rail_modx
@@ -629,6 +702,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.09,
+}))
+
+
 -- EFT ID: 5cde7b43d7f00c000d36b93e
 ARC9.LoadAttachment(ATT, "eft_m700_rail_modx")
 ///////////////////////////////////////      eft_m700_rail_badger
@@ -640,7 +718,6 @@ ATT.CompactName = "M700 SR"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_badger_ordnance_scope_rail.png", "mips smooth")
 ATT.Description = "A universal rail for mounting various sights on the Remington Model 700. Manufactured by Badger Ordnance."
 
-ATT.EFTErgoAdd = 0.5
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -662,6 +739,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    weight = 0.163,
+}))
+
+
 -- EFT ID: 65f064eec4da400cbb0dc1fe
 ARC9.LoadAttachment(ATT, "eft_m700_rail_badger")
 ///////////////////////////////////////      eft_m700_rail_ring
@@ -673,7 +756,6 @@ ATT.CompactName = "M700 30mm"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_30mm_integral_ring_scope_mount.png", "mips smooth")
 ATT.Description = "A universal 30mm scope base mount for installation on Remington Model 700 rifles."
 
-ATT.EFTErgoAdd = -1.5
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -690,6 +772,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    weight = 0.246,
+}))
+
+
 -- EFT ID: 5bfebc5e0db834001a6694e5
 ARC9.LoadAttachment(ATT, "eft_m700_rail_ring")
 
@@ -703,7 +791,6 @@ ATT.CompactName = "M700 thr."
 ATT.Icon = Material("entities/eft_m700_attachments/m700_thread_protection_cap.png", "mips smooth")
 ATT.Description = "A threading protection cap for the Remington M700 7.62x51 sniper rifle barrels."
 
-ATT.EFTErgoAdd = 1
 
 ATT.SortOrder = -2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -714,6 +801,12 @@ ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
 ATT.Category = {"eft_muzzle_m700"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.01,
+}))
+
 
 -- EFT ID: 5d270b3c8abbc3105335cfb8
 ARC9.LoadAttachment(ATT, "eft_m700_muzzle_thr")
@@ -727,7 +820,6 @@ ATT.CompactName = "M700 thr. steel"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_thread_protection_cap_stainless_steel.png", "mips smooth")
 ATT.Description = "A stainless steel threading protection cap for the Remington M700 7.62x51 barrels."
 
-ATT.EFTErgoAdd = 1
 
 ATT.SortOrder = -2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -738,6 +830,12 @@ ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
 ATT.Category = {"eft_muzzle_m700"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.01,
+}))
+
 
 -- EFT ID: 5d270ca28abbc31ee25ee821
 ARC9.LoadAttachment(ATT, "eft_m700_muzzle_thrs")
@@ -752,8 +850,6 @@ ATT.CompactName = "M700 Wyatts 5"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_wyatts_outdoor_5round_magazine.png", "mips smooth")
 ATT.Description = "A Remington M700 sniper rifle 5-round magazine by Wyatts Outdoor, for 7.62x51 cartridges."
 
-ATT.EFTErgoAdd = 4
-ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_wyatt5.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_wyatt5.mdl"
@@ -772,6 +868,13 @@ ATT.ChamberSize = 1
 
 ATT.RequireElements = {"eft_m700_stock_hogue"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.5,
+    malfunctionChance = 0.05,
+}))
+
+
 -- EFT ID: 5bfea7ad0db834001c38f1ee
 ARC9.LoadAttachment(ATT, "eft_m700_mag_w5")
 ///////////////////////////////////////      eft_m700_mag_w10
@@ -783,7 +886,6 @@ ATT.CompactName = "M700 Wyatts 10"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_wyatts_outdoor_10round_magazine.png", "mips smooth")
 ATT.Description = "A Remington M700 sniper rifle 10-round magazine by Wyatts Outdoor, for 7.62x51 cartridges."
 
-ATT.EFTErgoAdd = -2
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_wyatt10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_wyatt10.mdl"
@@ -802,6 +904,13 @@ ATT.ChamberSize = 1
 
 ATT.RequireElements = {"eft_m700_stock_hogue"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    weight = 0.5,
+    malfunctionChance = 0.06,
+}))
+
+
 -- EFT ID: 5bfeaa0f0db834001b734927
 ARC9.LoadAttachment(ATT, "eft_m700_mag_w10")
 ///////////////////////////////////////      eft_m700_mag_a5
@@ -813,7 +922,6 @@ ATT.CompactName = "M700 AICS 5"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_ai_aics_5round_magazine.png", "mips smooth")
 ATT.Description = "A 5-round Remington M700 sniper rifle magazine by Accuracy International, for 7.62x51 cartridges."
 
-ATT.EFTErgoAdd = 3
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_aics5.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_aics5.mdl"
@@ -832,6 +940,13 @@ ATT.ChamberSize = 1
 
 ATT.ExcludeElements = {"eft_m700_stock_hogue", "eft_m700_stock_archangel"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.3,
+    malfunctionChance = 0.02,
+}))
+
+
 -- EFT ID: 5d25a4a98abbc30b917421a4
 ARC9.LoadAttachment(ATT, "eft_m700_mag_a5")
 ///////////////////////////////////////      eft_m700_mag_a10
@@ -843,7 +958,6 @@ ATT.CompactName = "M700 AICS 10"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_ai_aics_10round_magazine.png", "mips smooth")
 ATT.Description = "A 10-round Remington M700 sniper rifle magazine by Accuracy International, for 7.62x51 cartridges."
 
-ATT.EFTErgoAdd = -2
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_aics10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_aics10.mdl"
@@ -862,6 +976,13 @@ ATT.ChamberSize = 1
 
 ATT.ExcludeElements = {"eft_m700_stock_hogue", "eft_m700_stock_archangel"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.5,
+    malfunctionChance = 0.02,
+}))
+
+
 -- EFT ID: 5d25a6538abbc306c62e630d
 ARC9.LoadAttachment(ATT, "eft_m700_mag_a10")
 ///////////////////////////////////////      eft_m700_mag_a12
@@ -873,7 +994,6 @@ ATT.CompactName = "M700 AICS 12"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_mdt_aics_12round_magazine.png", "mips smooth")
 ATT.Description = "A 12-round Remington M700 sniper rifle magazine by Modular Driven Technologies LP., for 7.62x51 cartridges."
 
-ATT.EFTErgoAdd = -3
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_aics12.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_aics12.mdl"
@@ -892,6 +1012,13 @@ ATT.ChamberSize = 1
 
 ATT.ExcludeElements = {"eft_m700_stock_hogue", "eft_m700_stock_archangel"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.6,
+    malfunctionChance = 0.03,
+}))
+
+
 -- EFT ID: 5d25a6a48abbc306c62e6310
 ARC9.LoadAttachment(ATT, "eft_m700_mag_a12")
 ///////////////////////////////////////      eft_m700_mag_p5
@@ -903,7 +1030,6 @@ ATT.CompactName = "M700 PMAG 5"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_magpul_pmag_ac_5round_magazine.png", "mips smooth")
 ATT.Description = "A Remington M700 sniper rifle 5-round polymer magazine by Magpul. It accepts 7.62x51 cartridges."
 
-ATT.EFTErgoAdd = 4
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_pmag5.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_pmag5.mdl"
@@ -922,6 +1048,13 @@ ATT.ChamberSize = 1
 
 ATT.ExcludeElements = {"eft_m700_stock_hogue", "eft_m700_stock_archangel"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.09,
+    malfunctionChance = 0.01,
+}))
+
+
 -- EFT ID: 5ce69cbad7f00c00b61c5098
 ARC9.LoadAttachment(ATT, "eft_m700_mag_p5")
 ///////////////////////////////////////      eft_m700_mag_p10
@@ -933,7 +1066,6 @@ ATT.CompactName = "M700 PMAG 10"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_magpul_pmag_ac_10round_magazine.png", "mips smooth")
 ATT.Description = "A Remington M700 sniper rifle polymer magazine by Magpul, with a 10-round capacity for 7.62x51 cartridges."
 
-ATT.EFTErgoAdd = -1
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_pmag10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_pmag10.mdl"
@@ -951,6 +1083,13 @@ ATT.ClipSize = 10
 ATT.ChamberSize = 1
 
 ATT.ExcludeElements = {"eft_m700_stock_hogue", "eft_m700_stock_archangel"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.12,
+    malfunctionChance = 0.01,
+}))
+
 
 -- EFT ID: 5d25a7b88abbc3054f3e60bc
 ARC9.LoadAttachment(ATT, "eft_m700_mag_p10")
@@ -980,6 +1119,13 @@ ATT.ChamberSize = 1
 
 ATT.RequireElements = {"eft_m700_stock_archangel"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.5,
+    malfunctionChance = 0.03,
+}))
+
+
 -- EFT ID: 5d25af8f8abbc3055079fec5
 ARC9.LoadAttachment(ATT, "eft_m700_mag_pro10")
 ///////////////////////////////////////      eft_m700_mag_pro20
@@ -991,7 +1137,6 @@ ATT.CompactName = "M700 ProMag 20"
 ATT.Icon = Material("entities/eft_m700_attachments/m700_762x51_promag_aa70_20round_magazine.png", "mips smooth")
 ATT.Description = "A Remington M700 sniper rifle magazine by ProMag, for the Archangel M700 stock. It accepts 7.62x51 cartridges and has a 20-round capacity."
 
-ATT.EFTErgoAdd = -7
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_m700_pro20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m700_pro20.mdl"
@@ -1009,6 +1154,13 @@ ATT.ClipSize = 20
 ATT.ChamberSize = 1
 
 ATT.RequireElements = {"eft_m700_stock_archangel"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    weight = 0.5,
+    malfunctionChance = 0.05,
+}))
+
 
 -- EFT ID: 5cf12a15d7f00c05464b293f
 ARC9.LoadAttachment(ATT, "eft_m700_mag_pro20")

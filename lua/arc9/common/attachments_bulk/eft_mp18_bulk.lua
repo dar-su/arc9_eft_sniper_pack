@@ -13,10 +13,7 @@ ATT.Description = [[A standard factory-produced 600mm barrel with a front sight 
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -13
 
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -51,6 +48,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -30,
+    recoilModifier = -15,
+    weight = 1.35,
+}))
+
+
 -- EFT ID: 61f4012adfc9f01a816adda1
 ARC9.LoadAttachment(ATT, "eft_mp18_barrel_762x54r")
 
@@ -66,13 +70,9 @@ ATT.Description = [[A standard factory-produced 600mm barrel with a front sight 
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -13
 
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/762x51.mdl"
 ATT.ShellSounds = ARC9EFT.Shells556
-
-ATT.RecoilMult = 0.82
-ATT.VisualRecoilMult = 0.82
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -106,6 +106,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -30,
+    recoilModifier = -15,
+    weight = 1.35,
+}))
 
 -- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_mp18_barrel_762x51")
@@ -122,13 +127,9 @@ ATT.Description = [[A standard factory-produced 600mm barrel with a front sight 
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -13
 
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/762x39.mdl"
 ATT.ShellSounds = ARC9EFT.Shells556
-
-ATT.RecoilMult = 0.6
-ATT.VisualRecoilMult = 0.6
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -162,6 +163,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -30,
+    recoilModifier = -15,
+    weight = 1.35,
+}))
+
 
 -- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_mp18_barrel_762x39")
@@ -179,12 +186,17 @@ ATT.Description = [[A polymer handguard for MP-18 hunting rifles. Manufactured b
 
 ATT.HasHandguard = true 
 
-ATT.EFTErgoAdd = 6
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mp18_hg"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    weight = 0.13,
+}))
 
 
 -- EFT ID: 61f8024263dc1250e26eb029
@@ -203,12 +215,17 @@ ATT.Description = [[A wooden handguard for MP-18 hunting rifles. Manufactured by
 
 ATT.HasHandguard = true 
 
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mp18_hg"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.182,
+}))
 
 
 -- EFT ID: 61f7b85367ddd414173fdb36
@@ -242,6 +259,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 61f804acfcba9556ea304cb8
 ARC9.LoadAttachment(ATT, "eft_mp18_mount_std")
 
@@ -258,15 +280,19 @@ ATT.Description = [[A polymer stock for MP-18 hunting rifles. Manufactured by Iz
 
 ATT.HasStock = true 
 
-ATT.EFTErgoAdd = 7
 
-ATT.RecoilMult = 0.69
-ATT.VisualRecoilMult = 0.69
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mp18_stock"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    recoilModifier = -22,
+    weight = 0.47,
+}))
 
 
 -- EFT ID: 61f803b8ced75b2e852e35f8
@@ -285,15 +311,19 @@ ATT.Description = [[A wooden stock for MP-18 hunting rifles. Manufactured by Izh
 
 ATT.HasStock = true 
 
-ATT.EFTErgoAdd = 6
 
-ATT.RecoilMult = 0.69
-ATT.VisualRecoilMult = 0.69
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mp18_stock"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -22,
+    weight = 0.56,
+}))
 
 
 -- EFT ID: 61f7b234ea4ab34f2f59c3ec

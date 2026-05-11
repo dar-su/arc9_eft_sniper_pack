@@ -36,6 +36,9 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 1.93,
+}))
 
 -- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_barrel308_20")
@@ -75,6 +78,9 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 1.93,
+}))
 
 -- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_barrel308_24")
@@ -113,6 +119,9 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 1.93,
+}))
 
 -- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_barrel308_26")
@@ -130,9 +139,6 @@ ATT.Description = [[A 28 inch (686mm) barrel for the AI AXMC chambered in .338 L
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -18
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 1.056
 
 ATT.SortOrder = 0
@@ -148,6 +154,15 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -45,
+    recoilModifier = -17.2,
+    accuracyModifier = 10,
+    weight = 1.93,
+    velocity = 5,
+}))
 
 
 -- EFT ID: 628121434fa03b6b6c35dc6a
@@ -238,6 +253,9 @@ ATT.Attachments = {
 
 ATT.Category = {"eft_axmc_bolt"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.45,
+}))
 
 -- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_bolt308")
@@ -255,7 +273,6 @@ ATT.Description = [[A .338 Lapua Magnum bolt assembly for the Accuracy Internati
 
 ATT.HasBolt = true 
 
-ATT.EFTErgoAdd = -3
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -274,6 +291,13 @@ ATT.Attachments = {
 ATT.Category = {"eft_axmc_bolt"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -1,
+    weight = 0.45,
+}))
+
+
 -- EFT ID: 62811cd7308cb521f87a8f99
 ARC9.LoadAttachment(ATT, "eft_axmc_bolt338")
 
@@ -290,9 +314,6 @@ ATT.Description = [[The factory fitted .338 Lapua Magnum chassis for the AXMC sn
 
 ATT.HasChassis = true 
 
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -333,6 +354,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -1,
+    weight = 0.31,
+}))
+
+
 -- EFT ID: 6281204f308cb521f87a8f9b
 ARC9.LoadAttachment(ATT, "eft_axmc_chassis")
 
@@ -349,7 +377,6 @@ ATT.Description = [[A pistol grip for the AXMC sniper rifle, manufactured by Acc
 
 ATT.HasGrip = true 
 
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -374,6 +401,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.22,
+}))
+
+
 -- EFT ID: 62811e2510e26c1f344e6554
 ARC9.LoadAttachment(ATT, "eft_axmc_grip")
 
@@ -391,7 +424,6 @@ ATT.Description = [[An adapter that allows AR-type pistol grips installation on 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 
 ATT.Category = {"eft_axmc_pg"}
 
@@ -421,6 +453,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.15,
+}))
+
+
 -- EFT ID: 62811e335631d45211793c95
 ARC9.LoadAttachment(ATT, "eft_axmc_gripar")
 
@@ -438,9 +476,6 @@ ATT.Description = [[The AX 16 inch handguard for the AXMC sniper rifle manufactu
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 8
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.Category = {"eft_axmc_hgg"}
 
@@ -476,6 +511,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    weight = 0.43,
+}))
+
+
 -- EFT ID: 6281209662cba23f6c4d7a19
 ARC9.LoadAttachment(ATT, "eft_axmc_hg")
 
@@ -506,6 +547,10 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_axmc_762x51_10.m
 ATT.ActivateElements = {"mag762"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.3,
+}))
+
 -- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_mag308")
 
@@ -520,7 +565,6 @@ ATT.CompactName = "AXMC 338LM"
 ATT.Icon = Material("entities/eft_axmc_attachments/338mag.png", "mips smooth")
 ATT.Description = [[A 10-round AXMC sniper rifle magazine by Accuracy International, for .338 Lapua Magnum cartridges.]]
 
-ATT.EFTErgoAdd = -3
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -532,6 +576,13 @@ ATT.ChamberSize = 1
 ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_axmc_86x70_10.mdl"
 ATT.ActivateElements = {"magdef"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.4,
+    malfunctionChance = 0.02,
+}))
 
 
 -- EFT ID: 628120fd5631d45211793c9f
@@ -557,6 +608,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.RequireElements = {"eft_axmc_bolt308"}
 ATT.Category = {"eft_axmc_308magwell"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.1,
+}))
 
 -- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_magwell")
@@ -572,14 +626,18 @@ ATT.CompactName = "AXMC pad"
 ATT.Icon = Material("entities/eft_axmc_attachments/pad.png", "mips smooth")
 ATT.Description = [[A standard-issue padded grip for the AXMC sniper rifle, manufactured by Accuracy International.]]
 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_axmc_hg_pad"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -0.5,
+    weight = 0.09,
+}))
 
 
 -- EFT ID: 6281212a09427b40ab14e770
@@ -613,6 +671,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 628120dd308cb521f87a8fa1
@@ -650,6 +713,9 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
 
 -- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_railmid_b")
@@ -682,6 +748,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.065,
+}))
 
 
 -- EFT ID: 628120d309427b40ab14e76d
@@ -720,6 +791,10 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.065,
+}))
+
 -- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_axmc_railshort_b")
 
@@ -734,14 +809,18 @@ ATT.CompactName = "AXMC"
 ATT.Icon = Material("entities/eft_axmc_attachments/stock.png", "mips smooth")
 ATT.Description = [[The AX buttstock for the AXMC sniper rifle, manufactured by Accuracy International.]]
 
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.73
-ATT.VisualRecoilMult = 0.73
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_axmc_grip_stock"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -19,
+    weight = 0.52,
+}))
 
 
 -- EFT ID: 62811f828193841aca4a45c3
@@ -781,6 +860,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 628120c21d5df4475f46a337
 ARC9.LoadAttachment(ATT, "eft_axmc_toprail")
 
@@ -797,9 +881,6 @@ ATT.Description = [[An upper receiver for the AXMC sniper rifle manufactured by 
 
 ATT.HasReceiver = true 
 
-ATT.EFTErgoAdd = 3
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -848,6 +929,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -2,
+    weight = 0.38,
+}))
+
+
 -- EFT ID: 62811fbf09427b40ab14e767
 ARC9.LoadAttachment(ATT, "eft_axmc_upper")
 
@@ -880,6 +968,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.03,
+}))
 
 
 -- EFT ID: 671126a210d67adb5b08e925

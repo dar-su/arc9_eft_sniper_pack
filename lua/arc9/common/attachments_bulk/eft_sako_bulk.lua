@@ -10,7 +10,6 @@ ATT.CompactName = "M10 .338"
 ATT.Icon = Material("entities/eft_sako_attachments/sako_trg_m10_338_lm_8round_magazine.png", "mips smooth")
 ATT.Description = [[An 8-round .338 Lapua Magnum magazine for the TRG M10 sniper rifle, manufactured by Sako.]]
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -22,6 +21,13 @@ ATT.ChamberSize = 1
 ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_sako_86x70_8.mdl"
 ATT.ActivateElements = {"magdef"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.19,
+    malfunctionChance = 0.02,
+}))
+
 
 -- EFT ID: 673cbdfad0453ba50c0f76d6
 ARC9.LoadAttachment(ATT, "eft_sako_mag338")
@@ -37,9 +43,6 @@ ATT.Description = [[A 20 inch (508mm) .338 Lapua Magnum barrel for the TRG M10 s
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -11
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 ATT.PhysBulletMuzzleVelocityMult = 1.04
 
 ATT.SortOrder = 0
@@ -56,6 +59,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -33,
+    recoilModifier = -12.7,
+    weight = 1.87,
+    velocity = 4,
+}))
+
+
 -- EFT ID: 67405d760098dcb5940ea1a6
 ARC9.LoadAttachment(ATT, "eft_sako_barrel_20")
 
@@ -71,9 +82,6 @@ ATT.Description = [[A 23.5 inch (597mm) .338 Lapua Magnum barrel for the TRG M10
 ATT.HasBarrel = true 
 ATT.MuzzleEffectQCA = 5
 
-ATT.EFTErgoAdd = -18
-ATT.RecoilMult = 0.93
-ATT.VisualRecoilMult = 0.93
 ATT.PhysBulletMuzzleVelocityMult = 1.056
 
 ATT.SortOrder = 0
@@ -90,6 +98,15 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -39,
+    recoilModifier = -14.9,
+    accuracyModifier = 5,
+    weight = 2.03,
+    velocity = 5,
+}))
+
+
 -- EFT ID: 673cb551093e0ea7fd0b874a
 ARC9.LoadAttachment(ATT, "eft_sako_barrel_235")
 
@@ -105,9 +122,6 @@ ATT.Description = [[A 27 inch (685mm) .338 Lapua Magnum barrel for the TRG M10 s
 ATT.HasBarrel = true 
 ATT.MuzzleEffectQCA = 6
 
-ATT.EFTErgoAdd = -23
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.08
 
 ATT.SortOrder = 0
@@ -123,6 +137,15 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -44,
+    recoilModifier = -17.1,
+    accuracyModifier = 10,
+    weight = 2.33,
+    velocity = 8,
+}))
+
 
 -- EFT ID: 67405e3b83ac5c69ae025406
 ARC9.LoadAttachment(ATT, "eft_sako_barrel_27")
@@ -172,14 +195,18 @@ ATT.Description = [[A .338 Lapua Magnum bolt assembly for the Sako TRG M10 snipe
 
 ATT.HasBolt = true 
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sako_bolt"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -1,
+    weight = 0.45,
+}))
+
 
 -- EFT ID: 673cb4054ff4aa8f86076f4a
 ARC9.LoadAttachment(ATT, "eft_sako_bolt_std")
@@ -196,9 +223,6 @@ ATT.Description = [[Standard chassis with a folding stock for the TRG M10 sniper
 
 ATT.HasChassis = true 
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -215,6 +239,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -4,
+    weight = 1.267,
+}))
+
+
 -- EFT ID: 673cb212e695740be0047a46
 ARC9.LoadAttachment(ATT, "eft_sako_chassis")
 
@@ -227,14 +258,18 @@ ATT.CompactName = "M10 hook"
 ATT.Icon = Material("entities/eft_sako_attachments/sako_trg_m10_rear_hook.png", "mips smooth")
 ATT.Description = [[A rail cover for the TRG M10 sniper rifle buttstock. Manufactured by Sako.]]
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sako_hook"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -1,
+    weight = 0.15,
+}))
+
 
 -- EFT ID: 673ddbb567c759b3c90e5f76
 ARC9.LoadAttachment(ATT, "eft_sako_hook_std")
@@ -248,12 +283,17 @@ ATT.CompactName = "M10 pad"
 ATT.Icon = Material("entities/eft_sako_attachments/sako_trg_m10_grip_pad.png", "mips smooth")
 ATT.Description = [[A standard-issue padded grip for the TRG M10 sniper rifle, manufactured by Sako. Comes with a hex and torx key set for quick access. ]]
 
-ATT.EFTErgoAdd = 6
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sako_hg_pad"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    weight = 0.105,
+}))
+
 
 -- EFT ID: 673cb81f5b1511adb10cd326
 ARC9.LoadAttachment(ATT, "eft_sako_pad")
@@ -270,9 +310,6 @@ ATT.Description = [[A standard .338 Lapua Magnum receiver for the TRG M10 sniper
 
 ATT.HasReceiver = true 
 
-ATT.EFTErgoAdd = 4
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -302,6 +339,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -1,
+    weight = 0.54,
+}))
+
 
 -- EFT ID: 673cb491280680de5e02ff36
 ARC9.LoadAttachment(ATT, "eft_sako_upper")
@@ -341,6 +385,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.273,
+}))
+
+
 -- EFT ID: 673cb51e093e0ea7fd0b8746
 ARC9.LoadAttachment(ATT, "eft_sako_toprail")
 
@@ -357,10 +407,7 @@ ATT.Description = [[An 11 inch long handguard assembly for the TRG M10 sniper ri
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 14
--- ATT.RecoilMult = 0.98
--- ATT.VisualRecoilMult = 0.98
-
+-- -- 
 ATT.Category = {"eft_sako_hg"}
 
 ATT.Attachments = {
@@ -410,6 +457,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    weight = 0.64,
+}))
+
+
 -- EFT ID: 67405ef125beb509e8070276
 ARC9.LoadAttachment(ATT, "eft_sako_hg_11")
 
@@ -426,9 +479,6 @@ ATT.Description = [[A 15 inch long handguard assembly for the TRG M10 sniper rif
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 
 ATT.Category = {"eft_sako_hg"}
 
@@ -479,6 +529,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.78,
+}))
+
+
 -- EFT ID: 673cb5d1280680de5e02ff3b
 ARC9.LoadAttachment(ATT, "eft_sako_hg_15")
 
@@ -495,9 +551,6 @@ ATT.Description = [[A 15 inch long handguard assembly for the TRG M10 sniper rif
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 12
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.Category = {"eft_sako_hg"}
 
@@ -549,6 +602,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.72,
+}))
+
+
 -- EFT ID: 67405fd0812f476fb2020066
 ARC9.LoadAttachment(ATT, "eft_sako_hg_15mlok")
 
@@ -582,6 +641,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 673dd617912f68467c0615b6
 ARC9.LoadAttachment(ATT, "eft_sako_railmid")
 
@@ -612,6 +676,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
 
 
 -- EFT ID: 673dd5f73f92dc7e120d20a9

@@ -12,10 +12,7 @@ ATT.Description = [[A sawn-off 200mm barrel for the Mosin rifle.]]
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -2
--- ATT.RecoilMult = 0.96
--- ATT.VisualRecoilMult = 0.96
-ATT.SpreadOverride = 6.19 * ARC9.MOAToAcc
+-- -- ATT.SpreadOverride = 6.19 * ARC9.MOAToAcc
 
 ATT.MuzzleEffectQCA = 7
 ATT.BarrelLengthAdd = -17
@@ -26,6 +23,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.ExcludeElements = {"eft_mosin_stock_ati", "eft_mosin_stock_carbine", "eft_mosin_stock_inf", "eft_mosin_stock_sniper_carbine", "eft_mosin_stock_std", "eft_mosin_stock_opfor"}
 
 ATT.Category = {"eft_mosin_barrel"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -5,
+    weight = 0.7,
+    velocity = -54,
+}))
+
 
 -- EFT ID: 5bfd4cc90db834001d23e846
 ARC9.LoadAttachment(ATT, "eft_mosin_barrel_200")
@@ -41,9 +45,6 @@ ATT.Description = [[A sawn-off 200mm barrel for the Mosin rifle.]]
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.SpreadOverride = 6.53 * ARC9.MOAToAcc
 
 ATT.MuzzleEffectQCA = 6
@@ -72,6 +73,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -5.5,
+    weight = 0.9,
+    velocity = -49,
+}))
+
+
 -- EFT ID: 5bfd4cd60db834001c38f095
 ARC9.LoadAttachment(ATT, "eft_mosin_barrel_220")
 
@@ -86,9 +95,6 @@ ATT.Description = [[A regular 514mm barrel for the Mosin carbine.]]
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -8
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
 ATT.SpreadOverride = 2.41 * ARC9.MOAToAcc
 
 ATT.MuzzleEffectQCA = 5
@@ -122,6 +128,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -17,
+    recoilModifier = -12.9,
+    weight = 1.5,
+    velocity = -19,
+}))
+
+
 -- EFT ID: 5bfd4cbe0db834001b73449f
 ARC9.LoadAttachment(ATT, "eft_mosin_barrel_514")
 
@@ -136,9 +150,6 @@ ATT.Description = [[A regular 730mm barrel for the Mosin rifle.]]
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -13
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
 ATT.SpreadOverride = 1.31 * ARC9.MOAToAcc
 
 -- ATT.MuzzleEffectQCA = 1
@@ -174,6 +185,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -35,
+    recoilModifier = -18.3,
+    accuracyModifier = 5,
+    weight = 1.7,
+}))
+
+
 -- EFT ID: 5ae09bff5acfc4001562219d
 ARC9.LoadAttachment(ATT, "eft_mosin_barrel_730")
 
@@ -194,6 +213,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_fs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.08,
+}))
+
+
 -- EFT ID: 5ae099875acfc4001714e593
 ARC9.LoadAttachment(ATT, "eft_mosin_std_fs")
 
@@ -210,6 +234,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_730rs"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.15,
+}))
+
 
 -- EFT ID: 5ae099925acfc4001a5fc7b3
 ARC9.LoadAttachment(ATT, "eft_mosin_std_rs")
@@ -228,6 +257,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_220rs", "eft_mosin_514rs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.15,
+}))
+
+
 -- EFT ID: 5bfd4c980db834001b73449d
 ARC9.LoadAttachment(ATT, "eft_mosin_carb_rs")
 
@@ -243,12 +277,17 @@ ATT.Description = [[A polymer pistol grip for the Mosin rifle, manufactured by T
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mosin_pgrip_rhik.mdl"
 ATT.RHIK = true
 
-ATT.EFTErgoAdd = 8
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_pgrip"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.16,
+}))
+
 
 -- EFT ID: 5bbde41ed4351e003562b038
 ARC9.LoadAttachment(ATT, "eft_mosin_pgrip_tacfire")
@@ -262,14 +301,18 @@ ATT.CompactName = "Mosin RPad"
 ATT.Icon = Material("entities/eft_mosin_attachments/butt.png", "mips smooth")
 ATT.Description = [[A rubberized recoil pad for the Mosin rifle. Produced by AIM Sports.]]
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_butt"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -2,
+    weight = 0.2,
+}))
+
 
 -- EFT ID: 5bbde409d4351e003562b036
 ARC9.LoadAttachment(ATT, "eft_mosin_butt_aim")
@@ -292,7 +335,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_side"}
 
-ATT.EFTErgoAdd = -1
 
 ATT.Attachments = {
     {
@@ -303,6 +345,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.02,
+}))
+
 
 -- EFT ID: 5b3f7bf05acfc433000ecf6b
 ARC9.LoadAttachment(ATT, "eft_mosin_mount_kochetov")
@@ -321,7 +369,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_kochetov"}
 
-ATT.EFTErgoAdd = -1
 
 ATT.Attachments = {
     {
@@ -333,6 +380,12 @@ ATT.Attachments = {
 }
 
 ATT.ExcludeElements = {"eft_mosin_mount_trirail" }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.02,
+}))
+
 
 -- EFT ID: 5b3f7c005acfc4704b4a1de8
 ARC9.LoadAttachment(ATT, "eft_mosin_mount_rings")
@@ -354,7 +407,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_base_progress_pu_35x.mdl"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_pu"
 
-ATT.EFTErgoAdd = -5
 
 ATT.FoldSights = true
 
@@ -384,6 +436,12 @@ ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 400/1080
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    weight = 0.4,
+}))
+
+
 -- EFT ID: 5b3f7c1c5acfc40dc5296b1d
 ARC9.LoadAttachment(ATT, "eft_mosin_scope_pu")
 
@@ -402,7 +460,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_kochetov"}
 
-ATT.EFTErgoAdd = -1
 
 ATT.Attachments = {
     {
@@ -416,6 +473,12 @@ ATT.Attachments = {
 }
 
 ATT.ExcludeElements = {"eft_mosin_mount_trirail", "eft_mosin_mount_mng" }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.2,
+}))
+
 
 -- EFT ID: 5d024f5cd7ad1a04a067e91a
 ARC9.LoadAttachment(ATT, "eft_mosin_mount_patriot")
@@ -435,7 +498,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_mosin_aim_sports_tri_rail.mdl"
 ATT.Category = {"eft_mosin_220rs", "eft_mosin_730rs"}
 
-ATT.EFTErgoAdd = -2
 
 ATT.Attachments = {
     {
@@ -464,6 +526,12 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = {"eft_mosin_mount_patriot", "eft_mosin_mount_rings" }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.18,
+}))
+
+
 -- EFT ID: 5bbdb811d4351e45020113c7
 ARC9.LoadAttachment(ATT, "eft_mosin_mount_trirail")
 
@@ -482,7 +550,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_mosin_aim_sports_mng.mdl"
 ATT.Category = {"eft_mosin_730rs"}
 
-ATT.EFTErgoAdd = -1
 
 ATT.Attachments = {
     {
@@ -496,6 +563,12 @@ ATT.Attachments = {
 }
 
 ATT.ExcludeElements = {"eft_mosin_mount_patriot" }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.074,
+}))
+
 
 -- EFT ID: 5bc5a372d4351e44f824d17f
 ARC9.LoadAttachment(ATT, "eft_mosin_mount_mng")
@@ -525,9 +598,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_stock"}
 
-ATT.EFTErgoAdd = 14
-ATT.RecoilMult = 0.73
-ATT.VisualRecoilMult = 0.73
 
 ATT.Attachments = {
     {
@@ -546,6 +616,13 @@ ATT.Attachments = {
 }
 
 ATT.ExcludeElements = {"eft_mosin_barrel_730", "eft_mosin_barrel_200", "eft_mosin_barrel_220", "eft_mosin_mount_kochetov" }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    recoilModifier = -19,
+    weight = 1.6,
+}))
+
 
 -- EFT ID: 5bfd384c0db834001a6691d3
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_carbine")
@@ -566,9 +643,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_stock"}
 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.71
-ATT.VisualRecoilMult = 0.71
 
 ATT.Attachments = {
     {
@@ -587,6 +661,13 @@ ATT.Attachments = {
 }
 
 ATT.ExcludeElements = { "eft_mosin_barrel_200", "eft_mosin_barrel_220", "eft_mosin_barrel_514", "eft_mosin_mount_kochetov"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 9,
+    recoilModifier = -20,
+    weight = 1.8,
+}))
+
 
 -- EFT ID: 5bfd35380db83400232fe5cc
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_inf")
@@ -607,9 +688,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_stock"}
 
-ATT.EFTErgoAdd = 16
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 
 ATT.Attachments = {
     {
@@ -621,6 +699,13 @@ ATT.Attachments = {
 }
 
 ATT.ExcludeElements = { "eft_mosin_mount_kochetov"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    recoilModifier = -3,
+    weight = 0.8,
+}))
+
 
 -- EFT ID: 5bfd36ad0db834001c38ef66
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_sawnoff")
@@ -641,9 +726,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_stock"}
 
-ATT.EFTErgoAdd = 16
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 
 ATT.Attachments = {
     {
@@ -653,6 +735,13 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    recoilModifier = -3,
+    weight = 0.85,
+}))
+
 
 -- EFT ID: 5bfd36290db834001966869a
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_sawnoff_sniper")
@@ -673,9 +762,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_stock"}
 
-ATT.EFTErgoAdd = 11
-ATT.RecoilMult = 0.73
-ATT.VisualRecoilMult = 0.73
 
 ATT.Attachments = {
     {
@@ -694,6 +780,13 @@ ATT.Attachments = {
 }
 
 ATT.ExcludeElements = {"eft_mosin_barrel_730", "eft_mosin_barrel_200", "eft_mosin_barrel_220"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 11,
+    recoilModifier = -19,
+    weight = 1.55,
+}))
+
 
 -- EFT ID: 5bfd37c80db834001d23e842
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_sniper_carbine")
@@ -714,9 +807,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_stock"}
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.71
-ATT.VisualRecoilMult = 0.71
 
 ATT.Attachments = {
     {
@@ -735,6 +825,13 @@ ATT.Attachments = {
 }
 
 ATT.ExcludeElements = { "eft_mosin_barrel_200", "eft_mosin_barrel_220", "eft_mosin_barrel_514" }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -20,
+    weight = 1.75,
+}))
+
 
 -- EFT ID: 5ae096d95acfc400185c2c81
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_std")
@@ -755,9 +852,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_stock"}
 
-ATT.EFTErgoAdd = 22
-ATT.RecoilMult = 0.66
-ATT.VisualRecoilMult = 0.66
 
 ATT.ExcludeElements = { "eft_mosin_barrel_200", "eft_mosin_barrel_220"} -- , "eft_mosin_mount_kochetov" ???
 
@@ -770,6 +864,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 22,
+    recoilModifier = -24,
+    weight = 1.2,
+}))
+
 
 -- EFT ID: 5bbdb870d4351e00367fb67d
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_ati")
@@ -794,12 +895,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mosin_stock"}
 
-ATT.EFTErgoAdd = 40
-ATT.RecoilMult = 0.62
-ATT.VisualRecoilMult = 0.62
-ATT.SpreadMult = 0.97
 
 ATT.ExcludeElements = { "eft_mosin_barrel_200", "eft_mosin_barrel_220"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 40,
+    recoilModifier = -27,
+    accuracyModifier = 3,
+    weight = 2,
+}))
+
 
 -- EFT ID: 5bae13bad4351e00320204af
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_opfor")
@@ -824,8 +929,6 @@ ATT.CompactName = "Mosin"
 ATT.Icon = Material("entities/eft_mosin_attachments/5.png", "mips smooth")
 ATT.Description = [[A standard 7.62x54R 5-round magazine designed for the Mosin rifle. The magazine is installed into the rifle internally and cannot be ejected on the spot, so it's not recommended to take multiple of them into a raid.]]
 
-ATT.EFTErgoAdd = -1
-ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.ExcludeElements = {"eft_mosin_stock_opfor"}
 
@@ -838,6 +941,13 @@ ATT.HasMag = true
 
 ATT.ClipSize = 5
 ATT.ChamberSize = 1
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.4,
+    malfunctionChance = 0.03,
+}))
+
 
 -- EFT ID: 5ae0973a5acfc4001562206c
 ARC9.LoadAttachment(ATT, "eft_mosin_mag_5")
@@ -853,8 +963,6 @@ ATT.Description = [[A detachable 10-round magazine for the Archangel Mosin Rifle
 
 ATT.RequireElements = {"eft_mosin_stock_opfor"}
 
-ATT.EFTErgoAdd = -4
-ATT.MalfunctionMeanShotsToFailMult = 0.96
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_mosin_promag_opfor.mdl"
 ATT.DropMagazineAmount = 1
@@ -870,6 +978,13 @@ ATT.ShotgunReload = false
 
 ATT.ClipSize = 10
 ATT.ChamberSize = 1
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.227,
+    malfunctionChance = 0.04,
+}))
+
 
 -- EFT ID: 5bae13ded4351e44f824bf38
 ARC9.LoadAttachment(ATT, "eft_mosin_mag_10")
@@ -893,10 +1008,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_mosin_bramit.mdl"
 ATT.ModelOffset = Vector(0.95, 0, 0)
 
-ATT.EFTErgoAdd = -20
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
-ATT.SpreadMult = 1.03
 ATT.HeatCapacityMult = 1.14
 ATT.PhysBulletMuzzleVelocityMult = 1.0175
 
@@ -905,6 +1016,15 @@ ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 
 ATT.Category = {"eft_muzzle_mosin"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -20,
+    recoilModifier = -7,
+    accuracyModifier = -5,
+    weight = 1.1,
+    velocity = 0.3,
+}))
+
 
 -- EFT ID: 5b86a0e586f7745b600ccb23
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_bramit")
@@ -923,11 +1043,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_mosin_tpp_clamp_on_muzzle_brake.mdl"
 ATT.ModelOffset = Vector(0.55, 0, 0)
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.77
-ATT.VisualRecoilMult = 0.77
 
 ATT.Category = {"eft_muzzle_mosin"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -16,
+    accuracyModifier = 3,
+    weight = 0.19,
+}))
+
 
 -- EFT ID: 5bc5a351d4351e003477a414
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_tpp")
@@ -946,11 +1071,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_mosin_tacfire_tanker_style.mdl"
 ATT.ModelOffset = Vector(0.52, 0, 0)
 
-ATT.EFTErgoAdd = -3
-ATT.RecoilMult = 0.87
-ATT.VisualRecoilMult = 0.87
 
 ATT.Category = {"eft_muzzle_mosin"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -9,
+    accuracyModifier = 2,
+    weight = 0.25,
+}))
+
 
 -- EFT ID: 5bbdb83fd4351e44f824c44b
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_tanker")
@@ -969,11 +1099,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_mosin_witt_machine_custom_clamp_on_muzzle_brake.mdl"
 ATT.ModelOffset = Vector(0.43, 0, 0)
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.71
-ATT.VisualRecoilMult = 0.71
 
 ATT.Category = {"eft_muzzle_mosin"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -20,
+    accuracyModifier = -1,
+    weight = 0.17,
+}))
+
 
 -- EFT ID: 5bc5a35cd4351e450201232f
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_wm")
@@ -1004,6 +1139,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.09,
+}))
+
+
 -- EFT ID: 5cf79389d7f00c10941a0c4d
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_kiba")
 
@@ -1021,8 +1161,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_mosin_tiger_rock_muzzle_brake_adapter_multi.mdl"
 ATT.ModelOffset = Vector(0.547, 0, 0)
 
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.Category = {"eft_muzzle_mosin"}
 
@@ -1035,6 +1173,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -1,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 5cf79599d7f00c10875d9212
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_tr")
@@ -1064,6 +1208,11 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.06,
+}))
+
 
 -- EFT ID: 5cf67a1bd7f00c06585fb6f3
 ARC9.LoadAttachment(ATT, "eft_mosin_muzzle_wt")

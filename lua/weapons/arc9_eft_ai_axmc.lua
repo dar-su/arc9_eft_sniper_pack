@@ -57,6 +57,7 @@ SWEP.Spread = 0.378 * ARC9.MOAToAcc
 SWEP.RPM = 450
 
 SWEP.EFTErgo = 21
+SWEP.EFTWeight = 0.55
 SWEP.BarrelLength = 50
 SWEP.Ammo = "357"
 SWEP.Firemodes = { { Mode = 1, PrintName = ARC9:GetPhrase("eft_fmode_bolt") }, { Mode = 1, PrintName = ARC9:GetPhrase("eft_fmode_manualreload"), ShotgunReload = true, ShouldDropMagEmpty = false },  }

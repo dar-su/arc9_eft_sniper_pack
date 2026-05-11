@@ -13,13 +13,17 @@ ATT.Description = [[A threading protection cap for the AXMC barrel. Manufactured
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ai_thread_protector_86x70.mdl"
 
 
-ATT.EFTErgoAdd = 1
-ATT.MalfunctionMeanShotsToFailMult = 1.02
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tmb338lm"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.01,
+}))
 
 
 -- EFT ID: 628120621d5df4475f46a335
@@ -39,10 +43,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_all_awc_psr_muzzle_brake.
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.86
-ATT.VisualRecoilMult = 0.86
-ATT.SpreadMult = 0.99
 
 ATT.Category = {"eft_muzzle_338"}
 ATT.Attachments = {
@@ -55,6 +55,14 @@ ATT.Attachments = {
     },
 }
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -10,
+    accuracyModifier = 1,
+    weight = 0.177,
+}))
 
 
 -- EFT ID: 612e0d81290d254f5e6b291a
@@ -70,10 +78,6 @@ ATT.CompactName = "TMB 338LM"
 ATT.Icon = Material("entities/eft_axmc_attachments/tmb338.png", "mips smooth")
 ATT.Description = [[A muzzle brake manufactured by Accuracy International for .338 LM (8.6x70). Reduces recoil and counters the muzzle rise.]]
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.89
-ATT.VisualRecoilMult = 0.89
-ATT.SpreadMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -89,6 +93,14 @@ ATT.Attachments = {
     },
 }
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -8,
+    accuracyModifier = 1,
+    weight = 0.23,
+}))
 
 
 -- EFT ID: 62812081d23f207deb0ab216
@@ -113,18 +125,21 @@ ATT.BarrelLengthAdd = 5
 ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 5
 
-ATT.EFTErgoAdd = -30
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.SpreadMult = 1.04
 ATT.PhysBulletMuzzleVelocityMult = 1.075
-ATT.MalfunctionMeanShotsToFailMult = 0.75
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_ai_tactical_sound_moderator.mdl"
 ATT.Category = {"eft_tmb338lm"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -25,
+    recoilModifier = -11,
+    weight = 0.665,
+    velocity = 0.9,
+}))
 
 
 -- EFT ID: 62811fa609427b40ab14e765
@@ -145,10 +160,6 @@ ATT.ModelAngleOffset = Angle(0, -90, 0)
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
-ATT.SpreadMult = 0.99
 
 ATT.Category = {"eft_muzzle_338"}
 ATT.Attachments = {
@@ -160,6 +171,14 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -5,
+    accuracyModifier = 1,
+    weight = 0.192,
+}))
+
 
 -- EFT ID: 673f3ef1259f5945d70e43a8
 ARC9.LoadAttachment(ATT, "eft_muzzle_borelock338")
@@ -175,13 +194,17 @@ ATT.Description = [[A threading protection cap for Ase Utra BoreLock muzzle brak
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_borelock_thread_protector_86x70.mdl"
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 
-ATT.EFTErgoAdd = 1.5
-ATT.MalfunctionMeanShotsToFailMult = 1.02
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_338borelock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.5,
+    weight = 0.092,
+}))
+
 
 -- EFT ID: 673f3f2f40aeca974e0b5c66
 ARC9.LoadAttachment(ATT, "eft_muzzle_borelock338_cap")
@@ -203,18 +226,21 @@ ATT.BarrelLengthAdd = 4
 ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 5
 
-ATT.EFTErgoAdd = -17
-ATT.RecoilMult = 0.93
-ATT.VisualRecoilMult = 0.93
--- ATT.SpreadMult = 1.04
-ATT.PhysBulletMuzzleVelocityMult = 1.006
-ATT.MalfunctionMeanShotsToFailMult = 0.75
+-- ATT.PhysBulletMuzzleVelocityMult = 1.006
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_borelock_aseutra_sl7i_bl_86x70.mdl"
 -- ATT.ModelAngleOffset = Angle(0, -90, 0)
 ATT.Category = {"eft_338borelock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -13,
+    recoilModifier = -7,
+    weight = 0.64,
+    velocity = 0.6,
+}))
+
 
 -- EFT ID: 673f0a38259f5945d70e43a6
 ARC9.LoadAttachment(ATT, "eft_muzzle_borelock338_sup")
@@ -231,15 +257,18 @@ ATT.Description = [[A TRG .338 LM sniper rifle muzzle brake, manufactured by Sak
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_trg_sako_m10_muzzle_brake.mdl"
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
--- ATT.SpreadMult = 0.99
-
+-- 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_muzzle_sako"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -8,
+    weight = 0.281,
+}))
+
 
 -- EFT ID: 673f4046259f5945d70e43ab
 ARC9.LoadAttachment(ATT, "eft_muzzle_trg_std")
@@ -255,13 +284,17 @@ ATT.Description = [[A threading protection cap for the Sako TRG .338 LM rifle ba
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_trg_sako_m10_thread_protector.mdl"
 -- ATT.ModelAngleOffset = Angle(0, -90, 0)
 
-ATT.EFTErgoAdd = 1
-ATT.MalfunctionMeanShotsToFailMult = 1.02
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_muzzle_sako"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.01,
+}))
+
 
 -- EFT ID: 673f3f5eef7545280c00f026
 ARC9.LoadAttachment(ATT, "eft_muzzle_trg_cap")
@@ -278,15 +311,19 @@ ATT.Description = [[A .338 LM muzzle brake for the TRG sniper rifle. Manufacture
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_trg_coretac_corebrake_muzzle_brake_86x70.mdl"
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
-ATT.SpreadMult = 0.99
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_muzzle_sako"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -6,
+    accuracyModifier = 1,
+    weight = 0.295,
+}))
+
 
 -- EFT ID: 673f3f9840aeca974e0b5c68
 ARC9.LoadAttachment(ATT, "eft_muzzle_trg_coretac")
@@ -308,12 +345,7 @@ ATT.BarrelLengthAdd = 6
 ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 5
 
-ATT.EFTErgoAdd = -30
-ATT.RecoilMult = 0.89
-ATT.VisualRecoilMult = 0.89
--- ATT.SpreadMult = 1.04
-ATT.PhysBulletMuzzleVelocityMult = 1.009
-ATT.MalfunctionMeanShotsToFailMult = 0.8
+-- ATT.PhysBulletMuzzleVelocityMult = 1.009
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -321,6 +353,14 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_trg_pgm_sako_86x70.mdl"
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 -- ATT.Category = {"eft_muzzle_sako"}
 ATT.Category = {"eft_muzzle_338"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -8,
+    weight = 0.665,
+    velocity = 0.9,
+}))
+
 
 -- EFT ID: 673f0a9370a3ddcf0d0ee0b8
 ARC9.LoadAttachment(ATT, "eft_muzzle_trg_pgm")
@@ -342,12 +382,7 @@ ATT.BarrelLengthAdd = 5
 ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 5
 
-ATT.EFTErgoAdd = -23
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
--- ATT.SpreadMult = 1.04
-ATT.PhysBulletMuzzleVelocityMult = 1.008
-ATT.MalfunctionMeanShotsToFailMult = 0.82
+-- ATT.PhysBulletMuzzleVelocityMult = 1.008
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -355,6 +390,14 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_hekate_dt_338.mdl"
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 -- ATT.Category = {"eft_muzzle_sako"}
 ATT.Category = {"eft_muzzle_338"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -17,
+    recoilModifier = -9,
+    weight = 0.507,
+    velocity = 0.8,
+}))
+
 
 -- EFT ID: 673f0b36536d64240f01acd6
 ARC9.LoadAttachment(ATT, "eft_muzzle_trg_cgs")

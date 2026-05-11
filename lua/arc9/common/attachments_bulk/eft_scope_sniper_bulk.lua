@@ -18,7 +18,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_vomz_pilad.mdl"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_25mm"
 
-ATT.EFTErgoAdd = -4
 
 
 ATT.FoldSights = true
@@ -57,6 +56,12 @@ ATT.RTScopeNew_ShadowScale = 0.77
 ATT.ScopeScreenRatio = 0.4065
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    weight = 0.31,
+}))
+
+
 -- EFT ID: 5dff772da3651922b360bf91
 ARC9.LoadAttachment(ATT, "eft_scope_25mm_pilad")
 
@@ -79,7 +84,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_nightforce_atacr.mdl"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_34mm"
 
-ATT.EFTErgoAdd = -8
 
 ATT.FoldSights = true
 
@@ -158,6 +162,12 @@ ATT.ScopeScreenRatio = 619/1080
 ATT.RTScopeNew_ShadowScale = 1.2
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    weight = 1.113,
+}))
+
+
 -- EFT ID: 5aa66be6e5b5b0214e506e97
 ARC9.LoadAttachment(ATT, "eft_scope_34mm_atacr")
 
@@ -178,7 +188,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_hensoldt_zf_4.mdl"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_34mm"
 
-ATT.EFTErgoAdd = -6
 
 ATT.FoldSights = true
 
@@ -256,6 +265,12 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 531/1080
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -6,
+    weight = 0.9,
+}))
+
+
 -- EFT ID: 56ea70acd2720b844b8b4594
 ARC9.LoadAttachment(ATT, "eft_scope_34mm_hsff")
 
@@ -278,7 +293,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_sb_pm_ii_5_25x56.mdl"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_34mm"
 
-ATT.EFTErgoAdd = -8
 
 ATT.FoldSights = true
 
@@ -358,6 +372,12 @@ ATT.ScopeScreenRatio = 693/1080
 ATT.RTScopeNew_ShadowScale = 1.2
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    weight = 1.08,
+}))
+
+
 -- EFT ID: 62850c28da09541f43158cca
 ARC9.LoadAttachment(ATT, "eft_scope_34mm_sb_pmii5")
 
@@ -379,7 +399,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_5hd.mdl"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_optic_35mm"
 
-ATT.EFTErgoAdd = -10
 
 ATT.FoldSights = true
 
@@ -459,6 +478,12 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 627/1080
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    weight = 0.85,
+}))
+
+
 -- EFT ID: 676175789dcee773150c6925
 ARC9.LoadAttachment(ATT, "eft_scope_35mm_5hd")
 
@@ -483,7 +508,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = "eft_shakhin_scope"
 
 
-ATT.EFTErgoAdd = -20
 
 ATT.FoldSights = true
 -- local Reticle0 = Material("vgui/arc9_eft_shared/reticles/scope_base_armasight_zeus_pro_640_2_16x50_30hz_LOD0_mark_00.png", "")
@@ -582,6 +606,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -20,
+    weight = 1.014,
+}))
+
+
 -- EFT ID: 67641b461c2eb66ade05dba6
 ARC9.LoadAttachment(ATT, "eft_scope_shakhin")
 
@@ -597,12 +627,17 @@ ATT.Description = [[A rubber eyecup for the Shakhin thermal scope. Manufactured 
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_shakhin_eyecup.mdl"
 
-ATT.EFTErgoAdd = 2
 
 ATT.Category = {"eft_shakhin_cup"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.AdditionalSightDistance = 1
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.005,
+}))
+
 
 -- EFT ID: 67641bec4ad898aa100c1079
 ARC9.LoadAttachment(ATT, "eft_optic_shakhin_eyecup")

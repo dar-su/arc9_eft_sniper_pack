@@ -46,9 +46,6 @@ ATT.Description = [[The OV-SV98 chassis for the SV-98 sniper rifle, manufactured
 
 ATT.HasChassis = true
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -86,6 +83,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -4,
+    weight = 0.55,
+}))
+
+
 -- EFT ID: 623b2e9d11c3296b440d1638
 ARC9.LoadAttachment(ATT, "eft_sv98_chassis_cnc")
 
@@ -102,9 +106,6 @@ ATT.Description = [[A standard-issue wooden stock for the SV-98, manufactured by
 ATT.HasChassis = true
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.8
-ATT.VisualRecoilMult = 0.8
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -129,6 +130,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -20,
+    weight = 2.913,
+}))
+
+
 -- EFT ID: 61faa91878830f069b6b7967
 ARC9.LoadAttachment(ATT, "eft_sv98_chassis_wood")
 
@@ -146,9 +154,6 @@ ATT.Description = [[CNC Guns Keymod System aircraft-grade aluminum handguard for
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.Category = {"eft_sv98_hg"}
 
@@ -184,6 +189,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 20,
+    weight = 0.33,
+}))
+
+
 -- EFT ID: 623c3c1f37b4b31470357737
 ARC9.LoadAttachment(ATT, "eft_sv98_cnc_hg")
 
@@ -198,7 +209,6 @@ ATT.CompactName = "SV-98 10"
 ATT.Icon = Material("entities/eft_sv98_attachments/10.png", "mips smooth")
 ATT.Description = [[A standard Izhmash-produced polymer magazine for the SV-98 7.62x54R sniper rifle.]]
 
-ATT.EFTErgoAdd = -4
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -209,6 +219,13 @@ ATT.ClipSize = 10
 ATT.ChamberSize = 1
 ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_sv98.mdl"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.115,
+    malfunctionChance = 0.01,
+}))
 
 
 -- EFT ID: 559ba5b34bdc2d1f1a8b4582
@@ -226,14 +243,18 @@ ATT.CompactName = "M12B"
 ATT.Icon = Material("entities/eft_sv98_attachments/stock.png", "mips smooth")
 ATT.Description = [[A universal rear stock by CNC Guns for the OV-SV98 kit.]]
 
-ATT.RecoilMult = 0.8
-ATT.VisualRecoilMult = 0.8
-ATT.EFTErgoAdd = 12
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sv98_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    recoilModifier = -20,
+    weight = 1.04,
+}))
+
 
 -- EFT ID: 624c29ce09cd027dff2f8cd7
 ARC9.LoadAttachment(ATT, "eft_sv98_m12")
@@ -248,13 +269,18 @@ ATT.CompactName = "SV-98"
 ATT.Icon = Material("entities/eft_sv98_attachments/heat.png", "mips smooth")
 ATT.Description = [[An anti-heat ribbon for the SV-98 sniper rifle. Applied to the barrel. Prevents hot air from rising directly from the barrel and creating optical distortions in the line of fire.]]
 
-ATT.EFTErgoAdd = 2
 ATT.HeatCapacityMult = 1.2
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sv98_ribbon"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.053,
+}))
+
 
 -- EFT ID: 56083eab4bdc2d26448b456a
 ARC9.LoadAttachment(ATT, "eft_sv98_ribooon")
@@ -274,6 +300,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sv98_rs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.03,
+}))
+
+
 -- EFT ID: 56083e1b4bdc2dc8488b4572
 ARC9.LoadAttachment(ATT, "eft_sv98_rss")
 
@@ -291,7 +322,6 @@ A bit improvised version of EFT bipods, does not need manual unfolding.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
 
 ATT.Bipod = true 
 ATT.RecoilMultBipod = 0.33
@@ -301,6 +331,11 @@ ATT.HoldBreathTimeMultBipod = 30
 ATT.SwayMultBipod = 0.1
 
 ATT.Category = {"eft_sv98_bipod"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.472,
+}))
+
 
 -- EFT ID: 56ea8222d2720b69698b4567
 ARC9.LoadAttachment(ATT, "eft_sv98_bipodd")
@@ -319,9 +354,6 @@ ATT.Description = [[A standard SV-98 sound suppressor, manufactured by Izhmash.]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -22
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
 ATT.HeatCapacityMult = 1.14
 
 ATT.Silencer = true
@@ -341,6 +373,14 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -22,
+    recoilModifier = -8,
+    weight = 0.27,
+    velocity = 1.1,
+}))
+
+
 -- EFT ID: 5c4eecc32e221602b412b440
 ARC9.LoadAttachment(ATT, "eft_sv98_muzzle_sil")
 
@@ -355,11 +395,14 @@ ATT.Description = [[A standard-issue muzzle device for the SV-98 bolt-action sni
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
 
 ATT.Category = {"eft_muzzle_sv98"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    weight = 0.105,
+}))
+
 
 -- EFT ID: 560e620e4bdc2d724b8b456b
 ARC9.LoadAttachment(ATT, "eft_sv98_muzzle_std")
@@ -375,11 +418,16 @@ ATT.Description = [[The Mk.2.0 compensator produced by SRVV for SV-98 sniper rif
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.87
-ATT.VisualRecoilMult = 0.87
 
 ATT.Category = {"eft_muzzle_sv98"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -13,
+    accuracyModifier = 6,
+    weight = 0.46,
+}))
+
 
 -- EFT ID: 5c4ee3d62e2216152006f302
 ARC9.LoadAttachment(ATT, "eft_sv98_muzzle_srvv")
@@ -395,7 +443,6 @@ ATT.Description = [[A standard-issue threaded adapter for 7.62x54R sound suppres
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
 
 ATT.Category = {"eft_muzzle_sv98"}
 
@@ -408,6 +455,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.06,
+}))
+
 
 -- EFT ID: 5c4eec9b2e2216398b5aaba2
 ARC9.LoadAttachment(ATT, "eft_sv98_muzzle_thr")
@@ -423,10 +476,15 @@ ATT.Description = [[A standard-issue heat shield for SV-98 sound suppressors.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 2
 ATT.HeatCapacityMult = 1.02
 
 ATT.Category = {"eft_muzzle_sv98_sil_cover"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.005,
+}))
+
 
 -- EFT ID: 5c4eecde2e221602b3140418
 ARC9.LoadAttachment(ATT, "eft_sv98_sil_cover")
@@ -463,7 +521,6 @@ ATT.Category = {"eft_optic_kmz"}
 
 
 
-ATT.EFTErgoAdd = -8
 
 ATT.FoldSights = true
 
@@ -559,6 +616,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    weight = 0.94,
+}))
+
+
 -- EFT ID: 5d0a3a58d7ad1a669c15ca14
 ARC9.LoadAttachment(ATT, "eft_scope_kmz_1p59")
 
@@ -582,7 +645,6 @@ ATT.Category = {"eft_optic_kmz"}
 -- ATT.Folder = "Scopes"
 
 
-ATT.EFTErgoAdd = -8
 
 ATT.FoldSights = true
 
@@ -678,6 +740,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    weight = 0.94,
+}))
+
+
 -- EFT ID: 5d0a3e8cd7ad1a6f6a3d35bd
 ARC9.LoadAttachment(ATT, "eft_scope_kmz_1p69")
 
@@ -693,7 +761,6 @@ ATT.Description = [[Rubber eyecup for KMZ 1P59 scope.]]
 
 ATT.Model = "models/weapons/arc9_eft_shared/atts/optic/kmz_eyecup.mdl"
 
-ATT.EFTErgoAdd = 5
 
 
 ATT.Category = {"eft_kmz_eyecap"}
@@ -702,6 +769,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.AdditionalSightDistance = 2
 
 ATT.ModelOffset = Vector(0, 0, 0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.005,
+}))
 
 
 -- EFT ID: 5d0b5cd3d7ad1a3fe32ad263

@@ -9,9 +9,6 @@ ATT.CompactName = "T-5000 barrel"
 ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_762x51_660mm_barrel.png", "mips smooth")
 ATT.Description = "A 660mm long match-grade barrel manufactured by ORSIS for the T-5000M 7.62x51 bolt-action sniper rifle."
 
-ATT.EFTErgoAdd = -10
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.82
 ATT.PhysBulletMuzzleVelocityMult = 1.115
 
@@ -35,6 +32,15 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -40,
+    recoilModifier = -16.5,
+    accuracyModifier = 10,
+    weight = 2.7,
+    velocity = 11,
+}))
+
+
 -- EFT ID: 5df256570dee1b22f862e9c4
 ARC9.LoadAttachment(ATT, "eft_t5000_barrel_std")
 
@@ -47,9 +53,6 @@ ATT.CompactName = "T-5000 body"
 ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_aluminium_body.png", "mips smooth")
 ATT.Description = "A standard aluminum body for the T-5000M bolt-action sniper rifle, manufactured by ORSIS."
 
-ATT.EFTErgoAdd = 16
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 -- ATT.HasGrip = true
 
@@ -83,6 +86,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    recoilModifier = -1,
+    weight = 0.64,
+}))
+
+
 -- EFT ID: 5df35e59c41b2312ea3334d5
 ARC9.LoadAttachment(ATT, "eft_t5000_chassis_std")
 
@@ -95,9 +105,6 @@ ATT.CompactName = "T-5000 hg"
 ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_handguard.png", "mips smooth")
 ATT.Description = "A standard handguard for the T-5000M bolt-action sniper rifle, manufactured by ORSIS."
 
-ATT.EFTErgoAdd = 11
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -149,6 +156,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 20,
+    weight = 0.46,
+}))
+
+
 -- EFT ID: 5df25d3bfd6b4e6e2276dc9a
 ARC9.LoadAttachment(ATT, "eft_t5000_hg_std")
 ///////////////////////////////////////      eft_t5000_hg2_std
@@ -160,9 +173,6 @@ ATT.CompactName = "T-5000 pad"
 ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_padded_handguard_grip.png", "mips smooth")
 ATT.Description = "A standard-issue padded grip for the T-5000M sniper rifle, manufactured by ORSIS."
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 
 ATT.HasHG = true
 
@@ -170,6 +180,13 @@ ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_t5000_hg2"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -0.5,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 5df36948bb49d91fb446d5ad
 ARC9.LoadAttachment(ATT, "eft_t5000_hg2_std")
@@ -183,7 +200,6 @@ ATT.CompactName = "T-5000 grip"
 ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_pistol_grip.png", "mips smooth")
 ATT.Description = "An ergonomic pistol grip for the T-5000M bolt-action sniper rifle, manufactured by ORSIS."
 
-ATT.EFTErgoAdd = 8
 
 ATT.HasGrip = true
 
@@ -191,6 +207,12 @@ ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_t5000_pg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 5df38a5fb74cd90030650cb6
 ARC9.LoadAttachment(ATT, "eft_t5000_pg_std")
@@ -203,15 +225,19 @@ ATT.CompactName = "T-5000 stock"
 ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_stock.png", "mips smooth")
 ATT.Description = "A universal standard-issue stock for T-5000M sniper rifles, manufactured by ORSIS."
 
-ATT.EFTErgoAdd = 11
-ATT.RecoilMult = 0.82
-ATT.VisualRecoilMult = 0.82
 
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_t5000_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 11,
+    recoilModifier = -18,
+    weight = 0.31,
+}))
+
 
 -- EFT ID: 5df35ddddfc58d14537c2036
 ARC9.LoadAttachment(ATT, "eft_t5000_stock_std")
@@ -224,7 +250,6 @@ ATT.CompactName = "T-5000 mount"
 ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_scope_mount.png", "mips smooth")
 ATT.Description = "A universal scope mount for the T-5000M sniper rifle, manufactured by ORSIS. Allows installation of various scopes."
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -239,6 +264,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.14,
+}))
+
 
 -- EFT ID: 5df35e970b92095fd441e4d2
 ARC9.LoadAttachment(ATT, "eft_t5000_rail_optic")
@@ -269,6 +300,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
+
+
 -- EFT ID: 5df35ea9c41b2312ea3334d8
 ARC9.LoadAttachment(ATT, "eft_t5000_rail_long")
 ///////////////////////////////////////      eft_t5000_rail_medium
@@ -297,6 +333,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
+
+
 -- EFT ID: 5df35eb2b11454561e3923e2
 ARC9.LoadAttachment(ATT, "eft_t5000_rail_medium")
 ///////////////////////////////////////      eft_t5000_muzzle_brake
@@ -308,10 +349,6 @@ ATT.CompactName = "T-5000 brake"
 ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_762x51_muzzle_brakecompensator.png", "mips smooth")
 ATT.Description = "A standard-issue muzzle brake for the T-5000M bolt-action sniper rifle, manufactured by ORSIS."
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
-ATT.SpreadMult = 0.99
 ATT.HeatCapacityMult = 0.99
 
 ATT.SortOrder = -2
@@ -320,6 +357,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.BarrelLengthAdd = 1.5
 
 ATT.Category = {"eft_muzzle_t5000"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -10,
+    accuracyModifier = 1,
+    weight = 0.098,
+}))
+
 
 -- EFT ID: 5df35e7f2a78646d96665dd4
 ARC9.LoadAttachment(ATT, "eft_t5000_muzzle_brake")
@@ -333,7 +378,6 @@ ATT.CompactName = "T-5000 5"
 ATT.Icon = Material("entities/eft_t5000_attachments/orsis_t5000m_762x51_5round_magazine.png", "mips smooth")
 ATT.Description = "A 5-round magazine for the T-5000M 7.62x51 sniper rifle, manufactured by ORSIS."
 
-ATT.EFTErgoAdd = -3
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_t5000_5.mdl"
 ATT.DropMagazineAmount = 1
@@ -348,6 +392,13 @@ ATT.SuppressEmptySuffix = false
 
 ATT.ClipSize = 5
 ATT.ChamberSize = 1
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    weight = 0.35,
+    malfunctionChance = 0.02,
+}))
+
 
 -- EFT ID: 5df25b6c0b92095fd441e4cf
 ARC9.LoadAttachment(ATT, "eft_t5000_mag_5")
