@@ -284,7 +284,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 
 ATT.HeatCapacityMult = 0.97
--- ATT.Category = {"eft_ak50_gas"}
+ATT.Category = {"eft_ak50_gas"}
 
 ATT.Attachments = {
     {
