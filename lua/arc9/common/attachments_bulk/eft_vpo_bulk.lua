@@ -128,7 +128,6 @@ ATT.Description = "A threading protection cap for the VPO-215 .366TKM rifle barr
 ATT.SortOrder = -2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.BarrelLengthAdd = 1.5
 
 ATT.Category = {"eft_muzzle_vpo215"}
 
@@ -212,6 +211,176 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 5a9fbb74a2750c0032157181
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_r43_366")
+
+
+///////////////////////////////////////      eft_vpo215_barrel_short
+
+ATT = {}
+
+ATT.PrintName = "VPO-215 .366TKM 360mm barrel"
+ATT.CompactName = "215 360mm"
+ATT.Icon = Material("entities/eft_attachments/68b98415032fa71d2a000dab.png", "mips smooth")
+ATT.Description = "A 360mm barrel for VPO-215 rifle chambered in .366TKM."
+
+ATT.HeatCapacityMult = 0.83
+-- ATT.PhysBulletMuzzleVelocityMult = 1.0648
+
+ATT.Spread = 1.55 * ARC9.MOAToAcc
+
+ATT.HasBarrel = true 
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_vpo215_barrel"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = {"eft_muzzle_vpo215tac", "eft_366_muzzle"},
+        Pos = Vector(-12.9, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -3,
+    weight = 1.2,
+    velocity = -10.8,
+}))
+-- EFT ID: 68b98415032fa71d2a000dab
+ARC9.LoadAttachment(ATT, "eft_vpo215_barrel_short")
+
+
+///////////////////////////////////////      eft_vpo215_muzzle_tac
+
+ATT = {}
+
+ATT.PrintName = "VPO-215 tactical thread protector"
+ATT.CompactName = "215 tac thr."
+ATT.Icon = Material("entities/eft_attachments/68b985da5133d696f7032d37.png", "mips smooth")
+ATT.Description = "A tactical threading protection cap for the VPO-215 .366TKM rifle barrel."
+
+ATT.SortOrder = -2
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_muzzle_vpo215tac"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.01,
+}))
+-- EFT ID: 68b985da5133d696f7032d37
+ARC9.LoadAttachment(ATT, "eft_vpo215_muzzle_tac")
+
+
+///////////////////////////////////////      eft_vpo215_stock_tac
+
+ATT = {}
+
+ATT.PrintName = "VPO-215 tactical chassis"
+ATT.CompactName = "VPO-215 tac."
+ATT.Icon = Material("entities/eft_attachments/68b966e44b7f808d5609ac04.png", "mips smooth")
+ATT.Description = "A tactical chassis for the VPO-215 Gornostay hunting rifle."
+
+ATT.HeatCapacityMult = 1.12
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/vpo215_tac_lrhik.mdl"
+ATT.ModelOffset = Vector(0, 3.3, 0)
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+ATT.LHIK = true
+ATT.RHIK = true
+-- ATT.HasGrip = true
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_vpo215_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_buffertube"),
+        Category = {"eft_ar15_buffertube", "eft_hk416_buffertube", "eft_ar15_buffertube_notbuffer"},
+        Pos = Vector(11.2, 0, 0.54  ),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(-0.2, 0, 0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
+        -- Category = "eft_ar15_pgrip_flat",
+        Category = "eft_ak_grip",
+        Pos = Vector(6.3, 0, 0.93),
+        Ang = Angle(0, 90, 2),
+        Icon_Offset = Vector(-0.5, 0, -0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_handguard"),
+        Category = "eft_vpo215tac_hg",
+        Pos = Vector(-6, 0, -1),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+
+}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -15,
+    weight = 0.41,
+}))
+-- EFT ID: 68b966e44b7f808d5609ac04
+ARC9.LoadAttachment(ATT, "eft_vpo215_stock_tac")
+
+
+///////////////////////////////////////      eft_vpo215_stock_tac_hg
+
+
+ATT = {}
+
+ATT.PrintName = "VPO-215 tactical chassis front rail"
+ATT.CompactName = "VPO-215 tac."
+ATT.Icon = Material("entities/eft_attachments/68b97e7fd9dbc47f4808b09d.png", "mips smooth")
+ATT.Description = "A front rail for the VPO-215 tactical chassis. Allows installation of tactical equipment."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+ATT.Category = {"eft_vpo215tac_hg"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top_big", "eft_tactical_top", "eft_optic_small"},
+        Pos = Vector(1.5, 0, -0.73),
+        Ang = Angle(0, 0, 0),
+        ExtraSightDistance = 4
+    },
+}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.07,
+}))
+-- EFT ID: 68b97e7fd9dbc47f4808b09d
+ARC9.LoadAttachment(ATT, "eft_vpo215_stock_tac_hg")
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

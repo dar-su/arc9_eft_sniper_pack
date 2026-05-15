@@ -362,8 +362,50 @@ local rst_tac = {
     {hide = 0, t = 1.25- 4/26}
 }
 
+local rik_magcheck = {
+    { t = 0, lhik = 1, rhik = 1 },
+    { t = 0.2, lhik = 0, rhik = 1 },
+    { t = 0.87, lhik = 0, rhik = 1 },
+    { t = 1, lhik = 1, rhik = 1 },
+}
+local rik_chambercheck = {
+    { t = 0, lhik = 1, rhik = 1 },
+    { t = 0.16, lhik = 1, rhik = 0 },
+    { t = 0.76, lhik = 1, rhik = 0 },
+    { t = 0.95, lhik = 1, rhik = 1 },
+    { t = 1, lhik = 1, rhik = 1 },
+}
+local rik_look = {
+    { t = 0, lhik = 1, rhik = 1 },
+    { t = 0.35, lhik = 1, rhik = 1 },
+    { t = 0.55, lhik = 0, rhik = 1 },
+    { t = 0.79, lhik = 0, rhik = 1 },
+    { t = 0.95, lhik = 1, rhik = 1 },
+    { t = 1, lhik = 1, rhik = 1 },
+}
+local rik_def = {
+    { t = 0, lhik = 1, rhik = 1 },
+    { t = 0.1, lhik = 0, rhik = 1 },
+    { t = 0.9, lhik = 0, rhik = 1 },
+    { t = 1, lhik = 1, rhik = 1 },
+}
+local rik_empty = {
+    { t = 0, lhik = 1, rhik = 1 },
+    { t = 0.08, lhik = 0, rhik = 1 },
+    { t = 0.53, lhik = 0, rhik = 1 },
+    { t = 0.6, lhik = 1, rhik = 1 },
+    { t = 0.6, lhik = 1, rhik = 1 },
+    { t = 0.68, lhik = 1, rhik = 0 },
+    { t = 0.88, lhik = 1, rhik = 0 },
+    { t = 0.98, lhik = 1, rhik = 1 },
+    { t = 1, lhik = 1, rhik = 1 },
+}
+
 SWEP.Animations = {
-    ["idle"] = { Source = "idle"  },
+    ["idle"] = { Source = "idle"  ,
+
+    Time = 1000
+},
 
     ["ready"] = {
         Source = {"ready0", "ready1", "ready2"},
@@ -373,6 +415,15 @@ SWEP.Animations = {
             { s = path .. "rem700_bolt_2.ogg", t = 0.91 - 0.1 },
             { s = path .. "rem700_bolt_3.ogg", t = 1.21 - 0.07 },
             { s = path .. "rem700_bolt_4.ogg", t = 1.42 - 0.03 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.01, lhik = 0, rhik = 1 },
+            { t = 0.12, lhik = 0, rhik = 1 },
+            { t = 0.26, lhik = 1, rhik = 0 },
+            { t = 0.73, lhik = 1, rhik = 0 },
+            { t = 0.92, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
         },
     },
 
@@ -393,6 +444,13 @@ SWEP.Animations = {
             { s = path .. "rem700_bolt_4.ogg", t = 0.95 - 0.03 },
             { s = randspin, t = 1.17 },   
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.17, lhik = 1, rhik = 0 },
+            { t = 0.71, lhik = 1, rhik = 0 },
+            { t = 0.88, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        },
     },
 
 
@@ -411,7 +469,12 @@ SWEP.Animations = {
         MagSwapTime = 1.5,
         DropMagAt = 0.88- 4/26,
         EventTable = rst_tac,
-        IKTimeLine = rik_def,
+        IKTimeLine =  {
+            { t = 0, lhik = 0.5, rhik = 1 },
+            { t = 0.05, lhik = 0, rhik = 1 },
+            { t = 0.9, lhik = 0, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        },
     },
     ["reload_empty_0"] = {
         Source = "reload_empty0",
@@ -441,6 +504,13 @@ SWEP.Animations = {
             { s = path .. "rem700_bolt_4.ogg", t = 2.32 - 0.03 },
             { s = randspin, t = 2.36 },    
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.08, lhik = 1, rhik = 0 },
+            { t = 0.83, lhik = 1, rhik = 0 },
+            { t = 0.95, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        },
         EjectAt = 0.5
     },    
     
@@ -452,6 +522,11 @@ SWEP.Animations = {
             { s = path .. "rem700_bolt_2.ogg", t = 0.5 - 0.1 },
             { s = randspin, t = 0.78 },   
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.5, lhik = 1, rhik = 0 },
+            { t = 1, lhik = 1, rhik = 0 },
+        },
     },     
     ["reload_start"] = {
         Source = "sgreload_start",
@@ -460,6 +535,11 @@ SWEP.Animations = {
             { s = path .. "rem700_bolt_1.ogg", t = 0.23 - 0.1 },
             { s = path .. "rem700_bolt_2.ogg", t = 0.5 - 0.1 },
             { s = randspin, t = 0.78 },     
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.5, lhik = 1, rhik = 0 },
+            { t = 1, lhik = 1, rhik = 0 },
         },
         RestoreAmmo = -1,
         EjectAt = 0.45,
@@ -470,6 +550,10 @@ SWEP.Animations = {
             { s = path .. "ammo_singleround_pickup.ogg", t = 0 },
             { s = path .. "generic_jam_shell_ remove_medium1.ogg", t = 0.51 },
             { s = randspin, t = 0.53 },   
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 0 },
+            { t = 1, lhik = 1, rhik = 0 },
         },
         -- MinProgress = 0
     },   
@@ -482,6 +566,12 @@ SWEP.Animations = {
             { s = path .. "rem700_bolt_3.ogg", t = 0.26 - 0.07 },
             { s = path .. "rem700_bolt_4.ogg", t = 0.47 - 0.03 },
             { s = randspin, t = 0.63 },    
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 0 },
+            { t = 0.35, lhik = 1, rhik = 0 },
+            { t = 0.75, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
         },
     },
 
@@ -562,6 +652,17 @@ SWEP.Animations = {
             { s = path .. "rem700_bolt_4.ogg", t = 5.67 - 0.03 },
             { s = randspin, t = 5.88 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.05, lhik = 1, rhik = 0 },
+            { t = 0.22, lhik = 1, rhik = 0 },
+            { t = 0.29, lhik = 1, rhik = 1 },
+            { t = 0.46, lhik = 1, rhik = 1 },
+            { t = 0.51, lhik = 1, rhik = 0 },
+            { t = 0.92, lhik = 1, rhik = 0 },
+            { t = 0.98, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        },
         EjectAt = 4.79,
     },
     ["jam2"] = {
@@ -588,6 +689,17 @@ SWEP.Animations = {
 
             { s = ARC9EFT.Shells556, t = 6.8 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.04, lhik = 1, rhik = 0 },
+            { t = 0.19, lhik = 1, rhik = 0 },
+            { t = 0.28, lhik = 1, rhik = 1 },
+            { t = 0.39, lhik = 1, rhik = 1 },
+            { t = 0.43, lhik = 1, rhik = 0 },
+            { t = 0.95, lhik = 1, rhik = 0 },
+            -- { t = 0.98, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        },
         -- EjectAt = 6.5,
     },
     ["jam3"] = {
@@ -613,6 +725,17 @@ SWEP.Animations = {
             { s = path .. "rem700_bolt_4.ogg", t = 7.46 - 0.03 },
             { s = randspin, t = 7.78 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.05, lhik = 1, rhik = 0 },
+            { t = 0.15, lhik = 1, rhik = 0 },
+            { t = 0.2, lhik = 1, rhik = 1 },
+            { t = 0.35, lhik = 1, rhik = 1 },
+            { t = 0.39, lhik = 1, rhik = 0 },
+            { t = 0.94, lhik = 1, rhik = 0 },
+            { t = 0.97, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        },
         EjectAt = 6.41
     },
     ["jam4"] = {
@@ -633,6 +756,17 @@ SWEP.Animations = {
             { s = path .. "rem700_bolt_3.ogg", t = 4.92 - 0.07 },
             { s = path .. "rem700_bolt_4.ogg", t = 5.18 - 0.03 },
             { s = randspin, t = 5.51 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.06, lhik = 1, rhik = 0 },
+            { t = 0.21, lhik = 1, rhik = 0 },
+            { t = 0.27, lhik = 1, rhik = 1 },
+            { t = 0.48, lhik = 1, rhik = 1 },
+            { t = 0.54, lhik = 1, rhik = 0 },
+            { t = 0.92, lhik = 1, rhik = 0 },
+            { t = 0.97, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
         },
         EjectAt = 4.15
     },
@@ -697,6 +831,11 @@ SWEP.AttachmentElements = {
     ["eft_vpo215_rail_optic"] = { Bodygroups = { {3, 1} } },
     ["eft_vpo215_muzzle_brake"] = { Bodygroups = { {4, 1} } },
     ["eft_vpo215_mag_4"] = { Bodygroups = { {5, 1} } },
+
+    ["eft_vpo215_barrel_short"] = { Bodygroups = { {1, 2} } },
+    ["eft_vpo215_muzzle_tac"] = { Bodygroups = { {4, 2} } },
+    ["eft_vpo215_stock_tac"] = { Bodygroups = { {2, 2} } },
+    ["eft_vpo215_stock_tac_hg"] = { Bodygroups = { {7, 1} } },
 }
 
 SWEP.Attachments = {
