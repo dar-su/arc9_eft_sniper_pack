@@ -540,6 +540,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_axmc_mag_308"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.ClipSize = 10
 ATT.ChamberSize = 1
 ATT.DropMagazineAmount = 1
@@ -570,6 +572,8 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_axmc_mag_338"}
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 ATT.ClipSize = 10
 ATT.ChamberSize = 1

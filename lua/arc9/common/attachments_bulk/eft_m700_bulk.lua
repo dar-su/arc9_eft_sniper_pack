@@ -860,6 +860,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m700_mag"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.HasMag = true 
 ATT.SuppressEmptySuffix = false 
 
@@ -895,6 +897,8 @@ ATT.SortOrder = 2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m700_mag"}
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 ATT.HasMag = true 
 ATT.SuppressEmptySuffix = false 
@@ -932,6 +936,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m700_mag"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.HasMag = true 
 ATT.SuppressEmptySuffix = false 
 
@@ -968,6 +974,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m700_mag"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.HasMag = true 
 ATT.SuppressEmptySuffix = false 
 
@@ -1003,6 +1011,8 @@ ATT.SortOrder = 5
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m700_mag"}
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 ATT.HasMag = true 
 ATT.SuppressEmptySuffix = false 
@@ -1114,6 +1124,8 @@ ATT.Category = {"eft_m700_mag"}
 ATT.HasMag = true 
 ATT.SuppressEmptySuffix = false 
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.ClipSize = 10
 ATT.ChamberSize = 1
 
@@ -1149,6 +1161,8 @@ ATT.Category = {"eft_m700_mag"}
 
 ATT.HasMag = true 
 ATT.SuppressEmptySuffix = false 
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 ATT.ClipSize = 20
 ATT.ChamberSize = 1

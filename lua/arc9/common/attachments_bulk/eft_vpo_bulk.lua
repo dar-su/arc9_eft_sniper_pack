@@ -523,6 +523,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_barret_mag"}
 
 ATT.ClipSize = 10
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 ATT.ChamberSize = 1
 ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_barret10.mdl"

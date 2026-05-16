@@ -22,6 +22,8 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_sako_86x70_8.mdl"
 ATT.ActivateElements = {"magdef"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -1,
     weight = 0.19,

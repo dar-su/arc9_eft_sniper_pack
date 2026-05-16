@@ -246,6 +246,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_dvl10_mag"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.HasMag = true 
 ATT.SuppressEmptySuffix = false 
 

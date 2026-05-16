@@ -390,6 +390,8 @@ ATT.Category = {"eft_t5000_mag"}
 ATT.HasMag = true 
 ATT.SuppressEmptySuffix = false 
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.ClipSize = 5
 ATT.ChamberSize = 1
 
