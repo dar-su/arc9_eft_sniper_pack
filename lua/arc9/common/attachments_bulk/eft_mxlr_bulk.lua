@@ -1255,7 +1255,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     misfireChance = 0.1834,
     lightBleedModifier = 0.35,
     heavyBleedModifier = 0.17,
-}), "bigrifle")
+}, "bigrifle"))
 
 
 -- EFT ID: 67c540c3d0538d12ec036c08
@@ -1298,7 +1298,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     misfireChance = 0.1834,
     lightBleedModifier = 0.45,
     heavyBleedModifier = 0.22,
-}), "bigrifle")
+}, "bigrifle"))
 
 
 -- EFT ID: 67c540cfb032bbdb530201b8
