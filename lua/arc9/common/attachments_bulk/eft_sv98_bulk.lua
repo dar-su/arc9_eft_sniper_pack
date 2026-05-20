@@ -555,8 +555,8 @@ ATT.DrawFunc = function(swep, model, wm)
     end
 end
 
-local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/1p59_3-10x_mark_f.png", "mips")
-local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/1p59_3-10x_mark_q.png", "mips")
+local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/1p59_3-10x_mark_f.png", "")
+local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/1p59_3-10x_mark_q.png", "")
 
 local scale = 0.9
 local finalsize = 2.35 * scale
@@ -679,8 +679,8 @@ ATT.DrawFunc = function(swep, model, wm)
     end
 end
 
-local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/1p59_3-10x_mark_red_f.png", "mips")
-local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/1p59_3-10x_mark_red_q.png", "mips")
+local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/1p59_3-10x_mark_red_f.png", "")
+local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/1p59_3-10x_mark_red_q.png", "")
 
 local scale = 0.9
 local finalsize = 2.35 * scale

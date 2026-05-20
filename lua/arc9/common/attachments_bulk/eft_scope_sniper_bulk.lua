@@ -118,8 +118,8 @@ ATT.DrawFunc = function(swep, model, wm)
     end
 end
 
-local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/ATACR_7-35x56_mark_f.png", "mips")
-local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/ATACR_7-35x56_mark_q.png", "mips")
+local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/ATACR_7-35x56_mark_f.png", "")
+local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/ATACR_7-35x56_mark_q.png", "")
 
 local scale = 1.3
 local finalsize = 3.1 * scale
@@ -222,8 +222,8 @@ ATT.DrawFunc = function(swep, model, wm)
     end
 end
 
-local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/Hensoldt_FF_4-16x56_mark_f.png", "mips")
--- local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/Hensoldt_FF_4-16x56_mark_q.png", "mips")
+local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/Hensoldt_FF_4-16x56_mark_f.png", "")
+-- local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/Hensoldt_FF_4-16x56_mark_q.png", "")
 
 local scale = 0.5
 local finalsize = 2.9
@@ -328,8 +328,8 @@ ATT.DrawFunc = function(swep, model, wm)
     end
 end
 
-local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/SB_PM_II_5-25x56_mark_f.png", "mips")
-local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/SB_PM_II_5-25x56_mark_q.png", "mips")
+local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/SB_PM_II_5-25x56_mark_f.png", "")
+local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/SB_PM_II_5-25x56_mark_q.png", "")
 
 local scale = 1.25
 local finalsize = 3.65
@@ -434,8 +434,8 @@ ATT.DrawFunc = function(swep, model, wm)
     end
 end
 
-local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/scope_35mm_leupold_mark_5hd_5_25x56_mark_f.png", "mips")
-local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/scope_35mm_leupold_mark_5hd_5_25x56_mark_q.png", "mips")
+local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/scope_35mm_leupold_mark_5hd_5_25x56_mark_f.png", "")
+local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/scope_35mm_leupold_mark_5hd_5_25x56_mark_q.png", "")
 
 local scale = 0.6
 local finalsize = 1.85
